@@ -1,0 +1,259 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><title>Minecraft远程联机方法汇总 | ALT021的小世界</title><meta name="author" content="ALT021"><meta name="copyright" content="ALT021"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="准备开始！这篇文章的内容主要适用于Java版本远程联机，如果您是基岩版，双方可直接添加xbox好友进行联机，不需要再进行其他操作。 本文部分内容需要有计算机使用基础和对网络有初步了解后使用。 本文默认运营商没有为您分配公网IP，如果您拥有公网IP，请自行在路由器处配置端口转发。  方案1 内网穿透此方法使用较为容易，也已经被广泛传播。免费的内网穿透服务商比比皆是，诸如SakuraFrp、NATAP">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Minecraft远程联机方法汇总">
+<meta property="og:url" content="httpt://blog.alt021.eu.org/2023/04/02/mclink/index.html">
+<meta property="og:site_name" content="ALT021的小世界">
+<meta property="og:description" content="准备开始！这篇文章的内容主要适用于Java版本远程联机，如果您是基岩版，双方可直接添加xbox好友进行联机，不需要再进行其他操作。 本文部分内容需要有计算机使用基础和对网络有初步了解后使用。 本文默认运营商没有为您分配公网IP，如果您拥有公网IP，请自行在路由器处配置端口转发。  方案1 内网穿透此方法使用较为容易，也已经被广泛传播。免费的内网穿透服务商比比皆是，诸如SakuraFrp、NATAP">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://i.328888.xyz/2022/12/22/ALy1H.png">
+<meta property="article:published_time" content="2023-04-02T05:52:20.000Z">
+<meta property="article:modified_time" content="2023-04-09T11:08:40.143Z">
+<meta property="article:author" content="ALT021">
+<meta property="article:tag" content="Minecraft">
+<meta property="article:tag" content="网络">
+<meta property="article:tag" content="内网穿透">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.328888.xyz/2022/12/22/ALy1H.png"><link rel="shortcut icon" href="https://i.328888.xyz/2023/03/29/iWdg0z.png"><link rel="canonical" href="httpt://blog.alt021.eu.org/2023/04/02/mclink/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/4.0.31/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdnjs.cloudflare.com/ajax/libs/flickr-justified-gallery/2.1.2/fjGallery.min.js',
+      css: 'https://cdnjs.cloudflare.com/ajax/libs/flickr-justified-gallery/2.1.2/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  }
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Minecraft远程联机方法汇总',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-04-09 19:08:40'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 5.4.2"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">3</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">6</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">2</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://i.328888.xyz/2022/12/22/ALy1H.png')"><nav id="nav"><span id="blog-info"><a href="/" title="ALT021的小世界"><span class="site-name">ALT021的小世界</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Minecraft远程联机方法汇总</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2023-04-02T05:52:20.000Z" title="Created 2023-04-02 13:52:20">2023-04-02</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2023-04-09T11:08:40.143Z" title="Updated 2023-04-09 19:08:40">2023-04-09</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E6%95%99%E7%A8%8B/">教程</a></span></div><div class="meta-secondline"></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="准备开始！"><a href="#准备开始！" class="headerlink" title="准备开始！"></a>准备开始！</h1><p>这篇文章的内容主要适用于<strong>Java版本</strong>远程联机，如果您是基岩版，双方可直接添加xbox好友进行联机，不需要再进行其他操作。</p>
+<p>本文部分内容需要有计算机使用基础和对网络有初步了解后使用。</p>
+<p>本文默认运营商没有为您分配公网IP，如果您拥有公网IP，请自行在路由器处配置端口转发。</p>
+<hr>
+<h1 id="方案1-内网穿透"><a href="#方案1-内网穿透" class="headerlink" title="方案1 内网穿透"></a>方案1 内网穿透</h1><p>此方法使用较为容易，也已经被广泛传播。免费的内网穿透服务商比比皆是，诸如<em>SakuraFrp、NATAPP、花生壳等等。<br>今天我要为大家推荐的是另一款目前体验较为优秀的穿透提供商*<em>OpenFrp</em></em></p>
+<h2 id="创建账号"><a href="#创建账号" class="headerlink" title="创建账号"></a>创建账号</h2><p>首先，打开<a target="_blank" rel="noopener" href="https://www.openfrp.net/">OpenFrp官网</a>进行账号注册，这一步不过多讲述，请按照网页上的提示进行注册</p>
+<h2 id="下载软件"><a href="#下载软件" class="headerlink" title="下载软件"></a>下载软件</h2><p>进入<a target="_blank" rel="noopener" href="https://console.openfrp.net/">管理面板</a>后，点击侧边下载软件，下载启动器即可。如果您是新手则不建议使用客户端。</p>
+<p><img src="https://i.328888.xyz/2023/04/02/iHIBza.png" alt="下载指引"></p>
+<h2 id="获得端口号"><a href="#获得端口号" class="headerlink" title="获得端口号"></a>获得端口号</h2><p>打开您的Minecraft:Java Edtion实例，进入要游玩的世界。按Esc键暂停游戏，选择对局域网开启</p>
+<p><img src="https://i.328888.xyz/2023/04/02/iHIEKp.png"></p>
+<p>开启后，您会在聊天框中收到一条消息，此消息包含了端口号。</p>
+<p><img src="https://i.328888.xyz/2023/04/02/iHI63v.png"></p>
+<p>请记住此端口号，将在稍后创建隧道的步骤中使用到</p>
+<h2 id="创建隧道"><a href="#创建隧道" class="headerlink" title="创建隧道"></a>创建隧道</h2><p>进入OpenFrp管理面板，点击侧边创建隧道</p>
+<p><img src="https://i.328888.xyz/2023/04/02/iHIrDd.md.png"></p>
+<p>进入后，在左侧选择好节点，在右侧输入信息的位置中。协议请选择TCP(基岩版本则使用UDP)，本地地址一般填写<strong>127.0.0.1</strong>(即本地计算机)，本地端口填写游戏中提示的端口号。远程端口建议随机，隧道名称可按自己的喜好填写</p>
+<p><img src="https://i.328888.xyz/2023/04/02/iHIdVy.md.png"></p>
+<p>完成填写后，点击创建即可。</p>
+<p>请注意，在此过程中，不要关闭您的游戏实例。重启局域网联机会导致本地端口变化，您则需要重新配置穿透隧道。</p>
+<h2 id="启动穿透"><a href="#启动穿透" class="headerlink" title="启动穿透"></a>启动穿透</h2><p>打开您的启动器，启动时会要求您登录，请输入与<a target="_blank" rel="noopener" href="https://console.openfrp.net/">管理面板</a><strong>相同</strong>的账号密码登录启动器</p>
+<p>点击左侧隧道按钮即可，启动您创建好的隧道</p>
+<p><img src="https://i.328888.xyz/2023/04/02/iHISQZ.png"></p>
+<p>启动完成后，您通常会收到一条来自Of启动器的通知，如果通知中向您提示端口被占用等，请<strong>重启电脑</strong>或<strong>前往管理面板强制下线</strong>。</p>
+<h2 id="好友方加入"><a href="#好友方加入" class="headerlink" title="好友方加入"></a>好友方加入</h2><p>隧道启动完成后，点击左侧日志按钮，在最底部会获得连接到此隧道的IP，请完整的复制这串地址并发送给朋友</p>
+<p><img src="https://i.328888.xyz/2023/04/02/iHNVnV.png"></p>
+<p>让朋友使用添加并加入服务器的方式连接到此地址即可与您联机</p>
+<h2 id="提示"><a href="#提示" class="headerlink" title="提示"></a>提示</h2><p>此方式是否稳定依赖于穿透服务商网络及延迟是否优秀，如服务商较为火爆则您的体验可能较差。此方式默认情况下可能需要正版账号方可连接。</p>
+<hr>
+<h1 id="方案2-虚拟局域网"><a href="#方案2-虚拟局域网" class="headerlink" title="方案2 虚拟局域网"></a>方案2 虚拟局域网</h1><p>此方法体验会优于前者，在服务器转发握手完成后，您和您朋友的计算机将直接点对点通信，因此可以获得更优异的延迟体验。本文以<a target="_blank" rel="noopener" href="https://my.zerotier.com/">Zerotier</a>为例</p>
+<h2 id="注册与下载"><a href="#注册与下载" class="headerlink" title="注册与下载"></a>注册与下载</h2><p>在<a target="_blank" rel="noopener" href="https://my.zerotier.com/">Zerotier 官方网站</a>下载软件，并注册登录账号。网站和客户端界面全部为英文，如果您无法阅读，请使用翻译工具。</p>
+<p><img src="https://i.328888.xyz/2023/04/02/iHN8Y8.png"></p>
+<p>请注意，您的朋友也需要安装Zerotier客户端！</p>
+<h2 id="创建虚拟局域网并加入"><a href="#创建虚拟局域网并加入" class="headerlink" title="创建虚拟局域网并加入"></a>创建虚拟局域网并加入</h2><p>登录官网后，点击”Create a network”即可创建并获得一串网络ID，请将此ID发送给您的朋友</p>
+<p><img src="https://i.328888.xyz/2023/04/02/iHNpsC.png"></p>
+<p>取得网络ID后，右键任务栏上的Zerotier图标，选择“Join New Network”</p>
+<p><img src="https://i.328888.xyz/2023/04/02/iHN7YJ.png"></p>
+<p>在打开的对话框中，输入您的网络ID。添加完成后，点击这个ID即可进行连接。</p>
+<p><img src="https://i.328888.xyz/2023/04/02/iHN7YJ.png"></p>
+<p>连接后打开网络和共享中心，如果可以看到Zerotier One则说明已经成功连接。</p>
+<p>请注意，您和您的朋友需要<strong>同时连接</strong>才可以正常联机</p>
+<h2 id="开始联机"><a href="#开始联机" class="headerlink" title="开始联机"></a>开始联机</h2><p>要建立连接，您首先需要查询您在虚拟局域网中的IP地址是什么</p>
+<p>打开cmd并输入”ipconfig”，在输出的信息中，找到”网络适配器 - Zerotier One”</p>
+<p><img src="https://i.328888.xyz/2023/04/02/iHNK7x.md.png"></p>
+<p>这里的IPv4地址就是您在此虚拟局域网中的IP地址。</p>
+<p>使用和方法1相同的方式创建一个局域网世界，并将虚拟局域网中的IP和端口号进行组合，发送给您的朋友，就像这样。</p>
+<blockquote>
+<p>172.24.0.1:63024</p>
+</blockquote>
+<p>然后使用连接服务器的方式连接即可。</p>
+<hr>
+<h1 id="方案3-IPv6公网直连"><a href="#方案3-IPv6公网直连" class="headerlink" title="方案3 IPv6公网直连"></a>方案3 IPv6公网直连</h1><p>如果您和朋友都可以使用IPv6，那么此方法就是最推荐的方法。</p>
+<h2 id="查看是否支持IPv6"><a href="#查看是否支持IPv6" class="headerlink" title="查看是否支持IPv6"></a>查看是否支持IPv6</h2><p>打开网络与共享中心，点击您的网络适配器。如果IPv6一栏为“Internet”，则说明您可以使用IPv6。如果为”无网络访问权限”，请尝试修改路由器设置或者将网线直接插入光猫LAN口</p>
+<p><img src="https://i.328888.xyz/2023/04/02/iHr4WH.png"></p>
+<p>如果您和您的朋友都拥有IPv6，则可以使用此方式联机。</p>
+<h2 id="查找IPv6地址"><a href="#查找IPv6地址" class="headerlink" title="查找IPv6地址"></a>查找IPv6地址</h2><p>同样打开cmd输入”ipconfig”，找到自己联网所使用的网络适配器，您将可以找到您的IPv6地址。请复制这串地址</p>
+<p><img src="https://i.328888.xyz/2023/04/02/iHrINb.png"></p>
+<p>您通常会拥有多个IPv6地址，如果使用其中一个无法连接，请依次使用其他的地址进行尝试。</p>
+<p>另外请不要使用类似”fe80”开头的本地链接IPv6地址，此地址<strong>无法连接</strong>。</p>
+<h2 id="开始联机-1"><a href="#开始联机-1" class="headerlink" title="开始联机"></a>开始联机</h2><p>请将IPv6地址套在中括号内，并加上游戏给出的端口号，就像这样</p>
+<blockquote>
+</blockquote>
+<p>并发送这串地址给您的朋友，让他使用加入服务器的方式连接到您的游戏。</p>
+<hr>
+<h1 id="无正版简单解决方式"><a href="#无正版简单解决方式" class="headerlink" title="无正版简单解决方式"></a>无正版简单解决方式</h1><p>如果您或您的朋友没有正版，那么可能在使用上述方式时无法正常连接。针对此情况的简单解决办法是：注册并使用第三方验证。<br>诸如HMCL、PCL2等启动器均支持使用第三方验证进行登录。登陆后，您和您的朋友便可以正常连接</p>
+<p>我建议尝试<a target="_blank" rel="noopener" href="https://littleskin.cn/">LittleSkin</a></p>
+<p>您也可以使用类似“自定义局域网”的Fabric或Forge模组来关闭正版验证。在此处不再赘述</p>
+<h1 id="提示-1"><a href="#提示-1" class="headerlink" title="提示"></a>提示</h1><p>如果您要游玩mod版，则双方需要使用相同的客户端，您可直接拷贝**.minecraft**文件夹发送给您的朋友。</p>
+<h1 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h1><p>本教程可能无法细致入微，请学会参考官方教程使用这些方式。</p>
+<p>让我们离开网易版的限制，拥抱自由的Minecraft</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="httpt://blog.alt021.eu.org">ALT021</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="httpt://blog.alt021.eu.org/2023/04/02/mclink/">httpt://blog.alt021.eu.org/2023/04/02/mclink/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Minecraft/">Minecraft</a><a class="post-meta__tags" href="/tags/%E7%BD%91%E7%BB%9C/">网络</a><a class="post-meta__tags" href="/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/">内网穿透</a></div><div class="post_share"></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2023/04/09/comtrue/" title="小小博客的新发展"><img class="cover" src="https://i.328888.xyz/2023/03/13/vSlTd.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">Previous Post</div><div class="prev_info">小小博客的新发展</div></div></a></div><div class="next-post pull-right"><a href="/2023/03/30/HelloWorld/" title="你好，世界！"><img class="cover" src="https://i.328888.xyz/2023/02/05/NsS1A.jpeg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">你好，世界！</div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> Comment</span></div></div><div class="comment-wrap"><div><div id="lv-container" data-id="city" data-uid="MTAyMC81ODMyOC8zNDc5MQ=="></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">ALT021</div><div class="author-info__description">一个十六岁初中牲</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">3</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">6</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">2</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://alt021.eu.org"><i class="fa-solid fa-earth-americas"></i><span>Offical Website</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://space.bilibili.com/367094604" target="_blank" title="bilibili"><i class="fa-brands fa-bilibili"></i></a><a class="social-icon" href="https://t.me/alt021" target="_blank" title="Telegram"><i class="fa-brands fa-telegram"></i></a><a class="social-icon" href="mailto:penbead@outlook.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">欢迎访问！想要查找内容请进入归档页，暂时没有站内搜索~</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Catalog</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%87%86%E5%A4%87%E5%BC%80%E5%A7%8B%EF%BC%81"><span class="toc-number">1.</span> <span class="toc-text">准备开始！</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%96%B9%E6%A1%881-%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F"><span class="toc-number">2.</span> <span class="toc-text">方案1 内网穿透</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E8%B4%A6%E5%8F%B7"><span class="toc-number">2.1.</span> <span class="toc-text">创建账号</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%8B%E8%BD%BD%E8%BD%AF%E4%BB%B6"><span class="toc-number">2.2.</span> <span class="toc-text">下载软件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%8E%B7%E5%BE%97%E7%AB%AF%E5%8F%A3%E5%8F%B7"><span class="toc-number">2.3.</span> <span class="toc-text">获得端口号</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E9%9A%A7%E9%81%93"><span class="toc-number">2.4.</span> <span class="toc-text">创建隧道</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%90%AF%E5%8A%A8%E7%A9%BF%E9%80%8F"><span class="toc-number">2.5.</span> <span class="toc-text">启动穿透</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A5%BD%E5%8F%8B%E6%96%B9%E5%8A%A0%E5%85%A5"><span class="toc-number">2.6.</span> <span class="toc-text">好友方加入</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8F%90%E7%A4%BA"><span class="toc-number">2.7.</span> <span class="toc-text">提示</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%96%B9%E6%A1%882-%E8%99%9A%E6%8B%9F%E5%B1%80%E5%9F%9F%E7%BD%91"><span class="toc-number">3.</span> <span class="toc-text">方案2 虚拟局域网</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B3%A8%E5%86%8C%E4%B8%8E%E4%B8%8B%E8%BD%BD"><span class="toc-number">3.1.</span> <span class="toc-text">注册与下载</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E8%99%9A%E6%8B%9F%E5%B1%80%E5%9F%9F%E7%BD%91%E5%B9%B6%E5%8A%A0%E5%85%A5"><span class="toc-number">3.2.</span> <span class="toc-text">创建虚拟局域网并加入</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BC%80%E5%A7%8B%E8%81%94%E6%9C%BA"><span class="toc-number">3.3.</span> <span class="toc-text">开始联机</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%96%B9%E6%A1%883-IPv6%E5%85%AC%E7%BD%91%E7%9B%B4%E8%BF%9E"><span class="toc-number">4.</span> <span class="toc-text">方案3 IPv6公网直连</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8B%E6%98%AF%E5%90%A6%E6%94%AF%E6%8C%81IPv6"><span class="toc-number">4.1.</span> <span class="toc-text">查看是否支持IPv6</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9F%A5%E6%89%BEIPv6%E5%9C%B0%E5%9D%80"><span class="toc-number">4.2.</span> <span class="toc-text">查找IPv6地址</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BC%80%E5%A7%8B%E8%81%94%E6%9C%BA-1"><span class="toc-number">4.3.</span> <span class="toc-text">开始联机</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%97%A0%E6%AD%A3%E7%89%88%E7%AE%80%E5%8D%95%E8%A7%A3%E5%86%B3%E6%96%B9%E5%BC%8F"><span class="toc-number">5.</span> <span class="toc-text">无正版简单解决方式</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%8F%90%E7%A4%BA-1"><span class="toc-number">6.</span> <span class="toc-text">提示</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%86%99%E5%9C%A8%E6%9C%80%E5%90%8E"><span class="toc-number">7.</span> <span class="toc-text">写在最后</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2023/04/09/comtrue/" title="小小博客的新发展"><img src="https://i.328888.xyz/2023/03/13/vSlTd.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="小小博客的新发展"/></a><div class="content"><a class="title" href="/2023/04/09/comtrue/" title="小小博客的新发展">小小博客的新发展</a><time datetime="2023-04-09T11:44:18.000Z" title="Created 2023-04-09 19:44:18">2023-04-09</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/04/02/mclink/" title="Minecraft远程联机方法汇总"><img src="https://i.328888.xyz/2022/12/22/ALy1H.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Minecraft远程联机方法汇总"/></a><div class="content"><a class="title" href="/2023/04/02/mclink/" title="Minecraft远程联机方法汇总">Minecraft远程联机方法汇总</a><time datetime="2023-04-02T05:52:20.000Z" title="Created 2023-04-02 13:52:20">2023-04-02</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/03/30/HelloWorld/" title="你好，世界！"><img src="https://i.328888.xyz/2023/02/05/NsS1A.jpeg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="你好，世界！"/></a><div class="content"><a class="title" href="/2023/03/30/HelloWorld/" title="你好，世界！">你好，世界！</a><time datetime="2023-03-30T04:57:52.000Z" title="Created 2023-03-30 12:57:52">2023-03-30</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2023 By ALT021</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="Scroll To Comments"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="Back To Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/4.0.31/fancybox.umd.min.js"></script><div class="js-pjax"><script>function loadLivere () {
+  if (typeof LivereTower === 'object') {
+    window.LivereTower.init()
+  }
+  else {
+    (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+    })(document, 'script');
+  }
+}
+
+if ('Livere' === 'Livere' || !false) {
+  if (false) btf.loadComment(document.getElementById('lv-container'), loadLivere)
+  else loadLivere()
+}
+else {
+  function loadOtherComment () {
+    loadLivere()
+  }
+}</script></div></div></body></html>
