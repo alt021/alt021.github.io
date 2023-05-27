@@ -84,6 +84,39 @@
       </tags>
   </entry>
   <entry>
+    <title>小小博客的新发展</title>
+    <url>/2023/04/09/0003/</url>
+    <content><![CDATA[<h1 id="写在开头"><a href="#写在开头" class="headerlink" title="写在开头"></a>写在开头</h1><p>本博客现已经开启Livere评论系统，可对我的文章发表评论了！</p>
+<p>不过请文明发言，Livere会对垃圾留言进行过滤，博主也会清理不当言论。</p>
+<hr>
+<h1 id="最新的进展"><a href="#最新的进展" class="headerlink" title="最新的进展"></a>最新的进展</h1><p>我等不及要想告诉大家最近折腾的新成果了！！！</p>
+<hr>
+<h2 id="更换新的域名"><a href="#更换新的域名" class="headerlink" title="更换新的域名"></a>更换新的域名</h2><p>此前我使用过<a href="https://cloudflare.com/">Cloudflare</a>提供的二级域名，和<a href="https://nic.eu.org/">eu.org</a>,虽说后者的权重和顶级域名差不了太多，但还是会有点难看的，对吧？</p>
+<p>某天在网上冲浪时，得知了硅云，硅云目前正在进行“首年0元”的活动。新用户的首个域名首年免费(仅限.top等部分顶级域名)，如果你正需要，请<a href="https://www.vpsor.cn/?userCode=yh21c0e">点击这里注册</a>，这是我的推广链接，你使用此链接注册我将获得部分返利。提前感谢大家。</p>
+<p>我的所有站点都已换到<a href="https://www.alt021.top/">alt021.top</a>的域名。</p>
+<hr>
+<h2 id="更换CDN改善速度"><a href="#更换CDN改善速度" class="headerlink" title="更换CDN改善速度"></a>更换CDN改善速度</h2><p>博客的部分服务此前使用Jsdelivr的CDN，其在国内由于特殊原因很难正常访问。导致本网站打开速度异常缓慢，图标文件几乎不能正常加载。</p>
+<p>目前已更换到另外的CDN，网页打开速度显著改善，基本3-5秒即可完成加载。</p>
+<hr>
+<h2 id="开通评论"><a href="#开通评论" class="headerlink" title="开通评论"></a>开通评论</h2><p>此博客已经成功接入Livere评论系统，现在您可以对我的博文发表评论了。</p>
+<p>不过请注意，您的评论若包含不当言论或垃圾内容，将会被Livere过滤，博主也将不定期主动删除不当言论。</p>
+<hr>
+<h1 id="在网络之外"><a href="#在网络之外" class="headerlink" title="在网络之外"></a>在网络之外</h1><p>博主离中考越来越近了，近期的一次模拟考试部分成绩些许不理想。等两个月之后，我的自我介绍大抵是该更新了。</p>
+<p>到那时候就真的没时间管理博客了，我的<strong>Pure Life纯净生存服务器</strong>会不会开下去也成了谜，谁知道呢，到时再看。</p>
+<hr>
+<h1 id="尾声"><a href="#尾声" class="headerlink" title="尾声"></a>尾声</h1><p>这次的文章有点水( 自 知 之 明 )，下次好好更新就是了。。。</p>
+<p>总之以后空闲时间可能会越来越少，尽量多管理一下博客吧。感谢来阅读的各位！</p>
+]]></content>
+      <categories>
+        <category>闲聊</category>
+      </categories>
+      <tags>
+        <tag>闲聊</tag>
+        <tag>hexo</tag>
+        <tag>海文章</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>更加私密的浏览体验，Tor Browser</title>
     <url>/2023/05/02/0004/</url>
     <content><![CDATA[<h1 id="写在开头"><a href="#写在开头" class="headerlink" title="写在开头"></a>写在开头</h1><p>此文章只介绍有关使用方法以及保护原理。如果您想对Tor及Tor Network了解更加”深入”请移步别家。</p>
@@ -124,39 +157,6 @@
         <tag>富强上网</tag>
         <tag>科学上网</tag>
         <tag>隐私保护</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>小小博客的新发展</title>
-    <url>/2023/04/09/0003/</url>
-    <content><![CDATA[<h1 id="写在开头"><a href="#写在开头" class="headerlink" title="写在开头"></a>写在开头</h1><p>本博客现已经开启Livere评论系统，可对我的文章发表评论了！</p>
-<p>不过请文明发言，Livere会对垃圾留言进行过滤，博主也会清理不当言论。</p>
-<hr>
-<h1 id="最新的进展"><a href="#最新的进展" class="headerlink" title="最新的进展"></a>最新的进展</h1><p>我等不及要想告诉大家最近折腾的新成果了！！！</p>
-<hr>
-<h2 id="更换新的域名"><a href="#更换新的域名" class="headerlink" title="更换新的域名"></a>更换新的域名</h2><p>此前我使用过<a href="https://cloudflare.com/">Cloudflare</a>提供的二级域名，和<a href="https://nic.eu.org/">eu.org</a>,虽说后者的权重和顶级域名差不了太多，但还是会有点难看的，对吧？</p>
-<p>某天在网上冲浪时，得知了硅云，硅云目前正在进行“首年0元”的活动。新用户的首个域名首年免费(仅限.top等部分顶级域名)，如果你正需要，请<a href="https://www.vpsor.cn/?userCode=yh21c0e">点击这里注册</a>，这是我的推广链接，你使用此链接注册我将获得部分返利。提前感谢大家。</p>
-<p>我的所有站点都已换到<a href="https://www.alt021.top/">alt021.top</a>的域名。</p>
-<hr>
-<h2 id="更换CDN改善速度"><a href="#更换CDN改善速度" class="headerlink" title="更换CDN改善速度"></a>更换CDN改善速度</h2><p>博客的部分服务此前使用Jsdelivr的CDN，其在国内由于特殊原因很难正常访问。导致本网站打开速度异常缓慢，图标文件几乎不能正常加载。</p>
-<p>目前已更换到另外的CDN，网页打开速度显著改善，基本3-5秒即可完成加载。</p>
-<hr>
-<h2 id="开通评论"><a href="#开通评论" class="headerlink" title="开通评论"></a>开通评论</h2><p>此博客已经成功接入Livere评论系统，现在您可以对我的博文发表评论了。</p>
-<p>不过请注意，您的评论若包含不当言论或垃圾内容，将会被Livere过滤，博主也将不定期主动删除不当言论。</p>
-<hr>
-<h1 id="在网络之外"><a href="#在网络之外" class="headerlink" title="在网络之外"></a>在网络之外</h1><p>博主离中考越来越近了，近期的一次模拟考试部分成绩些许不理想。等两个月之后，我的自我介绍大抵是该更新了。</p>
-<p>到那时候就真的没时间管理博客了，我的<strong>Pure Life纯净生存服务器</strong>会不会开下去也成了谜，谁知道呢，到时再看。</p>
-<hr>
-<h1 id="尾声"><a href="#尾声" class="headerlink" title="尾声"></a>尾声</h1><p>这次的文章有点水( 自 知 之 明 )，下次好好更新就是了。。。</p>
-<p>总之以后空闲时间可能会越来越少，尽量多管理一下博客吧。感谢来阅读的各位！</p>
-]]></content>
-      <categories>
-        <category>闲聊</category>
-      </categories>
-      <tags>
-        <tag>闲聊</tag>
-        <tag>hexo</tag>
-        <tag>海文章</tag>
       </tags>
   </entry>
   <entry>
