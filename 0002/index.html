@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Hexo Theme Redefine">
+    
+    <meta name="author" content="ALT021">
+    <!-- preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    
+        
+            <link rel="preconnect" href="https://npm.elemecdn.com" crossorigin>
+        
+    
+    <!--- Seo Part-->
+    
+    <link rel="canonical" href="httpt://blog.alt021.top/0002/"/>
+    <meta name="robots" content="index,follow">
+    <meta name="googlebot" content="index,follow">
+    <meta name="revisit-after" content="1 days">
+    
+        <meta name="description" content="准备开始！这篇文章的内容主要适用于Java版本远程联机，如果您是基岩版，双方可直接添加xbox好友进行联机，不需要再进行其他操作。 本文部分内容需要有计算机使用基础和对网络有初步了解后使用。 本文默认运营商没有为您分配公网IP，如果您拥有公网IP，请自行在路由器处配置端口转发。   提示：本文图片已遗失，博主实在无力全部补完。  方案1 内网穿透此方法使用较为容易，也已经被广泛传播。免费的内网穿透">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Minecraft远程联机方法汇总">
+<meta property="og:url" content="httpt://blog.alt021.top/0002/index.html">
+<meta property="og:site_name" content="ALT021的小世界">
+<meta property="og:description" content="准备开始！这篇文章的内容主要适用于Java版本远程联机，如果您是基岩版，双方可直接添加xbox好友进行联机，不需要再进行其他操作。 本文部分内容需要有计算机使用基础和对网络有初步了解后使用。 本文默认运营商没有为您分配公网IP，如果您拥有公网IP，请自行在路由器处配置端口转发。   提示：本文图片已遗失，博主实在无力全部补完。  方案1 内网穿透此方法使用较为容易，也已经被广泛传播。免费的内网穿透">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2023-04-02T05:52:20.000Z">
+<meta property="article:modified_time" content="2023-05-19T15:05:24.967Z">
+<meta property="article:author" content="ALT021">
+<meta property="article:tag" content="Minecraft">
+<meta property="article:tag" content="网络">
+<meta property="article:tag" content="内网穿透">
+<meta name="twitter:card" content="summary">
+    
+    
+    <!--- Icon Part-->
+    <link rel="icon" type="image/png" href="/img/favicon.png" sizes="192x192">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon.png">
+    <meta name="theme-color" content="#4d90fe">
+    <link rel="shortcut icon" href="/img/favicon.png">
+    <!--- Page Info-->
+    
+    <title>
+        
+            Minecraft远程联机方法汇总 -
+        
+        ALT021的小世界
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <link rel="stylesheet" href="//npm.elemecdn.com/hexo-theme-redefine@2.1.5/source/assets/fonts.css">
+    <!--- Font Part-->
+    
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC&family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
+    
+    
+    
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC&family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
+    
+    
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC&family=ZCOOL+XiaoWei&display=swap"" rel="stylesheet">
+    
+
+    <!--- Inject Part-->
+    
+    <script id="hexo-configurations">
+    let Global = window.Global || {};
+    Global.hexo_config = {"hostname":"blog.alt021.top","root":"/","language":"zh-CN","path":"search.xml"};
+    Global.theme_config = {"articles":{"style":{"font_size":"16px","line_height":1.5,"image_border_radius":"14px","image_alignment":"center","image_caption":false,"link_icon":true},"word_count":{"enable":false,"count":true,"min2read":true},"author_label":{"enable":false,"auto":false,"list":[]},"code_block":{"copy":true,"style":"mac","font":{"enable":false,"family":"Noto Sans SC","url":"https://fonts.googleapis.com/css2?family=Noto+Sans+SC&family=ZCOOL+XiaoWei&display=swap\" rel=\"stylesheet"}},"toc":{"enable":true,"max_depth":3,"number":false,"expand":true,"init_open":true},"copyright":false,"lazyload":true,"recommendation":{"enable":false,"title":"推荐阅读","limit":3,"placeholder":"/img/wallhaven-wqery6-light.webp","skip_dirs":[]}},"colors":{"primary":"#4d90fe","secondary":null},"global":{"fonts":{"chinese":{"enable":true,"family":"Noto Sans SC","url":"https://fonts.googleapis.com/css2?family=Noto+Sans+SC&family=ZCOOL+XiaoWei&display=swap"},"english":{"enable":true,"family":"Noto Sans SC","url":"https://fonts.googleapis.com/css2?family=Noto+Sans+SC&family=ZCOOL+XiaoWei&display=swap\""}},"content_max_width":"1000px","sidebar_width":"210px","hover":{"shadow":true,"scale":false},"scroll_progress":{"bar":false,"percentage":true},"busuanzi_counter":{"enable":false,"site_pv":true,"site_uv":true,"post_pv":true},"pjax":true,"open_graph":true,"google_analytics":{"enable":false,"id":null}},"home_banner":{"enable":true,"style":"static","image":{"light":"/img/index.jpg","dark":"/img/index-dark.jpg"},"title":"ALT021的小世界","subtitle":{"text":["有志者，事竟成","Where there is a will,there is a way."],"hitokoto":{"enable":false,"api":"https://v1.hitokoto.cn"},"typing_speed":100,"backing_speed":80,"starting_delay":500,"backing_delay":1500,"loop":true,"smart_backspace":true},"text_color":{"light":"#ffff","dark":"#d1d1b6"},"text_style":{"title_size":"2.8rem","subtitle_size":"1.5rem","line_height":1.2},"custom_font":{"enable":true,"family":"Noto Sans SC","url":"https://fonts.googleapis.com/css2?family=Noto+Sans+SC&family=ZCOOL+XiaoWei&display=swap"},"social_links":{"enable":true,"links":{"telegram":"https://t.me/alt021","bilibili":"https://space.bilibili.com/367094604","email":"mailto:penbead@outlook.com"}}},"plugins":{"feed":{"enable":false},"aplayer":{"enable":false,"type":"fixed","audios":[{"name":null,"artist":null,"url":null,"cover":null}]},"mermaid":{"enable":false,"version":"9.3.0"}},"version":"2.1.5","navbar":{"auto_hide":false,"color":{"left":"#ffffff","right":"#ffffff","transparency":35},"links":{"Home":{"path":"/","icon":"fa-regular fa-house"},"Archives":{"path":"/archives","icon":"fa-regular fa-archive"},"Tags":{"path":"/tags","icon":"fa-regular fa-tags"},"Categories":{"path":"/categories","icon":"fa-regular fa-folder"},"Links":{"icon":"fa-regular fa-link","submenus":{"个人主页":"https://www.alt021.top","储物间":"https://alt021.ysepan.com","B站":"https://space.bilibili.com/367094604"}},"About":{"path":"/about","icon":"fa-regular fa-user"}},"search":{"enable":true,"preload":true}},"page_templates":{"friends_column":2,"tags_style":"blur"},"home":{"sidebar":{"enable":true,"position":"left","first_item":"menu","announcement":null,"links":{"Archives":{"path":"/archives","icon":"fa-regular fa-archive"},"Tags":{"path":"/tags","icon":"fa-regular fa-tags"},"Categories":{"path":"/categories","icon":"fa-regular fa-folder"}}},"article_date_format":"auto","categories":{"enable":true,"limit":3},"tags":{"enable":true,"limit":3}}};
+    Global.language_ago = {"second":"%s 秒前","minute":"%s 分钟前","hour":"%s 小时前","day":"%s 天前","week":"%s 周前","month":"%s 个月前","year":"%s 年前"};
+    Global.data_config = {"masonry":false};
+  </script>
+    
+    <!--- Fontawesome Part-->
+    <link rel="stylesheet" href="//npm.elemecdn.com/hexo-theme-redefine@2.1.5/source/fontawesome/fontawesome.min.css">
+    <link rel="stylesheet" href="//npm.elemecdn.com/hexo-theme-redefine@2.1.5/source/fontawesome/brands.min.css">
+    <link rel="stylesheet" href="//npm.elemecdn.com/hexo-theme-redefine@2.1.5/source/fontawesome/solid.min.css">
+    <link rel="stylesheet" href="//npm.elemecdn.com/hexo-theme-redefine@2.1.5/source/fontawesome/regular.min.css">
+    
+        <link rel="stylesheet" href="//npm.elemecdn.com/hexo-theme-redefine@2.1.5/source/fontawesome/thin.min.css">
+    
+    
+        <link rel="stylesheet" href="//npm.elemecdn.com/hexo-theme-redefine@2.1.5/source/fontawesome/light.min.css">
+    
+    
+        <link rel="stylesheet" href="//npm.elemecdn.com/hexo-theme-redefine@2.1.5/source/fontawesome/duotone.min.css">
+    
+    
+<meta name="generator" content="Hexo 5.4.2"></head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+
+    
+        <span class="pjax-progress-bar"></span>
+        <span class="pjax-progress-icon">
+            <i class="fa-solid fa-circle-notch fa-spin"></i>
+        </span>
+    
+</div>
+
+
+<main class="page-container">
+
+    
+
+    <div class="main-content-container">
+
+        <div class="main-content-header">
+            <header class="navbar-container">
+    
+    <div class="navbar-content">
+        <div class="left">
+            
+            <a class="logo-title" href="/">
+                
+                ALT021的小世界
+                
+            </a>
+        </div>
+
+        <div class="right">
+            <!-- PC -->
+            <div class="desktop">
+                <ul class="navbar-list">
+                    
+                        
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class="" 
+                                    href="/"  >
+                                    
+                                        
+                                            <i class="fa-regular fa-house"></i>
+                                        
+                                        首页
+                                    
+                                </a>
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class="" 
+                                    href="/archives"  >
+                                    
+                                        
+                                            <i class="fa-regular fa-archive"></i>
+                                        
+                                        归档
+                                    
+                                </a>
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class="" 
+                                    href="/tags"  >
+                                    
+                                        
+                                            <i class="fa-regular fa-tags"></i>
+                                        
+                                        标签
+                                    
+                                </a>
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class="" 
+                                    href="/categories"  >
+                                    
+                                        
+                                            <i class="fa-regular fa-folder"></i>
+                                        
+                                        分类
+                                    
+                                </a>
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class="has-dropdown" 
+                                    href="#" onClick="return false;">
+                                    
+                                        
+                                            <i class="fa-regular fa-link"></i>
+                                        
+                                        链接&nbsp;<i class="fa-solid fa-chevron-down"></i>
+                                    
+                                </a>
+                                <!-- Submenu -->
+                                
+                                    <ul class="sub-menu">
+                                    
+                                        <li>
+                                        <a target="_blank" rel="noopener" href="https://www.alt021.top">个人主页
+                                        </a>
+                                        </li>
+                                    
+                                        <li>
+                                        <a target="_blank" rel="noopener" href="https://alt021.ysepan.com">储物间
+                                        </a>
+                                        </li>
+                                    
+                                        <li>
+                                        <a target="_blank" rel="noopener" href="https://space.bilibili.com/367094604">B站
+                                        </a>
+                                        </li>
+                                    
+                                    </ul>
+                                
+                            </li>
+                    
+                        
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class="" 
+                                    href="/about"  >
+                                    
+                                        
+                                            <i class="fa-regular fa-user"></i>
+                                        
+                                        关于
+                                    
+                                </a>
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                    
+                        <li class="navbar-item search search-popup-trigger">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </li>
+                    
+                </ul>
+            </div>
+            <!-- Mobile -->
+            <div class="mobile">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fa-solid fa-magnifying-glass"></i></div>
+                
+                <div class="icon-item navbar-bar">
+                    <div class="navbar-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile drawer -->
+    <div class="navbar-drawer">
+        <ul class="drawer-navbar-list">
+            
+                
+                    <li class="drawer-navbar-item flex-center">
+                        <a class="" 
+                        href="/"  >
+                             
+                                
+                                    <i class="fa-regular fa-house"></i>
+                                
+                                首页
+                            
+                        </a>
+                    </li>
+                    <!-- Submenu -->
+                    
+            
+                
+                    <li class="drawer-navbar-item flex-center">
+                        <a class="" 
+                        href="/archives"  >
+                             
+                                
+                                    <i class="fa-regular fa-archive"></i>
+                                
+                                归档
+                            
+                        </a>
+                    </li>
+                    <!-- Submenu -->
+                    
+            
+                
+                    <li class="drawer-navbar-item flex-center">
+                        <a class="" 
+                        href="/tags"  >
+                             
+                                
+                                    <i class="fa-regular fa-tags"></i>
+                                
+                                标签
+                            
+                        </a>
+                    </li>
+                    <!-- Submenu -->
+                    
+            
+                
+                    <li class="drawer-navbar-item flex-center">
+                        <a class="" 
+                        href="/categories"  >
+                             
+                                
+                                    <i class="fa-regular fa-folder"></i>
+                                
+                                分类
+                            
+                        </a>
+                    </li>
+                    <!-- Submenu -->
+                    
+            
+                
+                    <li class="drawer-navbar-item flex-center">
+                        <a class="has-dropdown" 
+                        href="#" onClick="return false;">
+                            
+                                
+                                    <i class="fa-regular fa-link"></i>
+                                
+                                链接&nbsp;<i class="fa-solid fa-chevron-down"></i>
+                            
+                        </a>
+                    </li>
+                    <!-- Submenu -->
+                              
+                        
+                            <li class="dropdown-item flex-center">
+                                <a class="dropdown-item" target="_blank" rel="noopener" href="https://www.alt021.top">个人主页</a>
+                            </li>
+                        
+                            <li class="dropdown-item flex-center">
+                                <a class="dropdown-item" target="_blank" rel="noopener" href="https://alt021.ysepan.com">储物间</a>
+                            </li>
+                        
+                            <li class="dropdown-item flex-center">
+                                <a class="dropdown-item" target="_blank" rel="noopener" href="https://space.bilibili.com/367094604">B站</a>
+                            </li>
+                        
+                    
+            
+                
+                    <li class="drawer-navbar-item flex-center">
+                        <a class="" 
+                        href="/about"  >
+                             
+                                
+                                    <i class="fa-regular fa-user"></i>
+                                
+                                关于
+                            
+                        </a>
+                    </li>
+                    <!-- Submenu -->
+                    
+            
+
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="main-content-body">
+
+            
+
+            <div class="main-content">
+
+                
+                    <div class="fade-in-down-animation">
+    <div class="post-page-container">
+        <div class="article-content-container">
+
+            
+             
+                <div class="article-title">         
+                    <img src="/img/0002/index.jpg" alt="Minecraft远程联机方法汇总" />
+                    <h1 class="article-title-cover">Minecraft远程联机方法汇总</h1>
+                </div>
+            
+                
+            
+
+            
+                <div class="article-header">
+                    <div class="avatar">
+                        <img src="/img/avatar.png">
+                    </div>
+                    <div class="info">
+                        <div class="author">
+                            <span class="name">ALT021</span>
+                            
+                        </div>
+                        <div class="meta-info">
+                            <div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fa-regular fa-pen-fancy"></i>&nbsp;
+        <span class="desktop">2023-04-02 13:52:20</span>
+        <span class="mobile">2023-04-02 13:52</span>
+        <span class="hover-info">创建</span>
+    </span>
+    
+        <span class="article-date article-meta-item">
+            <i class="fa-regular fa-wrench"></i>&nbsp;
+            <span class="desktop">2023-05-19 23:05:24</span>
+            <span class="mobile">2023-05-19 23:05</span>
+            <span class="hover-info">更新</span>
+        </span>
+    
+
+    
+        <span class="article-categories article-meta-item">
+            <i class="fa-regular fa-folders"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/categories/%E6%95%99%E7%A8%8B/">教程</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fa-regular fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/tags/Minecraft/">Minecraft</a>&nbsp;
+                    </li>
+                
+                    <li>
+                        | <a href="/tags/%E7%BD%91%E7%BB%9C/">网络</a>&nbsp;
+                    </li>
+                
+                    <li>
+                        | <a href="/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/">内网穿透</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+
+    
+    
+    
+    
+</div>
+
+                        </div>
+                    </div>
+                </div>
+            
+
+            <div class="article-content markdown-body">
+                <h1 id="准备开始！"><a href="#准备开始！" class="headerlink" title="准备开始！"></a>准备开始！</h1><p>这篇文章的内容主要适用于<strong>Java版本</strong>远程联机，如果您是基岩版，双方可直接添加xbox好友进行联机，不需要再进行其他操作。</p>
+<p>本文部分内容需要有计算机使用基础和对网络有初步了解后使用。</p>
+<p>本文默认运营商没有为您分配公网IP，如果您拥有公网IP，请自行在路由器处配置端口转发。</p>
+<hr>
+<blockquote>
+<p>提示：本文图片已遗失，博主实在无力全部补完。</p>
+</blockquote>
+<h1 id="方案1-内网穿透"><a href="#方案1-内网穿透" class="headerlink" title="方案1 内网穿透"></a>方案1 内网穿透</h1><p>此方法使用较为容易，也已经被广泛传播。免费的内网穿透服务商比比皆是，诸如<em>SakuraFrp、NATAPP、花生壳等等。<br>今天我要为大家推荐的是另一款目前体验较为优秀的穿透提供商*<em>OpenFrp</em></em></p>
+<h2 id="创建账号"><a href="#创建账号" class="headerlink" title="创建账号"></a>创建账号</h2><p>首先，打开<a class="link"   target="_blank" rel="noopener" href="https://www.openfrp.net/" >OpenFrp官网 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>进行账号注册，这一步不过多讲述，请按照网页上的提示进行注册</p>
+<h2 id="下载软件"><a href="#下载软件" class="headerlink" title="下载软件"></a>下载软件</h2><p>进入<a class="link"   target="_blank" rel="noopener" href="https://console.openfrp.net/" >管理面板 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>后，点击侧边下载软件，下载启动器即可。如果您是新手则不建议使用客户端。</p>
+<p>![下载指引](https:// /2023/04/02/iHIBza.png)</p>
+<h2 id="获得端口号"><a href="#获得端口号" class="headerlink" title="获得端口号"></a>获得端口号</h2><p>打开您的Minecraft:Java Edtion实例，进入要游玩的世界。按Esc键暂停游戏，选择对局域网开启</p>
+<p>开启后，您会在聊天框中收到一条消息，此消息包含了端口号。</p>
+<p>请记住此端口号，将在稍后创建隧道的步骤中使用到</p>
+<h2 id="创建隧道"><a href="#创建隧道" class="headerlink" title="创建隧道"></a>创建隧道</h2><p>进入OpenFrp管理面板，点击侧边创建隧道</p>
+<p>进入后，在左侧选择好节点，在右侧输入信息的位置中。协议请选择TCP(基岩版本则使用UDP)，本地地址一般填写<strong>127.0.0.1</strong>(即本地计算机)，本地端口填写游戏中提示的端口号。远程端口建议随机，隧道名称可按自己的喜好填写</p>
+<p>完成填写后，点击创建即可。</p>
+<p>请注意，在此过程中，不要关闭您的游戏实例。重启局域网联机会导致本地端口变化，您则需要重新配置穿透隧道。</p>
+<h2 id="启动穿透"><a href="#启动穿透" class="headerlink" title="启动穿透"></a>启动穿透</h2><p>打开您的启动器，启动时会要求您登录，请输入与<a class="link"   target="_blank" rel="noopener" href="https://console.openfrp.net/" >管理面板 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a><strong>相同</strong>的账号密码登录启动器</p>
+<p>点击左侧隧道按钮即可，启动您创建好的隧道</p>
+<p>启动完成后，您通常会收到一条来自Of启动器的通知，如果通知中向您提示端口被占用等，请<strong>重启电脑</strong>或<strong>前往管理面板强制下线</strong>。</p>
+<h2 id="好友方加入"><a href="#好友方加入" class="headerlink" title="好友方加入"></a>好友方加入</h2><p>隧道启动完成后，点击左侧日志按钮，在最底部会获得连接到此隧道的IP，请完整的复制这串地址并发送给朋友</p>
+<p>让朋友使用添加并加入服务器的方式连接到此地址即可与您联机</p>
+<h2 id="提示"><a href="#提示" class="headerlink" title="提示"></a>提示</h2><p>此方式是否稳定依赖于穿透服务商网络及延迟是否优秀，如服务商较为火爆则您的体验可能较差。此方式默认情况下可能需要正版账号方可连接。</p>
+<hr>
+<h1 id="方案2-虚拟局域网"><a href="#方案2-虚拟局域网" class="headerlink" title="方案2 虚拟局域网"></a>方案2 虚拟局域网</h1><p>此方法体验会优于前者，在服务器转发握手完成后，您和您朋友的计算机将直接点对点通信，因此可以获得更优异的延迟体验。本文以<a class="link"   target="_blank" rel="noopener" href="https://my.zerotier.com/" >Zerotier <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>为例</p>
+<h2 id="注册与下载"><a href="#注册与下载" class="headerlink" title="注册与下载"></a>注册与下载</h2><p>在<a class="link"   target="_blank" rel="noopener" href="https://my.zerotier.com/" >Zerotier 官方网站 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>下载软件，并注册登录账号。网站和客户端界面全部为英文，如果您无法阅读，请使用翻译工具。</p>
+<p>请注意，您的朋友也需要安装Zerotier客户端！</p>
+<h2 id="创建虚拟局域网并加入"><a href="#创建虚拟局域网并加入" class="headerlink" title="创建虚拟局域网并加入"></a>创建虚拟局域网并加入</h2><p>登录官网后，点击”Create a network”即可创建并获得一串网络ID，请将此ID发送给您的朋友</p>
+<p>取得网络ID后，右键任务栏上的Zerotier图标，选择“Join New Network”</p>
+<p>在打开的对话框中，输入您的网络ID。添加完成后，点击这个ID即可进行连接。</p>
+<p>连接后打开网络和共享中心，如果可以看到Zerotier One则说明已经成功连接。</p>
+<p>请注意，您和您的朋友需要<strong>同时连接</strong>才可以正常联机</p>
+<h2 id="开始联机"><a href="#开始联机" class="headerlink" title="开始联机"></a>开始联机</h2><p>要建立连接，您首先需要查询您在虚拟局域网中的IP地址是什么</p>
+<p>打开cmd并输入”ipconfig”，在输出的信息中，找到”网络适配器 - Zerotier One”</p>
+<p>这里的IPv4地址就是您在此虚拟局域网中的IP地址。</p>
+<p>使用和方法1相同的方式创建一个局域网世界，并将虚拟局域网中的IP和端口号进行组合，发送给您的朋友，就像这样。</p>
+<blockquote>
+<p>172.24.0.1:63024</p>
+</blockquote>
+<p>然后使用连接服务器的方式连接即可。</p>
+<hr>
+<h1 id="方案3-IPv6公网直连"><a href="#方案3-IPv6公网直连" class="headerlink" title="方案3 IPv6公网直连"></a>方案3 IPv6公网直连</h1><p>如果您和朋友都可以使用IPv6，那么此方法就是最推荐的方法。</p>
+<h2 id="查看是否支持IPv6"><a href="#查看是否支持IPv6" class="headerlink" title="查看是否支持IPv6"></a>查看是否支持IPv6</h2><p>打开网络与共享中心，点击您的网络适配器。如果IPv6一栏为“Internet”，则说明您可以使用IPv6。如果为”无网络访问权限”，请尝试修改路由器设置或者将网线直接插入光猫LAN口</p>
+<p>如果您和您的朋友都拥有IPv6，则可以使用此方式联机。</p>
+<h2 id="查找IPv6地址"><a href="#查找IPv6地址" class="headerlink" title="查找IPv6地址"></a>查找IPv6地址</h2><p>同样打开cmd输入”ipconfig”，找到自己联网所使用的网络适配器，您将可以找到您的IPv6地址。请复制这串地址</p>
+<p>您通常会拥有多个IPv6地址，如果使用其中一个无法连接，请依次使用其他的地址进行尝试。</p>
+<p>另外请不要使用类似”fe80”开头的本地链接IPv6地址，此地址<strong>无法连接</strong>。</p>
+<h2 id="开始联机-1"><a href="#开始联机-1" class="headerlink" title="开始联机"></a>开始联机</h2><p>请将IPv6地址套在中括号内，并加上游戏给出的端口号，就像这样</p>
+<blockquote>
+<p> 【240e:000:00ee:ee00:0e00:ee00:000e:0ee0】:22333 </p>
+</blockquote>
+<p><strong>此处演示使用全角括号，您需要使用英文半角括号</strong></p>
+<p>并发送这串地址给您的朋友，让他使用加入服务器的方式连接到您的游戏。</p>
+<hr>
+<h1 id="无正版简单解决方式"><a href="#无正版简单解决方式" class="headerlink" title="无正版简单解决方式"></a>无正版简单解决方式</h1><p>如果您或您的朋友没有正版，那么可能在使用上述方式时无法正常连接。针对此情况的简单解决办法是：注册并使用第三方验证。<br>诸如HMCL、PCL2等启动器均支持使用第三方验证进行登录。登陆后，您和您的朋友便可以正常连接</p>
+<p>我建议尝试<a class="link"   target="_blank" rel="noopener" href="https://littleskin.cn/" >LittleSkin <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<p>您也可以使用类似“自定义局域网”的Fabric或Forge模组来关闭正版验证。在此处不再赘述</p>
+<h1 id="提示-1"><a href="#提示-1" class="headerlink" title="提示"></a>提示</h1><p>如果您要游玩mod版，则双方需要使用相同的客户端，您可直接拷贝**.minecraft**文件夹发送给您的朋友。</p>
+<h1 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h1><p>本教程可能无法细致入微，请学会参考官方教程使用这些方式。</p>
+<p>让我们离开网易版的限制，拥抱自由的Minecraft</p>
+
+            </div>
+
+            
+
+            
+                <ul class="post-tags-box">
+                    
+                        <li class="tag-item">
+                            <a href="/tags/Minecraft/">#Minecraft</a>&nbsp;
+                        </li>
+                    
+                        <li class="tag-item">
+                            <a href="/tags/%E7%BD%91%E7%BB%9C/">#网络</a>&nbsp;
+                        </li>
+                    
+                        <li class="tag-item">
+                            <a href="/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/">#内网穿透</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            
+
+            
+
+            
+                <div class="article-nav">
+                    
+                        <div class="article-prev">
+                            <a class="prev"
+                            rel="prev"
+                            href="/0003/"
+                            >
+                                <span class="left arrow-icon flex-center">
+                                    <i class="fa-solid fa-chevron-left"></i>
+                                </span>
+                                <span class="title flex-center">
+                                    <span class="post-nav-title-item">小小博客的新发展</span>
+                                    <span class="post-nav-item">上一篇</span>
+                                </span>
+                            </a>
+                        </div>
+                    
+                    
+                        <div class="article-next">
+                            <a class="next"
+                            rel="next"
+                            href="/0001/"
+                            >
+                                <span class="title flex-center">
+                                    <span class="post-nav-title-item">你好，世界！</span>
+                                    <span class="post-nav-item">下一篇</span>
+                                </span>
+                                <span class="right arrow-icon flex-center">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </span>
+                            </a>
+                        </div>
+                    
+                </div>
+            
+
+
+            
+                <div class="comment-container">
+                    <div class="comments-container">
+    <div id="comment-anchor"></div>
+    <div class="comment-area-title">
+        <i class="fa-solid fa-comments"></i>&nbsp;评论
+    </div>
+    
+
+        
+            
+ 
+    <div id="waline"></div>
+    <script type="module"  data-pjax>
+        import { init } from 'https://evan.beee.top/js/waline.mjs';
+
+        function loadWaline() {
+            init({
+                el: '#waline',
+                serverURL: 'https://commentapi.alt021.top',
+                lang: 'zh-CN',
+                dark: 'body[class~="dark-mode"]',
+                requiredMeta: ['nick','mail'], // cannot customize by theme config, change it yourself
+            });
+        }
+
+        if ('true') {
+            const loadWalineTimeout = setTimeout(() => {
+                loadWaline();
+                clearTimeout(loadWalineTimeout);
+            }, 1000);
+        } else {
+            window.addEventListener('DOMContentLoaded', loadWaline);
+        }
+        
+    </script>
+
+
+
+        
+    
+</div>
+
+                </div>
+            
+        </div>
+
+        
+            <div class="toc-content-container">
+                <div class="post-toc-wrap">
+    <div class="post-toc">
+        <div class="toc-title">此页目录</div>
+        <div class="page-title">Minecraft远程联机方法汇总</div>
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%87%86%E5%A4%87%E5%BC%80%E5%A7%8B%EF%BC%81"><span class="nav-text">准备开始！</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%96%B9%E6%A1%881-%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F"><span class="nav-text">方案1 内网穿透</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%9B%E5%BB%BA%E8%B4%A6%E5%8F%B7"><span class="nav-text">创建账号</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%8B%E8%BD%BD%E8%BD%AF%E4%BB%B6"><span class="nav-text">下载软件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%8E%B7%E5%BE%97%E7%AB%AF%E5%8F%A3%E5%8F%B7"><span class="nav-text">获得端口号</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%9B%E5%BB%BA%E9%9A%A7%E9%81%93"><span class="nav-text">创建隧道</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%90%AF%E5%8A%A8%E7%A9%BF%E9%80%8F"><span class="nav-text">启动穿透</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A5%BD%E5%8F%8B%E6%96%B9%E5%8A%A0%E5%85%A5"><span class="nav-text">好友方加入</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8F%90%E7%A4%BA"><span class="nav-text">提示</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%96%B9%E6%A1%882-%E8%99%9A%E6%8B%9F%E5%B1%80%E5%9F%9F%E7%BD%91"><span class="nav-text">方案2 虚拟局域网</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B3%A8%E5%86%8C%E4%B8%8E%E4%B8%8B%E8%BD%BD"><span class="nav-text">注册与下载</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%9B%E5%BB%BA%E8%99%9A%E6%8B%9F%E5%B1%80%E5%9F%9F%E7%BD%91%E5%B9%B6%E5%8A%A0%E5%85%A5"><span class="nav-text">创建虚拟局域网并加入</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BC%80%E5%A7%8B%E8%81%94%E6%9C%BA"><span class="nav-text">开始联机</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%96%B9%E6%A1%883-IPv6%E5%85%AC%E7%BD%91%E7%9B%B4%E8%BF%9E"><span class="nav-text">方案3 IPv6公网直连</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9F%A5%E7%9C%8B%E6%98%AF%E5%90%A6%E6%94%AF%E6%8C%81IPv6"><span class="nav-text">查看是否支持IPv6</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9F%A5%E6%89%BEIPv6%E5%9C%B0%E5%9D%80"><span class="nav-text">查找IPv6地址</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BC%80%E5%A7%8B%E8%81%94%E6%9C%BA-1"><span class="nav-text">开始联机</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%97%A0%E6%AD%A3%E7%89%88%E7%AE%80%E5%8D%95%E8%A7%A3%E5%86%B3%E6%96%B9%E5%BC%8F"><span class="nav-text">无正版简单解决方式</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%8F%90%E7%A4%BA-1"><span class="nav-text">提示</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%86%99%E5%9C%A8%E6%9C%80%E5%90%8E"><span class="nav-text">写在最后</span></a></li></ol>
+
+    </div>
+</div>
+            </div>
+        
+    </div>
+</div>
+
+
+                
+
+            </div>
+            
+            
+
+        </div>
+
+        <div class="main-content-footer">
+            <footer class="footer">
+    <div class="info-container">
+        <div class="copyright-info">
+            &copy;
+            
+              <span>2022</span>
+              -
+            
+            2023&nbsp;&nbsp;<i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 0.5s; color: #f54545"></i>&nbsp;&nbsp;<a href="/">ALT021</a>
+        </div>
+        
+        <div class="theme-info info-item">
+            <span class="powered-by-container">由 <?xml version="1.0" encoding="utf-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1rem" height="1rem" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve"><path fill="#0E83CD" d="M256.4,25.8l-200,115.5L56,371.5l199.6,114.7l200-115.5l0.4-230.2L256.4,25.8z M349,354.6l-18.4,10.7l-18.6-11V275H200v79.6l-18.4,10.7l-18.6-11v-197l18.5-10.6l18.5,10.8V237h112v-79.6l18.5-10.6l18.5,10.8V354.6z"/></svg><a target="_blank" href="https://hexo.io">Hexo</a> 驱动</span>
+                <br>
+            <span class="theme-version-container">主题&nbsp;<a class="theme-version" target="_blank" href="https://github.com/EvanNotFound/hexo-theme-redefine">Redefine v2.1.5</a>
+        </div>
+        
+        
+        
+        
+        
+        
+        
+    </div>  
+</footer>
+        </div>
+    </div>
+
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="article-tools-list">
+        <!-- TOC aside toggle -->
+        
+            <li class="right-bottom-tools page-aside-toggle">
+                <i class="fa-regular fa-outdent"></i>
+            </li>
+        
+
+        <!-- go comment -->
+        
+            <li class="go-comment">
+                <i class="fa-regular fa-comments"></i>
+            </li>
+        
+    </ul>
+</div>
+
+        </div>
+    
+
+    <div class="right-side-tools-container">
+        <div class="side-tools-container">
+    <ul class="hidden-tools-list">
+        <li class="right-bottom-tools tool-font-adjust-plus flex-center">
+            <i class="fa-regular fa-magnifying-glass-plus"></i>
+        </li>
+
+        <li class="right-bottom-tools tool-font-adjust-minus flex-center">
+            <i class="fa-regular fa-magnifying-glass-minus"></i>
+        </li>
+
+        <li class="right-bottom-tools tool-expand-width flex-center">
+            <i class="fa-regular fa-expand"></i>
+        </li>
+
+        <li class="right-bottom-tools tool-dark-light-toggle flex-center">
+            <i class="fa-regular fa-moon"></i>
+        </li>
+
+        <!-- rss -->
+        
+
+        
+
+        <li class="right-bottom-tools tool-scroll-to-bottom flex-center">
+            <i class="fa-regular fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="visible-tools-list">
+        <li class="right-bottom-tools toggle-tools-list flex-center">
+            <i class="fa-regular fa-cog fa-spin"></i>
+        </li>
+        
+            <li class="right-bottom-tools tool-scroll-to-top flex-center">
+                <i class="arrow-up fas fa-arrow-up"></i>
+                <span class="percent"></span>
+            </li>
+        
+        
+    </ul>
+</div>
+
+    </div>
+
+    <div class="image-viewer-container">
+    <img src="">
+</div>
+
+
+    
+        <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-input-field-pre">
+            <i class="fa-solid fa-keyboard"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="搜索..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="popup-btn-close">
+                <i class="fa-solid fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fa-solid fa-spinner fa-spin-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+
+</main>
+
+
+
+<script src="https://npm.elemecdn.com/hexo-theme-redefine@2.1.5/source/js/utils.js"></script><script src="https://npm.elemecdn.com/hexo-theme-redefine@2.1.5/source/js/main.js"></script><script src="https://npm.elemecdn.com/hexo-theme-redefine@2.1.5/source/js/layouts/navbarShrink.js"></script><script src="https://npm.elemecdn.com/hexo-theme-redefine@2.1.5/source/js/tools/scrollTopBottom.js"></script><script src="https://npm.elemecdn.com/hexo-theme-redefine@2.1.5/source/js/tools/lightDarkSwitch.js"></script>
+
+
+    <script src="https://npm.elemecdn.com/hexo-theme-redefine@2.1.5/source/js/tools/localSearch.js"></script>
+
+
+
+    <script src="https://npm.elemecdn.com/hexo-theme-redefine@2.1.5/source/js/tools/codeBlock.js"></script>
+
+
+
+    <script src="https://npm.elemecdn.com/hexo-theme-redefine@2.1.5/source/js/layouts/lazyload.js"></script>
+
+
+
+
+
+  <script src="https://npm.elemecdn.com/hexo-theme-redefine@2.1.5/source/js/libs/Typed.min.js"></script>
+  <script src="https://npm.elemecdn.com/hexo-theme-redefine@2.1.5/source/js/plugins/typed.js"></script>
+
+
+
+
+
+
+<div class="post-scripts pjax">
+    
+        <script src="https://npm.elemecdn.com/hexo-theme-redefine@2.1.5/source/js/tools/tocToggle.js"></script><script src="https://npm.elemecdn.com/hexo-theme-redefine@2.1.5/source/js/libs/anime.min.js"></script><script src="https://npm.elemecdn.com/hexo-theme-redefine@2.1.5/source/js/layouts/toc.js"></script><script src="https://npm.elemecdn.com/hexo-theme-redefine@2.1.5/source/js/plugins/tabs.js"></script>
+    
+</div>
+
+
+    <script src="https://npm.elemecdn.com/hexo-theme-redefine@2.1.5/source/js/libs/pjax.min.js"></script>
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        window.pjax = new Pjax({
+            selectors: [
+                'head title',
+                '.page-container',
+                '.pjax',
+            ],
+            history: true,
+            debug: false,
+            cacheBust: false,
+            timeout: 0,
+            analytics: false,
+            currentUrlFullReload: false,
+            scrollRestoration: false,
+            // scrollTo: true,
+        });
+
+        document.addEventListener('pjax:send', () => {
+            Global.utils.pjaxProgressBarStart();
+        });
+
+        document.addEventListener('pjax:complete', () => {
+            Global.utils.pjaxProgressBarEnd();
+            window.pjax.executeScripts(document.querySelectorAll('script[data-pjax], .pjax script'));
+            Global.refresh();
+        });
+    });
+</script>
+
+
+
+
+</body>
+</html>

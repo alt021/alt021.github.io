@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Hexo Theme Redefine">
+    
+    <meta name="author" content="ALT021">
+    <!-- preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    
+        
+            <link rel="preconnect" href="https://npm.elemecdn.com" crossorigin>
+        
+    
+    <!--- Seo Part-->
+    
+    <link rel="canonical" href="httpt://blog.alt021.top/0004/"/>
+    <meta name="robots" content="index,follow">
+    <meta name="googlebot" content="index,follow">
+    <meta name="revisit-after" content="1 days">
+    
+        <meta name="description" content="写在开头此文章只介绍有关使用方法以及保护原理。如果您想对Tor及Tor Network了解更加”深入”请移步别家。 使用初衷因为极其完善的Tor网络以及网桥，让隐私浏览更加接近隐私。更加接近真正的”无痕模式”，我选择了使用Tor，并让其完全接替我的常规浏览器的匿名模式。无论是处于保护隐私，亦或是其他一些不便于说的原因，我也会建议使用Tor进行私密浏览。至于流传甚广的”暗网”，我不在意，也不想在意。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="更加私密的浏览体验，Tor Browser">
+<meta property="og:url" content="httpt://blog.alt021.top/0004/index.html">
+<meta property="og:site_name" content="ALT021的小世界">
+<meta property="og:description" content="写在开头此文章只介绍有关使用方法以及保护原理。如果您想对Tor及Tor Network了解更加”深入”请移步别家。 使用初衷因为极其完善的Tor网络以及网桥，让隐私浏览更加接近隐私。更加接近真正的”无痕模式”，我选择了使用Tor，并让其完全接替我的常规浏览器的匿名模式。无论是处于保护隐私，亦或是其他一些不便于说的原因，我也会建议使用Tor进行私密浏览。至于流传甚广的”暗网”，我不在意，也不想在意。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://i.328888.xyz/2023/05/02/iMVnio.png">
+<meta property="article:published_time" content="2023-05-02T05:19:36.000Z">
+<meta property="article:modified_time" content="2023-05-19T14:57:40.640Z">
+<meta property="article:author" content="ALT021">
+<meta property="article:tag" content="Tor">
+<meta property="article:tag" content="匿名">
+<meta property="article:tag" content="富强上网">
+<meta property="article:tag" content="科学上网">
+<meta property="article:tag" content="隐私保护">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.328888.xyz/2023/05/02/iMVnio.png">
+    
+    
+    <!--- Icon Part-->
+    <link rel="icon" type="image/png" href="/img/favicon.png" sizes="192x192">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon.png">
+    <meta name="theme-color" content="#4d90fe">
+    <link rel="shortcut icon" href="/img/favicon.png">
+    <!--- Page Info-->
+    
+    <title>
+        
+            更加私密的浏览体验，Tor Browser -
+        
+        ALT021的小世界
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <link rel="stylesheet" href="//npm.elemecdn.com/hexo-theme-redefine@2.1.5/source/assets/fonts.css">
+    <!--- Font Part-->
+    
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC&family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
+    
+    
+    
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC&family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
+    
+    
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC&family=ZCOOL+XiaoWei&display=swap"" rel="stylesheet">
+    
+
+    <!--- Inject Part-->
+    
+    <script id="hexo-configurations">
+    let Global = window.Global || {};
+    Global.hexo_config = {"hostname":"blog.alt021.top","root":"/","language":"zh-CN","path":"search.xml"};
+    Global.theme_config = {"articles":{"style":{"font_size":"16px","line_height":1.5,"image_border_radius":"14px","image_alignment":"center","image_caption":false,"link_icon":true},"word_count":{"enable":false,"count":true,"min2read":true},"author_label":{"enable":false,"auto":false,"list":[]},"code_block":{"copy":true,"style":"mac","font":{"enable":false,"family":"Noto Sans SC","url":"https://fonts.googleapis.com/css2?family=Noto+Sans+SC&family=ZCOOL+XiaoWei&display=swap\" rel=\"stylesheet"}},"toc":{"enable":true,"max_depth":3,"number":false,"expand":true,"init_open":true},"copyright":false,"lazyload":true,"recommendation":{"enable":false,"title":"推荐阅读","limit":3,"placeholder":"/img/wallhaven-wqery6-light.webp","skip_dirs":[]}},"colors":{"primary":"#4d90fe","secondary":null},"global":{"fonts":{"chinese":{"enable":true,"family":"Noto Sans SC","url":"https://fonts.googleapis.com/css2?family=Noto+Sans+SC&family=ZCOOL+XiaoWei&display=swap"},"english":{"enable":true,"family":"Noto Sans SC","url":"https://fonts.googleapis.com/css2?family=Noto+Sans+SC&family=ZCOOL+XiaoWei&display=swap\""}},"content_max_width":"1000px","sidebar_width":"210px","hover":{"shadow":true,"scale":false},"scroll_progress":{"bar":false,"percentage":true},"busuanzi_counter":{"enable":false,"site_pv":true,"site_uv":true,"post_pv":true},"pjax":true,"open_graph":true,"google_analytics":{"enable":false,"id":null}},"home_banner":{"enable":true,"style":"static","image":{"light":"/img/index.jpg","dark":"/img/index-dark.jpg"},"title":"ALT021的小世界","subtitle":{"text":["有志者，事竟成","Where there is a will,there is a way."],"hitokoto":{"enable":false,"api":"https://v1.hitokoto.cn"},"typing_speed":100,"backing_speed":80,"starting_delay":500,"backing_delay":1500,"loop":true,"smart_backspace":true},"text_color":{"light":"#ffff","dark":"#d1d1b6"},"text_style":{"title_size":"2.8rem","subtitle_size":"1.5rem","line_height":1.2},"custom_font":{"enable":true,"family":"Noto Sans SC","url":"https://fonts.googleapis.com/css2?family=Noto+Sans+SC&family=ZCOOL+XiaoWei&display=swap"},"social_links":{"enable":true,"links":{"telegram":"https://t.me/alt021","bilibili":"https://space.bilibili.com/367094604","email":"mailto:penbead@outlook.com"}}},"plugins":{"feed":{"enable":false},"aplayer":{"enable":false,"type":"fixed","audios":[{"name":null,"artist":null,"url":null,"cover":null}]},"mermaid":{"enable":false,"version":"9.3.0"}},"version":"2.1.5","navbar":{"auto_hide":false,"color":{"left":"#ffffff","right":"#ffffff","transparency":35},"links":{"Home":{"path":"/","icon":"fa-regular fa-house"},"Archives":{"path":"/archives","icon":"fa-regular fa-archive"},"Tags":{"path":"/tags","icon":"fa-regular fa-tags"},"Categories":{"path":"/categories","icon":"fa-regular fa-folder"},"Links":{"icon":"fa-regular fa-link","submenus":{"个人主页":"https://www.alt021.top","储物间":"https://alt021.ysepan.com","B站":"https://space.bilibili.com/367094604"}},"About":{"path":"/about","icon":"fa-regular fa-user"}},"search":{"enable":true,"preload":true}},"page_templates":{"friends_column":2,"tags_style":"blur"},"home":{"sidebar":{"enable":true,"position":"left","first_item":"menu","announcement":null,"links":{"Archives":{"path":"/archives","icon":"fa-regular fa-archive"},"Tags":{"path":"/tags","icon":"fa-regular fa-tags"},"Categories":{"path":"/categories","icon":"fa-regular fa-folder"}}},"article_date_format":"auto","categories":{"enable":true,"limit":3},"tags":{"enable":true,"limit":3}}};
+    Global.language_ago = {"second":"%s 秒前","minute":"%s 分钟前","hour":"%s 小时前","day":"%s 天前","week":"%s 周前","month":"%s 个月前","year":"%s 年前"};
+    Global.data_config = {"masonry":false};
+  </script>
+    
+    <!--- Fontawesome Part-->
+    <link rel="stylesheet" href="//npm.elemecdn.com/hexo-theme-redefine@2.1.5/source/fontawesome/fontawesome.min.css">
+    <link rel="stylesheet" href="//npm.elemecdn.com/hexo-theme-redefine@2.1.5/source/fontawesome/brands.min.css">
+    <link rel="stylesheet" href="//npm.elemecdn.com/hexo-theme-redefine@2.1.5/source/fontawesome/solid.min.css">
+    <link rel="stylesheet" href="//npm.elemecdn.com/hexo-theme-redefine@2.1.5/source/fontawesome/regular.min.css">
+    
+        <link rel="stylesheet" href="//npm.elemecdn.com/hexo-theme-redefine@2.1.5/source/fontawesome/thin.min.css">
+    
+    
+        <link rel="stylesheet" href="//npm.elemecdn.com/hexo-theme-redefine@2.1.5/source/fontawesome/light.min.css">
+    
+    
+        <link rel="stylesheet" href="//npm.elemecdn.com/hexo-theme-redefine@2.1.5/source/fontawesome/duotone.min.css">
+    
+    
+<meta name="generator" content="Hexo 5.4.2"></head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+
+    
+        <span class="pjax-progress-bar"></span>
+        <span class="pjax-progress-icon">
+            <i class="fa-solid fa-circle-notch fa-spin"></i>
+        </span>
+    
+</div>
+
+
+<main class="page-container">
+
+    
+
+    <div class="main-content-container">
+
+        <div class="main-content-header">
+            <header class="navbar-container">
+    
+    <div class="navbar-content">
+        <div class="left">
+            
+            <a class="logo-title" href="/">
+                
+                ALT021的小世界
+                
+            </a>
+        </div>
+
+        <div class="right">
+            <!-- PC -->
+            <div class="desktop">
+                <ul class="navbar-list">
+                    
+                        
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class="" 
+                                    href="/"  >
+                                    
+                                        
+                                            <i class="fa-regular fa-house"></i>
+                                        
+                                        首页
+                                    
+                                </a>
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class="" 
+                                    href="/archives"  >
+                                    
+                                        
+                                            <i class="fa-regular fa-archive"></i>
+                                        
+                                        归档
+                                    
+                                </a>
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class="" 
+                                    href="/tags"  >
+                                    
+                                        
+                                            <i class="fa-regular fa-tags"></i>
+                                        
+                                        标签
+                                    
+                                </a>
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class="" 
+                                    href="/categories"  >
+                                    
+                                        
+                                            <i class="fa-regular fa-folder"></i>
+                                        
+                                        分类
+                                    
+                                </a>
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class="has-dropdown" 
+                                    href="#" onClick="return false;">
+                                    
+                                        
+                                            <i class="fa-regular fa-link"></i>
+                                        
+                                        链接&nbsp;<i class="fa-solid fa-chevron-down"></i>
+                                    
+                                </a>
+                                <!-- Submenu -->
+                                
+                                    <ul class="sub-menu">
+                                    
+                                        <li>
+                                        <a target="_blank" rel="noopener" href="https://www.alt021.top">个人主页
+                                        </a>
+                                        </li>
+                                    
+                                        <li>
+                                        <a target="_blank" rel="noopener" href="https://alt021.ysepan.com">储物间
+                                        </a>
+                                        </li>
+                                    
+                                        <li>
+                                        <a target="_blank" rel="noopener" href="https://space.bilibili.com/367094604">B站
+                                        </a>
+                                        </li>
+                                    
+                                    </ul>
+                                
+                            </li>
+                    
+                        
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class="" 
+                                    href="/about"  >
+                                    
+                                        
+                                            <i class="fa-regular fa-user"></i>
+                                        
+                                        关于
+                                    
+                                </a>
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                    
+                        <li class="navbar-item search search-popup-trigger">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </li>
+                    
+                </ul>
+            </div>
+            <!-- Mobile -->
+            <div class="mobile">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fa-solid fa-magnifying-glass"></i></div>
+                
+                <div class="icon-item navbar-bar">
+                    <div class="navbar-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile drawer -->
+    <div class="navbar-drawer">
+        <ul class="drawer-navbar-list">
+            
+                
+                    <li class="drawer-navbar-item flex-center">
+                        <a class="" 
+                        href="/"  >
+                             
+                                
+                                    <i class="fa-regular fa-house"></i>
+                                
+                                首页
+                            
+                        </a>
+                    </li>
+                    <!-- Submenu -->
+                    
+            
+                
+                    <li class="drawer-navbar-item flex-center">
+                        <a class="" 
+                        href="/archives"  >
+                             
+                                
+                                    <i class="fa-regular fa-archive"></i>
+                                
+                                归档
+                            
+                        </a>
+                    </li>
+                    <!-- Submenu -->
+                    
+            
+                
+                    <li class="drawer-navbar-item flex-center">
+                        <a class="" 
+                        href="/tags"  >
+                             
+                                
+                                    <i class="fa-regular fa-tags"></i>
+                                
+                                标签
+                            
+                        </a>
+                    </li>
+                    <!-- Submenu -->
+                    
+            
+                
+                    <li class="drawer-navbar-item flex-center">
+                        <a class="" 
+                        href="/categories"  >
+                             
+                                
+                                    <i class="fa-regular fa-folder"></i>
+                                
+                                分类
+                            
+                        </a>
+                    </li>
+                    <!-- Submenu -->
+                    
+            
+                
+                    <li class="drawer-navbar-item flex-center">
+                        <a class="has-dropdown" 
+                        href="#" onClick="return false;">
+                            
+                                
+                                    <i class="fa-regular fa-link"></i>
+                                
+                                链接&nbsp;<i class="fa-solid fa-chevron-down"></i>
+                            
+                        </a>
+                    </li>
+                    <!-- Submenu -->
+                              
+                        
+                            <li class="dropdown-item flex-center">
+                                <a class="dropdown-item" target="_blank" rel="noopener" href="https://www.alt021.top">个人主页</a>
+                            </li>
+                        
+                            <li class="dropdown-item flex-center">
+                                <a class="dropdown-item" target="_blank" rel="noopener" href="https://alt021.ysepan.com">储物间</a>
+                            </li>
+                        
+                            <li class="dropdown-item flex-center">
+                                <a class="dropdown-item" target="_blank" rel="noopener" href="https://space.bilibili.com/367094604">B站</a>
+                            </li>
+                        
+                    
+            
+                
+                    <li class="drawer-navbar-item flex-center">
+                        <a class="" 
+                        href="/about"  >
+                             
+                                
+                                    <i class="fa-regular fa-user"></i>
+                                
+                                关于
+                            
+                        </a>
+                    </li>
+                    <!-- Submenu -->
+                    
+            
+
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="main-content-body">
+
+            
+
+            <div class="main-content">
+
+                
+                    <div class="fade-in-down-animation">
+    <div class="post-page-container">
+        <div class="article-content-container">
+
+            
+             
+                <div class="article-title">         
+                    <img src="/img/0004/index.jpg" alt="更加私密的浏览体验，Tor Browser" />
+                    <h1 class="article-title-cover">更加私密的浏览体验，Tor Browser</h1>
+                </div>
+            
+                
+            
+
+            
+                <div class="article-header">
+                    <div class="avatar">
+                        <img src="/img/avatar.png">
+                    </div>
+                    <div class="info">
+                        <div class="author">
+                            <span class="name">ALT021</span>
+                            
+                        </div>
+                        <div class="meta-info">
+                            <div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fa-regular fa-pen-fancy"></i>&nbsp;
+        <span class="desktop">2023-05-02 13:19:36</span>
+        <span class="mobile">2023-05-02 13:19</span>
+        <span class="hover-info">创建</span>
+    </span>
+    
+        <span class="article-date article-meta-item">
+            <i class="fa-regular fa-wrench"></i>&nbsp;
+            <span class="desktop">2023-05-19 22:57:40</span>
+            <span class="mobile">2023-05-19 22:57</span>
+            <span class="hover-info">更新</span>
+        </span>
+    
+
+    
+        <span class="article-categories article-meta-item">
+            <i class="fa-regular fa-folders"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/categories/%E6%95%99%E7%A8%8B/">教程</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fa-regular fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/tags/Tor/">Tor</a>&nbsp;
+                    </li>
+                
+                    <li>
+                        | <a href="/tags/%E5%8C%BF%E5%90%8D/">匿名</a>&nbsp;
+                    </li>
+                
+                    <li>
+                        | <a href="/tags/%E5%AF%8C%E5%BC%BA%E4%B8%8A%E7%BD%91/">富强上网</a>&nbsp;
+                    </li>
+                
+                    <li>
+                        | <a href="/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/">科学上网</a>&nbsp;
+                    </li>
+                
+                    <li>
+                        | <a href="/tags/%E9%9A%90%E7%A7%81%E4%BF%9D%E6%8A%A4/">隐私保护</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+
+    
+    
+    
+    
+</div>
+
+                        </div>
+                    </div>
+                </div>
+            
+
+            <div class="article-content markdown-body">
+                <h1 id="写在开头"><a href="#写在开头" class="headerlink" title="写在开头"></a>写在开头</h1><p>此文章只介绍有关使用方法以及保护原理。如果您想对Tor及Tor Network了解更加”深入”请移步别家。</p>
+<h1 id="使用初衷"><a href="#使用初衷" class="headerlink" title="使用初衷"></a>使用初衷</h1><p>因为极其完善的Tor网络以及网桥，让隐私浏览更加接近隐私。更加接近真正的”无痕模式”，我选择了使用Tor，并让其完全接替我的常规浏览器的匿名模式。<br><br>无论是处于保护隐私，亦或是其他一些不便于说的原因，我也会建议使用Tor进行私密浏览。至于流传甚广的”暗网”，我不在意，也不想在意。</p>
+<h1 id="实现原理"><a href="#实现原理" class="headerlink" title="实现原理"></a>实现原理</h1><p>至于具体原理，我只了解了大概。具体的，不妨连接上Tor Network问问ChatGPT！</p>
+<p><strong>我：</strong></p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Tor如何保护我的隐私</span><br></pre></td></tr></table></figure></div>
+<p><strong>ChatGPT：</strong></p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">Tor是一种匿名网络，它通过将您的网络流量路由通过多个节点来保护您的隐私。当您使用Tor时，您的数据将通过称为“中继”的服务器进行路由，这些服务器由志愿者维护。每个中继只知道数据来自前一个中继，并将数据发送到下一个中继，以便在传输过程中匿名化您的身份和位置。</span><br><span class="line"></span><br><span class="line">以下是Tor如何保护您的隐私的一些关键方面：</span><br><span class="line"></span><br><span class="line">1. 匿名化您的IP地址：Tor将您的数据流量路由通过多个中继，使得目标网站无法看到您的真实IP地址。取而代之的是，他们只能看到中继节点的IP地址。</span><br><span class="line"></span><br><span class="line">2. 加密您的数据：Tor使用多层加密来保护您的数据，以确保只有您和最终目标网站能够读取您的通信内容。</span><br><span class="line"></span><br><span class="line">3. 防止流量分析：Tor还会随机化数据包的大小，时间和路由路径，防止攻击者通过流量分析来确定您的身份和位置。</span><br><span class="line"></span><br><span class="line">4. 避免DNS泄漏：Tor使用自己的DNS解析器来避免您的DNS请求暴露您的位置。</span><br><span class="line"></span><br><span class="line">总的来说，使用Tor可以帮助您保护您的隐私和匿名性，但请记住，Tor并非完美的工具，因此请注意在使用Tor时采取其他隐私保护措施，例如使用端到端加密的通信和避免向任何人透露您的真实身份和位置信息。</span><br></pre></td></tr></table></figure></div>
+
+<p>以上即是Tor浏览更加匿名化的原因。<br><br>但这些干干的东西显然对我们没有很大用处。我们更加在意的，还是…</p>
+<h1 id="对我们有什么影响"><a href="#对我们有什么影响" class="headerlink" title="对我们有什么影响"></a>对我们有什么影响</h1><p>过去你只能对使用同一台机器的用户匿名，现在则不然，你可以对你的ISP甚至你要访问的网站匿名。你的数据包在整个传输过程中都是加密的，被截取的可能性也微乎其微。(毕竟SSL/TLS也在从中保护).<br>这可以有效的帮助我们远离跟踪与数据收集。某些情况下也可以减少你收到垃圾短信和电话的数量。</p>
+<h1 id="有什么缺点"><a href="#有什么缺点" class="headerlink" title="有什么缺点"></a>有什么缺点</h1><p>经过我数次浏览体验，发现了这么几点问题</p>
+<ul>
+<li><strong>访问速度慢</strong><br>由于你的请求经过数次转发，最终到达客户端的速度会变得十分慢，在我这里，使用DuckDuckGO搜索一次内容需要至少等上5秒，这可能使很多人难以接受</li>
+<li><strong>无法保存登录状态</strong><br>这不算缺点，但我觉得值得一说。Tor被配置为不保存任何浏览数据，意味着即使你使用你自己的计算机，并且你希望在对匿名浏览时保存状态，这也是不被允许的。</li>
+<li><strong>部分地区难以连接</strong><br>Tor Network也许部分地区与运营商无法访问，即使配置网桥也无济于事。我建议想办法启用IPv6，这将使你更加容易连接到Tor，因为这些服务在IPv6下大多数未被封锁。</li>
+</ul>
+<h1 id="安装使用"><a href="#安装使用" class="headerlink" title="安装使用"></a>安装使用</h1><p>这一步没有什么难度，请直接去往官方网站进行下载。使用IPv6可直接访问。<br>您亦可直接前往下在本站提供的安装包。</p>
+<p>下载完成后，请按照说明进行安装。</p>
+<blockquote>
+<p><a class="link"   target="_blank" rel="noopener" href="https://torproject.netcologne.de/" >点这去往Tor Project <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+</blockquote>
+<p>打开Tor，您将被立刻要求连接到Tor，点击连接。如果您的运营商没有封锁Tor，过不了多久，您便可以开始私密浏览了。<br></p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://i.328888.xyz/2023/05/02/iMVnio.png"
+                     
+                ></p>
+<h1 id="Q-amp-A"><a href="#Q-amp-A" class="headerlink" title="Q&amp;A"></a>Q&amp;A</h1><h2 id="能否稳定使用"><a href="#能否稳定使用" class="headerlink" title="能否稳定使用"></a>能否稳定使用</h2><p>我的地区没有问题，且不需要使用网桥。</p>
+<h2 id="为什么不直接使用VPN"><a href="#为什么不直接使用VPN" class="headerlink" title="为什么不直接使用VPN"></a>为什么不直接使用VPN</h2><p>Tor其实与VPN的实现相差不大，但我之所以选择Tor完全是因为使用方便而且成本更低。我的其他应用也并不会受到Tor Network的影响。</p>
+<p>Tor也比VPN法律风险更低。</p>
+<h1 id="尾声"><a href="#尾声" class="headerlink" title="尾声"></a>尾声</h1><p>所有资源将在藏宝阁有更新，如您需要可自行前往下载。</p>
+<p>此文章评论部分禁止讨论有关富强上网一类的话题，仅限于交流技术与使用问题。</p>
+
+            </div>
+
+            
+
+            
+                <ul class="post-tags-box">
+                    
+                        <li class="tag-item">
+                            <a href="/tags/Tor/">#Tor</a>&nbsp;
+                        </li>
+                    
+                        <li class="tag-item">
+                            <a href="/tags/%E5%8C%BF%E5%90%8D/">#匿名</a>&nbsp;
+                        </li>
+                    
+                        <li class="tag-item">
+                            <a href="/tags/%E5%AF%8C%E5%BC%BA%E4%B8%8A%E7%BD%91/">#富强上网</a>&nbsp;
+                        </li>
+                    
+                        <li class="tag-item">
+                            <a href="/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/">#科学上网</a>&nbsp;
+                        </li>
+                    
+                        <li class="tag-item">
+                            <a href="/tags/%E9%9A%90%E7%A7%81%E4%BF%9D%E6%8A%A4/">#隐私保护</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            
+
+            
+
+            
+                <div class="article-nav">
+                    
+                        <div class="article-prev">
+                            <a class="prev"
+                            rel="prev"
+                            href="/0005/"
+                            >
+                                <span class="left arrow-icon flex-center">
+                                    <i class="fa-solid fa-chevron-left"></i>
+                                </span>
+                                <span class="title flex-center">
+                                    <span class="post-nav-title-item">部分GPT镜像及其他生成式AI汇总</span>
+                                    <span class="post-nav-item">上一篇</span>
+                                </span>
+                            </a>
+                        </div>
+                    
+                    
+                        <div class="article-next">
+                            <a class="next"
+                            rel="next"
+                            href="/0003/"
+                            >
+                                <span class="title flex-center">
+                                    <span class="post-nav-title-item">小小博客的新发展</span>
+                                    <span class="post-nav-item">下一篇</span>
+                                </span>
+                                <span class="right arrow-icon flex-center">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </span>
+                            </a>
+                        </div>
+                    
+                </div>
+            
+
+
+            
+                <div class="comment-container">
+                    <div class="comments-container">
+    <div id="comment-anchor"></div>
+    <div class="comment-area-title">
+        <i class="fa-solid fa-comments"></i>&nbsp;评论
+    </div>
+    
+
+        
+            
+ 
+    <div id="waline"></div>
+    <script type="module"  data-pjax>
+        import { init } from 'https://evan.beee.top/js/waline.mjs';
+
+        function loadWaline() {
+            init({
+                el: '#waline',
+                serverURL: 'https://commentapi.alt021.top',
+                lang: 'zh-CN',
+                dark: 'body[class~="dark-mode"]',
+                requiredMeta: ['nick','mail'], // cannot customize by theme config, change it yourself
+            });
+        }
+
+        if ('true') {
+            const loadWalineTimeout = setTimeout(() => {
+                loadWaline();
+                clearTimeout(loadWalineTimeout);
+            }, 1000);
+        } else {
+            window.addEventListener('DOMContentLoaded', loadWaline);
+        }
+        
+    </script>
+
+
+
+        
+    
+</div>
+
+                </div>
+            
+        </div>
+
+        
+            <div class="toc-content-container">
+                <div class="post-toc-wrap">
+    <div class="post-toc">
+        <div class="toc-title">此页目录</div>
+        <div class="page-title">更加私密的浏览体验，Tor Browser</div>
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%86%99%E5%9C%A8%E5%BC%80%E5%A4%B4"><span class="nav-text">写在开头</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8%E5%88%9D%E8%A1%B7"><span class="nav-text">使用初衷</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86"><span class="nav-text">实现原理</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%AF%B9%E6%88%91%E4%BB%AC%E6%9C%89%E4%BB%80%E4%B9%88%E5%BD%B1%E5%93%8D"><span class="nav-text">对我们有什么影响</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%9C%89%E4%BB%80%E4%B9%88%E7%BC%BA%E7%82%B9"><span class="nav-text">有什么缺点</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8"><span class="nav-text">安装使用</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Q-amp-A"><span class="nav-text">Q&amp;A</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%83%BD%E5%90%A6%E7%A8%B3%E5%AE%9A%E4%BD%BF%E7%94%A8"><span class="nav-text">能否稳定使用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%8D%E7%9B%B4%E6%8E%A5%E4%BD%BF%E7%94%A8VPN"><span class="nav-text">为什么不直接使用VPN</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%B0%BE%E5%A3%B0"><span class="nav-text">尾声</span></a></li></ol>
+
+    </div>
+</div>
+            </div>
+        
+    </div>
+</div>
+
+
+                
+
+            </div>
+            
+            
+
+        </div>
+
+        <div class="main-content-footer">
+            <footer class="footer">
+    <div class="info-container">
+        <div class="copyright-info">
+            &copy;
+            
+              <span>2022</span>
+              -
+            
+            2023&nbsp;&nbsp;<i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 0.5s; color: #f54545"></i>&nbsp;&nbsp;<a href="/">ALT021</a>
+        </div>
+        
+        <div class="theme-info info-item">
+            <span class="powered-by-container">由 <?xml version="1.0" encoding="utf-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1rem" height="1rem" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve"><path fill="#0E83CD" d="M256.4,25.8l-200,115.5L56,371.5l199.6,114.7l200-115.5l0.4-230.2L256.4,25.8z M349,354.6l-18.4,10.7l-18.6-11V275H200v79.6l-18.4,10.7l-18.6-11v-197l18.5-10.6l18.5,10.8V237h112v-79.6l18.5-10.6l18.5,10.8V354.6z"/></svg><a target="_blank" href="https://hexo.io">Hexo</a> 驱动</span>
+                <br>
+            <span class="theme-version-container">主题&nbsp;<a class="theme-version" target="_blank" href="https://github.com/EvanNotFound/hexo-theme-redefine">Redefine v2.1.5</a>
+        </div>
+        
+        
+        
+        
+        
+        
+        
+    </div>  
+</footer>
+        </div>
+    </div>
+
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="article-tools-list">
+        <!-- TOC aside toggle -->
+        
+            <li class="right-bottom-tools page-aside-toggle">
+                <i class="fa-regular fa-outdent"></i>
+            </li>
+        
+
+        <!-- go comment -->
+        
+            <li class="go-comment">
+                <i class="fa-regular fa-comments"></i>
+            </li>
+        
+    </ul>
+</div>
+
+        </div>
+    
+
+    <div class="right-side-tools-container">
+        <div class="side-tools-container">
+    <ul class="hidden-tools-list">
+        <li class="right-bottom-tools tool-font-adjust-plus flex-center">
+            <i class="fa-regular fa-magnifying-glass-plus"></i>
+        </li>
+
+        <li class="right-bottom-tools tool-font-adjust-minus flex-center">
+            <i class="fa-regular fa-magnifying-glass-minus"></i>
+        </li>
+
+        <li class="right-bottom-tools tool-expand-width flex-center">
+            <i class="fa-regular fa-expand"></i>
+        </li>
+
+        <li class="right-bottom-tools tool-dark-light-toggle flex-center">
+            <i class="fa-regular fa-moon"></i>
+        </li>
+
+        <!-- rss -->
+        
+
+        
+
+        <li class="right-bottom-tools tool-scroll-to-bottom flex-center">
+            <i class="fa-regular fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="visible-tools-list">
+        <li class="right-bottom-tools toggle-tools-list flex-center">
+            <i class="fa-regular fa-cog fa-spin"></i>
+        </li>
+        
+            <li class="right-bottom-tools tool-scroll-to-top flex-center">
+                <i class="arrow-up fas fa-arrow-up"></i>
+                <span class="percent"></span>
+            </li>
+        
+        
+    </ul>
+</div>
+
+    </div>
+
+    <div class="image-viewer-container">
+    <img src="">
+</div>
+
+
+    
+        <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-input-field-pre">
+            <i class="fa-solid fa-keyboard"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="搜索..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="popup-btn-close">
+                <i class="fa-solid fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fa-solid fa-spinner fa-spin-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+
+</main>
+
+
+
+<script src="https://npm.elemecdn.com/hexo-theme-redefine@2.1.5/source/js/utils.js"></script><script src="https://npm.elemecdn.com/hexo-theme-redefine@2.1.5/source/js/main.js"></script><script src="https://npm.elemecdn.com/hexo-theme-redefine@2.1.5/source/js/layouts/navbarShrink.js"></script><script src="https://npm.elemecdn.com/hexo-theme-redefine@2.1.5/source/js/tools/scrollTopBottom.js"></script><script src="https://npm.elemecdn.com/hexo-theme-redefine@2.1.5/source/js/tools/lightDarkSwitch.js"></script>
+
+
+    <script src="https://npm.elemecdn.com/hexo-theme-redefine@2.1.5/source/js/tools/localSearch.js"></script>
+
+
+
+    <script src="https://npm.elemecdn.com/hexo-theme-redefine@2.1.5/source/js/tools/codeBlock.js"></script>
+
+
+
+    <script src="https://npm.elemecdn.com/hexo-theme-redefine@2.1.5/source/js/layouts/lazyload.js"></script>
+
+
+
+
+
+  <script src="https://npm.elemecdn.com/hexo-theme-redefine@2.1.5/source/js/libs/Typed.min.js"></script>
+  <script src="https://npm.elemecdn.com/hexo-theme-redefine@2.1.5/source/js/plugins/typed.js"></script>
+
+
+
+
+
+
+<div class="post-scripts pjax">
+    
+        <script src="https://npm.elemecdn.com/hexo-theme-redefine@2.1.5/source/js/tools/tocToggle.js"></script><script src="https://npm.elemecdn.com/hexo-theme-redefine@2.1.5/source/js/libs/anime.min.js"></script><script src="https://npm.elemecdn.com/hexo-theme-redefine@2.1.5/source/js/layouts/toc.js"></script><script src="https://npm.elemecdn.com/hexo-theme-redefine@2.1.5/source/js/plugins/tabs.js"></script>
+    
+</div>
+
+
+    <script src="https://npm.elemecdn.com/hexo-theme-redefine@2.1.5/source/js/libs/pjax.min.js"></script>
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        window.pjax = new Pjax({
+            selectors: [
+                'head title',
+                '.page-container',
+                '.pjax',
+            ],
+            history: true,
+            debug: false,
+            cacheBust: false,
+            timeout: 0,
+            analytics: false,
+            currentUrlFullReload: false,
+            scrollRestoration: false,
+            // scrollTo: true,
+        });
+
+        document.addEventListener('pjax:send', () => {
+            Global.utils.pjaxProgressBarStart();
+        });
+
+        document.addEventListener('pjax:complete', () => {
+            Global.utils.pjaxProgressBarEnd();
+            window.pjax.executeScripts(document.querySelectorAll('script[data-pjax], .pjax script'));
+            Global.refresh();
+        });
+    });
+</script>
+
+
+
+
+</body>
+</html>
