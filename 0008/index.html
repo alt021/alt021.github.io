@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Hexo Theme Redefine">
+    
+    <meta name="author" content="ALT021">
+    <!-- preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    
+        
+            <link rel="preconnect" href="https://npm.elemecdn.com" crossorigin>
+        
+    
+    <!--- Seo Part-->
+    
+    <link rel="canonical" href="httpt://blog.alt021.top/0008/"/>
+    <meta name="robots" content="index,follow">
+    <meta name="googlebot" content="index,follow">
+    <meta name="revisit-after" content="1 days">
+    
+        <meta name="description" content="阅前提示本文章所有内容仅供保护隐私使用，不涉及翻牆等内容，无法帮您突破网络审查！如需要请另寻他处学习。 什么是1.1.1.1这是来自大名鼎鼎的Cloudflare 所提供的DNS解析与隐私保护服务。 其提供的服务分为1.1.1.1 DNS解析与WARP+隐私保护两种。前者不作介绍，后者则是我们今天的主角。 首先要回答一些问题WARP+是什么原理通过将您的数据通过Cloudflare服务器进行中转，">
+<meta property="og:type" content="article">
+<meta property="og:title" content="来自Cloudflare的隐私保护方案">
+<meta property="og:url" content="httpt://blog.alt021.top/0008/index.html">
+<meta property="og:site_name" content="ALT021的小世界">
+<meta property="og:description" content="阅前提示本文章所有内容仅供保护隐私使用，不涉及翻牆等内容，无法帮您突破网络审查！如需要请另寻他处学习。 什么是1.1.1.1这是来自大名鼎鼎的Cloudflare 所提供的DNS解析与隐私保护服务。 其提供的服务分为1.1.1.1 DNS解析与WARP+隐私保护两种。前者不作介绍，后者则是我们今天的主角。 首先要回答一些问题WARP+是什么原理通过将您的数据通过Cloudflare服务器进行中转，">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="httpt:///img/0008/1.jpg">
+<meta property="article:published_time" content="2023-06-30T05:50:10.000Z">
+<meta property="article:modified_time" content="2023-06-30T06:55:28.853Z">
+<meta property="article:author" content="ALT021">
+<meta property="article:tag" content="富强上网">
+<meta property="article:tag" content="科学上网">
+<meta property="article:tag" content="隐私保护">
+<meta property="article:tag" content="Cloudflare">
+<meta property="article:tag" content="1.1.1.1">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="httpt:///img/0008/1.jpg">
+    
+    
+    <!--- Icon Part-->
+    <link rel="icon" type="image/png" href="/img/favicon.png" sizes="192x192">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon.png">
+    <meta name="theme-color" content="#4d90fe">
+    <link rel="shortcut icon" href="/img/favicon.png">
+    <!--- Page Info-->
+    
+    <title>
+        
+            来自Cloudflare的隐私保护方案 -
+        
+        ALT021的小世界
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <link rel="stylesheet" href="//npm.elemecdn.com/hexo-theme-redefine@2.2.1/source/fonts/fonts.css">
+    <link rel="stylesheet" href="//npm.elemecdn.com/hexo-theme-redefine@2.2.1/source/fonts/Satoshi/satoshi.css">
+    <link rel="stylesheet" href="//npm.elemecdn.com/hexo-theme-redefine@2.2.1/source/fonts/Chillax/chillax.css">
+    <!--- Font Part-->
+    
+    
+    
+    
+
+    <!--- Inject Part-->
+    
+    <script id="hexo-configurations">
+    let Global = window.Global || {};
+    Global.hexo_config = {"hostname":"blog.alt021.top","root":"/","language":"zh-CN","path":"search.xml"};
+    Global.theme_config = {"articles":{"style":{"font_size":"16px","line_height":1.5,"image_border_radius":"14px","image_alignment":"center","image_caption":false,"link_icon":true},"word_count":{"enable":false,"count":true,"min2read":true},"author_label":{"enable":false,"auto":false,"list":[]},"code_block":{"copy":true,"style":"mac","font":{"enable":false,"family":"Noto Sans SC","url":"https://fonts.googleapis.com/css2?family=Noto+Sans+SC&family=ZCOOL+XiaoWei&display=swap\" rel=\"stylesheet"}},"toc":{"enable":true,"max_depth":3,"number":false,"expand":true,"init_open":true},"copyright":false,"lazyload":true,"recommendation":{"enable":false,"title":"推荐阅读","limit":3,"placeholder":"/img/wallhaven-wqery6-light.webp","skip_dirs":[]}},"colors":{"primary":"#4d90fe","secondary":null},"global":{"fonts":{"chinese":{"enable":false,"family":null,"url":null},"english":{"enable":false,"family":null,"url":null}},"content_max_width":"1000px","sidebar_width":"210px","hover":{"shadow":true,"scale":false},"scroll_progress":{"bar":false,"percentage":true},"busuanzi_counter":{"enable":false,"site_pv":true,"site_uv":true,"post_pv":true},"pjax":true,"open_graph":true,"google_analytics":{"enable":false,"id":null}},"home_banner":{"enable":true,"style":"static","image":{"light":"/img/index.jpg","dark":"/img/index-dark.jpg"},"title":"ALT021的小世界","subtitle":{"text":["有志者，事竟成","Where there is a will,there is a way."],"hitokoto":{"enable":false,"api":"https://v1.hitokoto.cn"},"typing_speed":100,"backing_speed":80,"starting_delay":500,"backing_delay":1500,"loop":true,"smart_backspace":true},"text_color":{"light":"#ffff","dark":"#d1d1b6"},"text_style":{"title_size":"2.8rem","subtitle_size":"1.5rem","line_height":1.2},"custom_font":{"enable":false,"family":null,"url":null},"social_links":{"enable":true,"links":{"qq":"https://www.alt021.top/QQ/","telegram":"https://t.me/alt021","bilibili":"https://space.bilibili.com/367094604","email":"penbead@outlook.com"}}},"plugins":{"feed":{"enable":false},"aplayer":{"enable":false,"type":"mini","audios":[{"name":"Funky Stars","artist":"Quazar","url":"/audio/Funky-stars.mp3","cover":"/img/cover1.jpg"}]},"mermaid":{"enable":false,"version":"9.3.0"}},"version":"2.2.1","navbar":{"auto_hide":false,"color":{"left":"#ffffff","right":"#ffffff","transparency":35},"links":{"Home":{"path":"/","icon":"fa-regular fa-house"},"Archives":{"path":"/archives","icon":"fa-regular fa-archive"},"Tags":{"path":"/tags","icon":"fa-regular fa-tags"},"Categories":{"path":"/categories","icon":"fa-regular fa-folder"},"Links":{"icon":"fa-regular fa-link","submenus":{"Pure Life生存服务器":"https://mcinfo.alt021.top","储物间":"http://alt021.ysepan.com"}},"About":{"path":"/about","icon":"fa-regular fa-user"}},"search":{"enable":true,"preload":false}},"page_templates":{"friends_column":2,"tags_style":"blur"},"home":{"sidebar":{"enable":true,"position":"left","first_item":"menu","announcement":null,"links":{"归档":{"path":"/archives","icon":"fa-regular fa-archive"},"标签":{"path":"/tags","icon":"fa-regular fa-tags"},"分类":{"path":"/categories","icon":"fa-regular fa-folder"},"关于":{"path":"/about","icon":"fa-regular fa-user"}}},"article_date_format":"auto","categories":{"enable":true,"limit":3},"tags":{"enable":true,"limit":3}},"footerStart":"2022/8/17 11:45:14"};
+    Global.language_ago = {"second":"%s 秒前","minute":"%s 分钟前","hour":"%s 小时前","day":"%s 天前","week":"%s 周前","month":"%s 个月前","year":"%s 年前"};
+    Global.data_config = {"masonry":false};
+  </script>
+    
+    <!--- Fontawesome Part-->
+    <link rel="stylesheet" href="//npm.elemecdn.com/hexo-theme-redefine@2.2.1/source/fontawesome/fontawesome.min.css">
+    <link rel="stylesheet" href="//npm.elemecdn.com/hexo-theme-redefine@2.2.1/source/fontawesome/brands.min.css">
+    <link rel="stylesheet" href="//npm.elemecdn.com/hexo-theme-redefine@2.2.1/source/fontawesome/solid.min.css">
+    <link rel="stylesheet" href="//npm.elemecdn.com/hexo-theme-redefine@2.2.1/source/fontawesome/regular.min.css">
+    
+        <link rel="stylesheet" href="//npm.elemecdn.com/hexo-theme-redefine@2.2.1/source/fontawesome/thin.min.css">
+    
+    
+        <link rel="stylesheet" href="//npm.elemecdn.com/hexo-theme-redefine@2.2.1/source/fontawesome/light.min.css">
+    
+    
+        <link rel="stylesheet" href="//npm.elemecdn.com/hexo-theme-redefine@2.2.1/source/fontawesome/duotone.min.css">
+    
+    
+<meta name="generator" content="Hexo 5.4.2"></head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+
+    
+        <span class="pjax-progress-bar"></span>
+        <span class="pjax-progress-icon">
+            <i class="fa-solid fa-circle-notch fa-spin"></i>
+        </span>
+    
+</div>
+
+
+<main class="page-container">
+
+    
+
+    <div class="main-content-container">
+
+        <div class="main-content-header">
+            <header class="navbar-container">
+    
+    <div class="navbar-content">
+        <div class="left">
+            
+            <a class="logo-title" href="/">
+                
+                ALT021的小世界
+                
+            </a>
+        </div>
+
+        <div class="right">
+            <!-- PC -->
+            <div class="desktop">
+                <ul class="navbar-list">
+                    
+                        
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class="" 
+                                    href="/"  >
+                                    
+                                        
+                                            <i class="fa-regular fa-house"></i>
+                                        
+                                        首页
+                                    
+                                </a>
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class="" 
+                                    href="/archives"  >
+                                    
+                                        
+                                            <i class="fa-regular fa-archive"></i>
+                                        
+                                        归档
+                                    
+                                </a>
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class="" 
+                                    href="/tags"  >
+                                    
+                                        
+                                            <i class="fa-regular fa-tags"></i>
+                                        
+                                        标签
+                                    
+                                </a>
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class="" 
+                                    href="/categories"  >
+                                    
+                                        
+                                            <i class="fa-regular fa-folder"></i>
+                                        
+                                        分类
+                                    
+                                </a>
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class="has-dropdown" 
+                                    href="#" onClick="return false;">
+                                    
+                                        
+                                            <i class="fa-regular fa-link"></i>
+                                        
+                                        链接&nbsp;<i class="fa-solid fa-chevron-down"></i>
+                                    
+                                </a>
+                                <!-- Submenu -->
+                                
+                                    <ul class="sub-menu">
+                                    
+                                        <li>
+                                        <a target="_blank" rel="noopener" href="https://mcinfo.alt021.top">PURE LIFE生存服务器
+                                        </a>
+                                        </li>
+                                    
+                                        <li>
+                                        <a target="_blank" rel="noopener" href="http://alt021.ysepan.com">储物间
+                                        </a>
+                                        </li>
+                                    
+                                    </ul>
+                                
+                            </li>
+                    
+                        
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class="" 
+                                    href="/about"  >
+                                    
+                                        
+                                            <i class="fa-regular fa-user"></i>
+                                        
+                                        关于
+                                    
+                                </a>
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                    
+                        <li class="navbar-item search search-popup-trigger">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </li>
+                    
+                </ul>
+            </div>
+            <!-- Mobile -->
+            <div class="mobile">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fa-solid fa-magnifying-glass"></i></div>
+                
+                <div class="icon-item navbar-bar">
+                    <div class="navbar-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile drawer -->
+    <div class="navbar-drawer">
+        <ul class="drawer-navbar-list">
+            
+                
+                    <li class="drawer-navbar-item flex-center">
+                        <a class="" 
+                        href="/"  >
+                             
+                                
+                                    <i class="fa-regular fa-house"></i>
+                                
+                                首页
+                            
+                        </a>
+                    </li>
+                    <!-- Submenu -->
+                    
+            
+                
+                    <li class="drawer-navbar-item flex-center">
+                        <a class="" 
+                        href="/archives"  >
+                             
+                                
+                                    <i class="fa-regular fa-archive"></i>
+                                
+                                归档
+                            
+                        </a>
+                    </li>
+                    <!-- Submenu -->
+                    
+            
+                
+                    <li class="drawer-navbar-item flex-center">
+                        <a class="" 
+                        href="/tags"  >
+                             
+                                
+                                    <i class="fa-regular fa-tags"></i>
+                                
+                                标签
+                            
+                        </a>
+                    </li>
+                    <!-- Submenu -->
+                    
+            
+                
+                    <li class="drawer-navbar-item flex-center">
+                        <a class="" 
+                        href="/categories"  >
+                             
+                                
+                                    <i class="fa-regular fa-folder"></i>
+                                
+                                分类
+                            
+                        </a>
+                    </li>
+                    <!-- Submenu -->
+                    
+            
+                
+                    <li class="drawer-navbar-item flex-center">
+                        <a class="has-dropdown" 
+                        href="#" onClick="return false;">
+                            
+                                
+                                    <i class="fa-regular fa-link"></i>
+                                
+                                链接&nbsp;<i class="fa-solid fa-chevron-down"></i>
+                            
+                        </a>
+                    </li>
+                    <!-- Submenu -->
+                              
+                        
+                            <li class="dropdown-item flex-center">
+                                <a class="dropdown-item" target="_blank" rel="noopener" href="https://mcinfo.alt021.top">PURE LIFE生存服务器</a>
+                            </li>
+                        
+                            <li class="dropdown-item flex-center">
+                                <a class="dropdown-item" target="_blank" rel="noopener" href="http://alt021.ysepan.com">储物间</a>
+                            </li>
+                        
+                    
+            
+                
+                    <li class="drawer-navbar-item flex-center">
+                        <a class="" 
+                        href="/about"  >
+                             
+                                
+                                    <i class="fa-regular fa-user"></i>
+                                
+                                关于
+                            
+                        </a>
+                    </li>
+                    <!-- Submenu -->
+                    
+            
+
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="main-content-body">
+
+            
+
+            <div class="main-content">
+
+                
+                    <div class="fade-in-down-animation">
+    <div class="post-page-container">
+        <div class="article-content-container">
+
+            
+             
+                <div class="article-title">         
+                    <img src="/img/0008/index.jpg" alt="来自Cloudflare的隐私保护方案" />
+                    <h1 class="article-title-cover">来自Cloudflare的隐私保护方案</h1>
+                </div>
+            
+                
+            
+
+            
+                <div class="article-header">
+                    <div class="avatar">
+                        <img src="/img/avatar.png">
+                    </div>
+                    <div class="info">
+                        <div class="author">
+                            <span class="name">ALT021</span>
+                            
+                        </div>
+                        <div class="meta-info">
+                            <div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fa-regular fa-pen-fancy"></i>&nbsp;
+        <span class="desktop">2023-06-30 13:50:10</span>
+        <span class="mobile">2023-06-30 13:50</span>
+        <span class="hover-info">创建</span>
+    </span>
+    
+        <span class="article-date article-meta-item">
+            <i class="fa-regular fa-wrench"></i>&nbsp;
+            <span class="desktop">2023-06-30 14:55:28</span>
+            <span class="mobile">2023-06-30 14:55</span>
+            <span class="hover-info">更新</span>
+        </span>
+    
+
+    
+        <span class="article-categories article-meta-item">
+            <i class="fa-regular fa-folders"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/categories/%E6%95%99%E7%A8%8B/">教程</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fa-regular fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/tags/%E5%AF%8C%E5%BC%BA%E4%B8%8A%E7%BD%91/">富强上网</a>&nbsp;
+                    </li>
+                
+                    <li>
+                        | <a href="/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/">科学上网</a>&nbsp;
+                    </li>
+                
+                    <li>
+                        | <a href="/tags/%E9%9A%90%E7%A7%81%E4%BF%9D%E6%8A%A4/">隐私保护</a>&nbsp;
+                    </li>
+                
+                    <li>
+                        | <a href="/tags/Cloudflare/">Cloudflare</a>&nbsp;
+                    </li>
+                
+                    <li>
+                        | <a href="/tags/1-1-1-1/">1.1.1.1</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+
+    
+    
+    
+    
+</div>
+
+                        </div>
+                    </div>
+                </div>
+            
+
+            <div class="article-content markdown-body">
+                <h1 id="阅前提示"><a href="#阅前提示" class="headerlink" title="阅前提示"></a>阅前提示</h1><p>本文章所有内容仅供保护隐私使用，不涉及翻牆等内容，无法帮您突破网络审查！如需要请另寻他处学习。</p>
+<h1 id="什么是1-1-1-1"><a href="#什么是1-1-1-1" class="headerlink" title="什么是1.1.1.1"></a>什么是1.1.1.1</h1><p>这是来自大名鼎鼎的<a class="link"   target="_blank" rel="noopener" href="https://www.cloudflare.com/" >Cloudflare <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>所提供的DNS解析与隐私保护服务。</p>
+<p>其提供的服务分为<strong>1.1.1.1 DNS解析</strong>与<strong>WARP+隐私保护</strong>两种。前者不作介绍，后者则是我们今天的主角。</p>
+<h1 id="首先要回答一些问题"><a href="#首先要回答一些问题" class="headerlink" title="首先要回答一些问题"></a>首先要回答一些问题</h1><h3 id="WARP-是什么原理"><a href="#WARP-是什么原理" class="headerlink" title="WARP+是什么原理"></a>WARP+是什么原理</h3><p>通过将您的数据通过Cloudflare服务器进行中转，来隐藏您的真实IP，从而达到保护隐私的效果。在这一点上，其与我之前介绍过的<a class="link"   target="_blank" rel="noopener" href="https://www.alt021.top/0004/" >TorBrowser <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>实现的原理大差不差。只是Tor仅供浏览器本身自己使用，而WARP+能在您的几乎所有设备和应用程序中使用</p>
+<h3 id="我能够访问被封锁的服务吗"><a href="#我能够访问被封锁的服务吗" class="headerlink" title="我能够访问被封锁的服务吗"></a><strong>我能够访问被封锁的服务吗</strong></h3><p>Cloudflare 1.1.1.1与WARP+均不会改变您IP对应的国家地区，因此您访问的流量虽被加密且经过转发，但您仍不能访问被封锁的流媒体等服务。</p>
+<h3 id="对我的网络速度有没有影响？"><a href="#对我的网络速度有没有影响？" class="headerlink" title="对我的网络速度有没有影响？"></a>对我的网络速度有没有影响？</h3><p>使用此类任何服务都会些许影响你的网速。但WARP+所提供的网络入口较为优秀，因此您访问所在地和所在地之外网站的速度均不会受到很大的影响。</p>
+<h3 id="适合的使用场景？"><a href="#适合的使用场景？" class="headerlink" title="适合的使用场景？"></a>适合的使用场景？</h3><p>例如您在公共网络、无密码的开放网络下或者某些特殊场合，需要通过诸如此类的方式保护自己的数据不会泄漏。</p>
+<h3 id="100"><a href="#100" class="headerlink" title="100% ?"></a>100% ?</h3><p>任何方式都无法完全保证您的信息不被窃取！请理性看待任何保护隐私的方式。</p>
+<h1 id="开始使用WARP"><a href="#开始使用WARP" class="headerlink" title="开始使用WARP"></a>开始使用WARP</h1><p>WARP的使用十分简单，您只需要前往<a class="link"   target="_blank" rel="noopener" href="https://1.1.1.1/" >官方网站 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>安装官方应用程序并打开他。点击那个醒目的按钮即可启用保护。</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/img/0008/1.jpg"
+                     
+                ></p>
+<h1 id="免费获取WARP"><a href="#免费获取WARP" class="headerlink" title="免费获取WARP+"></a>免费获取WARP+</h1><p><strong>提示：此处教程不配图</strong></p>
+<p>WARP+是WARP服务的高级版本，提供更多的流量和更快的网络入口。我们通过简单的几个步骤即可长期不断获取免费的WARP+流量。</p>
+<p><strong>读前注意：操作此步骤需要您有连接<em>自由网络</em>的能力！</strong></p>
+<p>首先我们需要注册一个Telegram账户，我在这里不解释Telegram是什么，如果您不了解，请自行Google搜索了解相关内容。</p>
+<p>您登录进入Telegram后，请向这个机器人发送”/start”。</p>
+<blockquote>
+<p><a class="link"   target="_blank" rel="noopener" href="https://t.me/generatewarpplusbot" >点击这里打开与此Telegram Bot的对话 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+</blockquote>
+<p>然后向其发送”/generate”</p>
+<p>在初次使用时，您会被要求订阅两个频道。请您直接订阅就好。</p>
+<p><strong>注意判断频道内容，由于此原因对您造成损失我们不承担相关责任。</strong></p>
+<p>在订阅完成后，再次发送”/generate”，机器人会出一道简单的加减算数题来进行人机验证。我们只要计算出结果并发送***/generate &lt;您的答案&gt;**就可以获得一个密钥，接下来我们前往1.1.1.1中输入这个密钥。</p>
+<p>以Android版为例，我们打开APP，<br><strong>点击右上角三横图标 - 账户 - 按键 - 更改密钥</strong></p>
+<p>然后输入您获得的密钥，即可激活拥有20+PB流量剩余的WARP+。</p>
+<p>密钥大概像这样：xxxxxxxx-xxxxxxxx-xxxxxxxx</p>
+<h1 id="尾声"><a href="#尾声" class="headerlink" title="尾声"></a>尾声</h1><p>本篇教程到这里就结束了，希望大家能够共享一个安全隐私的互联网。</p>
+<p>本文评论区禁止讨论有关翻牆，科學上網，等有关话题。仅限于讨论有关隐私保护，WARP+产品使用有关内容。</p>
+
+            </div>
+
+            
+
+            
+                <ul class="post-tags-box">
+                    
+                        <li class="tag-item">
+                            <a href="/tags/%E5%AF%8C%E5%BC%BA%E4%B8%8A%E7%BD%91/">#富强上网</a>&nbsp;
+                        </li>
+                    
+                        <li class="tag-item">
+                            <a href="/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/">#科学上网</a>&nbsp;
+                        </li>
+                    
+                        <li class="tag-item">
+                            <a href="/tags/%E9%9A%90%E7%A7%81%E4%BF%9D%E6%8A%A4/">#隐私保护</a>&nbsp;
+                        </li>
+                    
+                        <li class="tag-item">
+                            <a href="/tags/Cloudflare/">#Cloudflare</a>&nbsp;
+                        </li>
+                    
+                        <li class="tag-item">
+                            <a href="/tags/1-1-1-1/">#1.1.1.1</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            
+
+            
+
+            
+                <div class="article-nav">
+                    
+                    
+                        <div class="article-next">
+                            <a class="next"
+                            rel="next"
+                            href="/0007/"
+                            >
+                                <span class="title flex-center">
+                                    <span class="post-nav-title-item">ColorOS 13 第三方主题及无限试用教程</span>
+                                    <span class="post-nav-item">下一篇</span>
+                                </span>
+                                <span class="right arrow-icon flex-center">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </span>
+                            </a>
+                        </div>
+                    
+                </div>
+            
+
+
+            
+                <div class="comment-container">
+                    <div class="comments-container">
+    <div id="comment-anchor"></div>
+    <div class="comment-area-title">
+        <i class="fa-solid fa-comments"></i>&nbsp;评论
+    </div>
+    
+
+        
+            
+ 
+    <div id="waline"></div>
+    <script type="module"  data-pjax>
+        import { init } from 'https://evan.beee.top/js/waline.mjs';
+
+        function loadWaline() {
+            init({
+                el: '#waline',
+                serverURL: 'https://commentapi.alt021.top',
+                lang: 'zh-CN',
+                dark: 'body[class~="dark-mode"]',
+                requiredMeta: ['nick','mail'], // cannot customize by theme config, change it yourself
+            });
+        }
+
+        if ('true') {
+            const loadWalineTimeout = setTimeout(() => {
+                loadWaline();
+                clearTimeout(loadWalineTimeout);
+            }, 1000);
+        } else {
+            window.addEventListener('DOMContentLoaded', loadWaline);
+        }
+        
+    </script>
+
+
+
+        
+    
+</div>
+
+                </div>
+            
+        </div>
+
+        
+            <div class="toc-content-container">
+                <div class="post-toc-wrap">
+    <div class="post-toc">
+        <div class="toc-title">此页目录</div>
+        <div class="page-title">来自Cloudflare的隐私保护方案</div>
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E9%98%85%E5%89%8D%E6%8F%90%E7%A4%BA"><span class="nav-text">阅前提示</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF1-1-1-1"><span class="nav-text">什么是1.1.1.1</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E9%A6%96%E5%85%88%E8%A6%81%E5%9B%9E%E7%AD%94%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98"><span class="nav-text">首先要回答一些问题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#WARP-%E6%98%AF%E4%BB%80%E4%B9%88%E5%8E%9F%E7%90%86"><span class="nav-text">WARP+是什么原理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%88%91%E8%83%BD%E5%A4%9F%E8%AE%BF%E9%97%AE%E8%A2%AB%E5%B0%81%E9%94%81%E7%9A%84%E6%9C%8D%E5%8A%A1%E5%90%97"><span class="nav-text">我能够访问被封锁的服务吗</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AF%B9%E6%88%91%E7%9A%84%E7%BD%91%E7%BB%9C%E9%80%9F%E5%BA%A6%E6%9C%89%E6%B2%A1%E6%9C%89%E5%BD%B1%E5%93%8D%EF%BC%9F"><span class="nav-text">对我的网络速度有没有影响？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%80%82%E5%90%88%E7%9A%84%E4%BD%BF%E7%94%A8%E5%9C%BA%E6%99%AF%EF%BC%9F"><span class="nav-text">适合的使用场景？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#100"><span class="nav-text">100% ?</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%BC%80%E5%A7%8B%E4%BD%BF%E7%94%A8WARP"><span class="nav-text">开始使用WARP</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%85%8D%E8%B4%B9%E8%8E%B7%E5%8F%96WARP"><span class="nav-text">免费获取WARP+</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%B0%BE%E5%A3%B0"><span class="nav-text">尾声</span></a></li></ol>
+
+    </div>
+</div>
+            </div>
+        
+    </div>
+</div>
+
+
+                
+
+            </div>
+            
+            
+
+        </div>
+
+        <div class="main-content-footer">
+            <footer class="footer">
+    <div class="info-container">
+        <div class="copyright-info">
+            &copy;
+            
+              <span>2022</span>
+              -
+            
+            2023&nbsp;&nbsp;<i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 0.5s; color: #f54545"></i>&nbsp;&nbsp;<a href="/">ALT021</a>
+        </div>
+        
+        <div class="theme-info info-item">
+            <span class="powered-by-container">由 <?xml version="1.0" encoding="utf-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1rem" height="1rem" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve"><path fill="#0E83CD" d="M256.4,25.8l-200,115.5L56,371.5l199.6,114.7l200-115.5l0.4-230.2L256.4,25.8z M349,354.6l-18.4,10.7l-18.6-11V275H200v79.6l-18.4,10.7l-18.6-11v-197l18.5-10.6l18.5,10.8V237h112v-79.6l18.5-10.6l18.5,10.8V354.6z"/></svg><a target="_blank" href="https://hexo.io">Hexo</a> 驱动</span>
+                <br>
+            <span class="theme-version-container">主题&nbsp;<a class="theme-version" target="_blank" href="https://github.com/EvanNotFound/hexo-theme-redefine">Redefine v2.2.1</a>
+        </div>
+        
+        
+        
+        
+        
+        
+        
+    </div>  
+</footer>
+        </div>
+    </div>
+
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="article-tools-list">
+        <!-- TOC aside toggle -->
+        
+            <li class="right-bottom-tools page-aside-toggle">
+                <i class="fa-regular fa-outdent"></i>
+            </li>
+        
+
+        <!-- go comment -->
+        
+            <li class="go-comment">
+                <i class="fa-regular fa-comments"></i>
+            </li>
+        
+    </ul>
+</div>
+
+        </div>
+    
+
+    <div class="right-side-tools-container">
+        <div class="side-tools-container">
+    <ul class="hidden-tools-list">
+        <li class="right-bottom-tools tool-font-adjust-plus flex-center">
+            <i class="fa-regular fa-magnifying-glass-plus"></i>
+        </li>
+
+        <li class="right-bottom-tools tool-font-adjust-minus flex-center">
+            <i class="fa-regular fa-magnifying-glass-minus"></i>
+        </li>
+
+        <li class="right-bottom-tools tool-expand-width flex-center">
+            <i class="fa-regular fa-expand"></i>
+        </li>
+
+        <li class="right-bottom-tools tool-dark-light-toggle flex-center">
+            <i class="fa-regular fa-moon"></i>
+        </li>
+
+        <!-- rss -->
+        
+
+        
+
+        <li class="right-bottom-tools tool-scroll-to-bottom flex-center">
+            <i class="fa-regular fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="visible-tools-list">
+        <li class="right-bottom-tools toggle-tools-list flex-center">
+            <i class="fa-regular fa-cog fa-spin"></i>
+        </li>
+        
+            <li class="right-bottom-tools tool-scroll-to-top flex-center">
+                <i class="arrow-up fas fa-arrow-up"></i>
+                <span class="percent"></span>
+            </li>
+        
+        
+    </ul>
+</div>
+
+    </div>
+
+    <div class="image-viewer-container">
+    <img src="">
+</div>
+
+
+    
+        <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-input-field-pre">
+            <i class="fa-solid fa-keyboard"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="搜索..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="popup-btn-close">
+                <i class="fa-solid fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fa-solid fa-spinner fa-spin-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+
+</main>
+
+
+
+<script src="https://npm.elemecdn.com/hexo-theme-redefine@2.2.1/source/js/utils.js"></script><script src="https://npm.elemecdn.com/hexo-theme-redefine@2.2.1/source/js/main.js"></script><script src="https://npm.elemecdn.com/hexo-theme-redefine@2.2.1/source/js/layouts/navbarShrink.js"></script><script src="https://npm.elemecdn.com/hexo-theme-redefine@2.2.1/source/js/tools/scrollTopBottom.js"></script><script src="https://npm.elemecdn.com/hexo-theme-redefine@2.2.1/source/js/tools/lightDarkSwitch.js"></script>
+
+
+    <script src="https://npm.elemecdn.com/hexo-theme-redefine@2.2.1/source/js/tools/localSearch.js"></script>
+
+
+
+    <script src="https://npm.elemecdn.com/hexo-theme-redefine@2.2.1/source/js/tools/codeBlock.js"></script>
+
+
+
+    <script src="https://npm.elemecdn.com/hexo-theme-redefine@2.2.1/source/js/layouts/lazyload.js"></script>
+
+
+
+
+
+  <script src="https://npm.elemecdn.com/hexo-theme-redefine@2.2.1/source/js/libs/Typed.min.js"></script>
+  <script src="https://npm.elemecdn.com/hexo-theme-redefine@2.2.1/source/js/plugins/typed.js"></script>
+
+
+
+
+
+
+<div class="post-scripts pjax">
+    
+        <script src="https://npm.elemecdn.com/hexo-theme-redefine@2.2.1/source/js/tools/tocToggle.js"></script><script src="https://npm.elemecdn.com/hexo-theme-redefine@2.2.1/source/js/libs/anime.min.js"></script><script src="https://npm.elemecdn.com/hexo-theme-redefine@2.2.1/source/js/layouts/toc.js"></script><script src="https://npm.elemecdn.com/hexo-theme-redefine@2.2.1/source/js/plugins/tabs.js"></script>
+    
+</div>
+
+
+    <script src="https://npm.elemecdn.com/hexo-theme-redefine@2.2.1/source/js/libs/pjax.min.js"></script>
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        window.pjax = new Pjax({
+            selectors: [
+                'head title',
+                '.page-container',
+                '.pjax',
+            ],
+            history: true,
+            debug: false,
+            cacheBust: false,
+            timeout: 0,
+            analytics: false,
+            currentUrlFullReload: false,
+            scrollRestoration: false,
+            // scrollTo: true,
+        });
+
+        document.addEventListener('pjax:send', () => {
+            Global.utils.pjaxProgressBarStart();
+        });
+
+        document.addEventListener('pjax:complete', () => {
+            Global.utils.pjaxProgressBarEnd();
+            window.pjax.executeScripts(document.querySelectorAll('script[data-pjax], .pjax script'));
+            Global.refresh();
+        });
+    });
+</script>
+
+
+
+
+</body>
+</html>
