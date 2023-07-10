@@ -93,7 +93,7 @@
 <hr>
 <h2 id="更换新的域名"><a href="#更换新的域名" class="headerlink" title="更换新的域名"></a>更换新的域名</h2><p>此前我使用过<a class="link"   href="https://cloudflare.com/" >Cloudflare <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>提供的二级域名，和<a class="link"   href="https://nic.eu.org/" >eu.org <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>,虽说后者的权重和顶级域名差不了太多，但还是会有点难看的，对吧？</p>
 <p>某天在网上冲浪时，得知了硅云，硅云目前正在进行“首年0元”的活动。新用户的首个域名首年免费(仅限.top等部分顶级域名)，如果你正需要，请<a class="link"   href="https://www.vpsor.cn/?userCode=yh21c0e" >点击这里注册 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>，这是我的推广链接，你使用此链接注册我将获得部分返利。提前感谢大家。</p>
-<p>我的所有站点都已换到<a class="link"   href="https://www.alt021.top/" >alt021.top <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>的域名。</p>
+<p>我的所有站点都已换到<a href="https://www.alt021.top/">alt021.top</a>的域名。</p>
 <hr>
 <h2 id="更换CDN改善速度"><a href="#更换CDN改善速度" class="headerlink" title="更换CDN改善速度"></a>更换CDN改善速度</h2><p>博客的部分服务此前使用Jsdelivr的CDN，其在国内由于特殊原因很难正常访问。导致本网站打开速度异常缓慢，图标文件几乎不能正常加载。</p>
 <p>目前已更换到另外的CDN，网页打开速度显著改善，基本3-5秒即可完成加载。</p>
@@ -376,7 +376,7 @@
     <content><![CDATA[<h1 id="阅前提示"><a href="#阅前提示" class="headerlink" title="阅前提示"></a>阅前提示</h1><p>本文章所有内容仅供保护隐私使用，不涉及翻牆等内容，无法帮您突破网络审查！如需要请另寻他处学习。</p>
 <h1 id="什么是1-1-1-1"><a href="#什么是1-1-1-1" class="headerlink" title="什么是1.1.1.1"></a>什么是1.1.1.1</h1><p>这是来自大名鼎鼎的<a class="link"   href="https://www.cloudflare.com/" >Cloudflare <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>所提供的DNS解析与隐私保护服务。</p>
 <p>其提供的服务分为<strong>1.1.1.1 DNS解析</strong>与<strong>WARP+隐私保护</strong>两种。前者不作介绍，后者则是我们今天的主角。</p>
-<h1 id="首先要回答一些问题"><a href="#首先要回答一些问题" class="headerlink" title="首先要回答一些问题"></a>首先要回答一些问题</h1><h3 id="WARP-是什么原理"><a href="#WARP-是什么原理" class="headerlink" title="WARP+是什么原理"></a>WARP+是什么原理</h3><p>通过将您的数据通过Cloudflare服务器进行中转，来隐藏您的真实IP，从而达到保护隐私的效果。在这一点上，其与我之前介绍过的<a class="link"   href="https://www.alt021.top/0004/" >TorBrowser <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>实现的原理大差不差。只是Tor仅供浏览器本身自己使用，而WARP+能在您的几乎所有设备和应用程序中使用</p>
+<h1 id="首先要回答一些问题"><a href="#首先要回答一些问题" class="headerlink" title="首先要回答一些问题"></a>首先要回答一些问题</h1><h3 id="WARP-是什么原理"><a href="#WARP-是什么原理" class="headerlink" title="WARP+是什么原理"></a>WARP+是什么原理</h3><p>通过将您的数据通过Cloudflare服务器进行中转，来隐藏您的真实IP，从而达到保护隐私的效果。在这一点上，其与我之前介绍过的<a href="https://www.alt021.top/0004/">TorBrowser</a>实现的原理大差不差。只是Tor仅供浏览器本身自己使用，而WARP+能在您的几乎所有设备和应用程序中使用</p>
 <h3 id="我能够访问被封锁的服务吗"><a href="#我能够访问被封锁的服务吗" class="headerlink" title="我能够访问被封锁的服务吗"></a><strong>我能够访问被封锁的服务吗</strong></h3><p>Cloudflare 1.1.1.1与WARP+均不会改变您IP对应的国家地区，因此您访问的流量虽被加密且经过转发，但您仍不能访问被封锁的流媒体等服务。</p>
 <h3 id="对我的网络速度有没有影响？"><a href="#对我的网络速度有没有影响？" class="headerlink" title="对我的网络速度有没有影响？"></a>对我的网络速度有没有影响？</h3><p>使用此类任何服务都会些许影响你的网速。但WARP+所提供的网络入口较为优秀，因此您访问所在地和所在地之外网站的速度均不会受到很大的影响。</p>
 <h3 id="适合的使用场景？"><a href="#适合的使用场景？" class="headerlink" title="适合的使用场景？"></a>适合的使用场景？</h3><p>例如您在公共网络、无密码的开放网络下或者某些特殊场合，需要通过诸如此类的方式保护自己的数据不会泄漏。</p>
