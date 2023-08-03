@@ -10,6 +10,39 @@
 ]]></content>
   </entry>
   <entry>
+    <title>小小博客的新发展</title>
+    <url>/0003/</url>
+    <content><![CDATA[<h1 id="写在开头"><a href="#写在开头" class="headerlink" title="写在开头"></a>写在开头</h1><p>本博客现已经开启Livere评论系统，可对我的文章发表评论了！</p>
+<p>不过请文明发言，Livere会对垃圾留言进行过滤，博主也会清理不当言论。</p>
+<hr>
+<h1 id="最新的进展"><a href="#最新的进展" class="headerlink" title="最新的进展"></a>最新的进展</h1><p>我等不及要想告诉大家最近折腾的新成果了！！！</p>
+<hr>
+<h2 id="更换新的域名"><a href="#更换新的域名" class="headerlink" title="更换新的域名"></a>更换新的域名</h2><p>此前我使用过<a href="https://cloudflare.com/">Cloudflare</a>提供的二级域名，和<a href="https://nic.eu.org/">eu.org</a>,虽说后者的权重和顶级域名差不了太多，但还是会有点难看的，对吧？</p>
+<p>某天在网上冲浪时，得知了硅云，硅云目前正在进行“首年0元”的活动。新用户的首个域名首年免费(仅限.top等部分顶级域名)，如果你正需要，请<a href="https://www.vpsor.cn/?userCode=yh21c0e">点击这里注册</a>，这是我的推广链接，你使用此链接注册我将获得部分返利。提前感谢大家。</p>
+<p>我的所有站点都已换到<a href="https://www.alt021.top/">alt021.top</a>的域名。</p>
+<hr>
+<h2 id="更换CDN改善速度"><a href="#更换CDN改善速度" class="headerlink" title="更换CDN改善速度"></a>更换CDN改善速度</h2><p>博客的部分服务此前使用Jsdelivr的CDN，其在国内由于特殊原因很难正常访问。导致本网站打开速度异常缓慢，图标文件几乎不能正常加载。</p>
+<p>目前已更换到另外的CDN，网页打开速度显著改善，基本3-5秒即可完成加载。</p>
+<hr>
+<h2 id="开通评论"><a href="#开通评论" class="headerlink" title="开通评论"></a>开通评论</h2><p>此博客已经成功接入Livere评论系统，现在您可以对我的博文发表评论了。</p>
+<p>不过请注意，您的评论若包含不当言论或垃圾内容，将会被Livere过滤，博主也将不定期主动删除不当言论。</p>
+<hr>
+<h1 id="在网络之外"><a href="#在网络之外" class="headerlink" title="在网络之外"></a>在网络之外</h1><p>博主离中考越来越近了，近期的一次模拟考试部分成绩些许不理想。等两个月之后，我的自我介绍大抵是该更新了。</p>
+<p>到那时候就真的没时间管理博客了，我的<strong>Pure Life纯净生存服务器</strong>会不会开下去也成了谜，谁知道呢，到时再看。</p>
+<hr>
+<h1 id="尾声"><a href="#尾声" class="headerlink" title="尾声"></a>尾声</h1><p>这次的文章有点水( 自 知 之 明 )，下次好好更新就是了。。。</p>
+<p>总之以后空闲时间可能会越来越少，尽量多管理一下博客吧。感谢来阅读的各位！</p>
+]]></content>
+      <categories>
+        <category>闲聊</category>
+      </categories>
+      <tags>
+        <tag>闲聊</tag>
+        <tag>hexo</tag>
+        <tag>海文章</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Minecraft远程联机方法汇总</title>
     <url>/0002/</url>
     <content><![CDATA[<h1 id="准备开始！"><a href="#准备开始！" class="headerlink" title="准备开始！"></a>准备开始！</h1><p>这篇文章的内容主要适用于<strong>Java版本</strong>远程联机，如果您是基岩版，双方可直接添加xbox好友进行联机，不需要再进行其他操作。</p>
@@ -81,39 +114,6 @@
         <tag>Minecraft</tag>
         <tag>网络</tag>
         <tag>内网穿透</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>小小博客的新发展</title>
-    <url>/0003/</url>
-    <content><![CDATA[<h1 id="写在开头"><a href="#写在开头" class="headerlink" title="写在开头"></a>写在开头</h1><p>本博客现已经开启Livere评论系统，可对我的文章发表评论了！</p>
-<p>不过请文明发言，Livere会对垃圾留言进行过滤，博主也会清理不当言论。</p>
-<hr>
-<h1 id="最新的进展"><a href="#最新的进展" class="headerlink" title="最新的进展"></a>最新的进展</h1><p>我等不及要想告诉大家最近折腾的新成果了！！！</p>
-<hr>
-<h2 id="更换新的域名"><a href="#更换新的域名" class="headerlink" title="更换新的域名"></a>更换新的域名</h2><p>此前我使用过<a href="https://cloudflare.com/">Cloudflare</a>提供的二级域名，和<a href="https://nic.eu.org/">eu.org</a>,虽说后者的权重和顶级域名差不了太多，但还是会有点难看的，对吧？</p>
-<p>某天在网上冲浪时，得知了硅云，硅云目前正在进行“首年0元”的活动。新用户的首个域名首年免费(仅限.top等部分顶级域名)，如果你正需要，请<a href="https://www.vpsor.cn/?userCode=yh21c0e">点击这里注册</a>，这是我的推广链接，你使用此链接注册我将获得部分返利。提前感谢大家。</p>
-<p>我的所有站点都已换到<a href="https://www.alt021.top/">alt021.top</a>的域名。</p>
-<hr>
-<h2 id="更换CDN改善速度"><a href="#更换CDN改善速度" class="headerlink" title="更换CDN改善速度"></a>更换CDN改善速度</h2><p>博客的部分服务此前使用Jsdelivr的CDN，其在国内由于特殊原因很难正常访问。导致本网站打开速度异常缓慢，图标文件几乎不能正常加载。</p>
-<p>目前已更换到另外的CDN，网页打开速度显著改善，基本3-5秒即可完成加载。</p>
-<hr>
-<h2 id="开通评论"><a href="#开通评论" class="headerlink" title="开通评论"></a>开通评论</h2><p>此博客已经成功接入Livere评论系统，现在您可以对我的博文发表评论了。</p>
-<p>不过请注意，您的评论若包含不当言论或垃圾内容，将会被Livere过滤，博主也将不定期主动删除不当言论。</p>
-<hr>
-<h1 id="在网络之外"><a href="#在网络之外" class="headerlink" title="在网络之外"></a>在网络之外</h1><p>博主离中考越来越近了，近期的一次模拟考试部分成绩些许不理想。等两个月之后，我的自我介绍大抵是该更新了。</p>
-<p>到那时候就真的没时间管理博客了，我的<strong>Pure Life纯净生存服务器</strong>会不会开下去也成了谜，谁知道呢，到时再看。</p>
-<hr>
-<h1 id="尾声"><a href="#尾声" class="headerlink" title="尾声"></a>尾声</h1><p>这次的文章有点水( 自 知 之 明 )，下次好好更新就是了。。。</p>
-<p>总之以后空闲时间可能会越来越少，尽量多管理一下博客吧。感谢来阅读的各位！</p>
-]]></content>
-      <categories>
-        <category>闲聊</category>
-      </categories>
-      <tags>
-        <tag>闲聊</tag>
-        <tag>hexo</tag>
-        <tag>海文章</tag>
       </tags>
   </entry>
   <entry>
@@ -245,52 +245,6 @@
       </tags>
   </entry>
   <entry>
-    <title>来自Cloudflare的隐私保护方案</title>
-    <url>/0008/</url>
-    <content><![CDATA[<h1 id="阅前提示"><a href="#阅前提示" class="headerlink" title="阅前提示"></a>阅前提示</h1><p>本文章所有内容仅供保护隐私使用，不涉及翻牆等内容，无法帮您突破网络审查！如需要请另寻他处学习。</p>
-<h1 id="什么是1-1-1-1"><a href="#什么是1-1-1-1" class="headerlink" title="什么是1.1.1.1"></a>什么是1.1.1.1</h1><p>这是来自大名鼎鼎的<a href="https://www.cloudflare.com/">Cloudflare</a>所提供的DNS解析与隐私保护服务。</p>
-<p>其提供的服务分为<strong>1.1.1.1 DNS解析</strong>与<strong>WARP+隐私保护</strong>两种。前者不作介绍，后者则是我们今天的主角。</p>
-<h1 id="首先要回答一些问题"><a href="#首先要回答一些问题" class="headerlink" title="首先要回答一些问题"></a>首先要回答一些问题</h1><h3 id="WARP-是什么原理"><a href="#WARP-是什么原理" class="headerlink" title="WARP+是什么原理"></a>WARP+是什么原理</h3><p>通过将您的数据通过Cloudflare服务器进行中转，来隐藏您的真实IP，从而达到保护隐私的效果。在这一点上，其与我之前介绍过的<a href="https://www.alt021.top/0004/">TorBrowser</a>实现的原理大差不差。只是Tor仅供浏览器本身自己使用，而WARP+能在您的几乎所有设备和应用程序中使用</p>
-<h3 id="我能够访问被封锁的服务吗"><a href="#我能够访问被封锁的服务吗" class="headerlink" title="我能够访问被封锁的服务吗"></a><strong>我能够访问被封锁的服务吗</strong></h3><p>Cloudflare 1.1.1.1与WARP+均不会改变您IP对应的国家地区，因此您访问的流量虽被加密且经过转发，但您仍不能访问被封锁的流媒体等服务。</p>
-<h3 id="对我的网络速度有没有影响？"><a href="#对我的网络速度有没有影响？" class="headerlink" title="对我的网络速度有没有影响？"></a>对我的网络速度有没有影响？</h3><p>使用此类任何服务都会些许影响你的网速。但WARP+所提供的网络入口较为优秀，因此您访问所在地和所在地之外网站的速度均不会受到很大的影响。</p>
-<h3 id="适合的使用场景？"><a href="#适合的使用场景？" class="headerlink" title="适合的使用场景？"></a>适合的使用场景？</h3><p>例如您在公共网络、无密码的开放网络下或者某些特殊场合，需要通过诸如此类的方式保护自己的数据不会泄漏。</p>
-<h3 id="100"><a href="#100" class="headerlink" title="100% ?"></a>100% ?</h3><p>任何方式都无法完全保证您的信息不被窃取！请理性看待任何保护隐私的方式。</p>
-<h1 id="开始使用WARP"><a href="#开始使用WARP" class="headerlink" title="开始使用WARP"></a>开始使用WARP</h1><p>WARP的使用十分简单，您只需要前往<a href="https://1.1.1.1/">官方网站</a>安装官方应用程序并打开他。点击那个醒目的按钮即可启用保护。</p>
-<p><img src="/img/0008/1.jpg"></p>
-<h1 id="免费获取WARP"><a href="#免费获取WARP" class="headerlink" title="免费获取WARP+"></a>免费获取WARP+</h1><p><strong>提示：此处教程不配图</strong></p>
-<p>WARP+是WARP服务的高级版本，提供更多的流量和更快的网络入口。我们通过简单的几个步骤即可长期不断获取免费的WARP+流量。</p>
-<p><strong>读前注意：操作此步骤需要您有连接<em>自由网络</em>的能力！</strong></p>
-<p>首先我们需要注册一个Telegram账户，我在这里不解释Telegram是什么，如果您不了解，请自行Google搜索了解相关内容。</p>
-<p>您登录进入Telegram后，请向这个机器人发送”/start”。</p>
-<blockquote>
-<p><a href="https://t.me/generatewarpplusbot">点击这里打开与此Telegram Bot的对话</a></p>
-</blockquote>
-<p>然后向其发送”/generate”</p>
-<p>在初次使用时，您会被要求订阅两个频道。请您直接订阅就好。</p>
-<p><strong>注意判断频道内容，由于此原因对您造成损失我们不承担相关责任。</strong></p>
-<p>在订阅完成后，再次发送”/generate”，机器人会出一道简单的加减算数题来进行人机验证。我们只要计算出结果并发送</p>
-<blockquote>
-<p>/generate &lt;您的答案&gt;</p>
-</blockquote>
-<p>就可以获得一个密钥，接下来我们前往1.1.1.1中输入这个密钥。</p>
-<p>以Android版为例，我们打开APP，<br><strong>点击右上角三横图标 - 账户 - 按键 - 更改密钥</strong></p>
-<p>然后输入您获得的密钥，即可激活拥有20+PB流量剩余的WARP+。</p>
-<p>密钥大概像这样：xxxxxxxx-xxxxxxxx-xxxxxxxx</p>
-<h1 id="尾声"><a href="#尾声" class="headerlink" title="尾声"></a>尾声</h1><p>本篇教程到这里就结束了，希望大家能够共享一个安全隐私的互联网。</p>
-<p>本文评论区禁止讨论有关翻牆，科學上網，等有关话题。仅限于讨论有关隐私保护，WARP+产品使用有关内容。</p>
-]]></content>
-      <categories>
-        <category>教程</category>
-      </categories>
-      <tags>
-        <tag>富强上网</tag>
-        <tag>科学上网</tag>
-        <tag>隐私保护</tag>
-        <tag>Cloudflare</tag>
-        <tag>1.1.1.1</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>ColorOS 13 第三方主题及无限试用教程</title>
     <url>/0007/</url>
     <content><![CDATA[<h1 id="阅前提示"><a href="#阅前提示" class="headerlink" title="阅前提示"></a>阅前提示</h1><p>本文章仅针对ColorOS 13 用户，如果你使用低版本，不保证文章里的方法对你的设备完全有效。</p>
@@ -359,6 +313,52 @@
         <tag>教程</tag>
         <tag>主题</tag>
         <tag>ColorOS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>来自Cloudflare的隐私保护方案</title>
+    <url>/0008/</url>
+    <content><![CDATA[<h1 id="阅前提示"><a href="#阅前提示" class="headerlink" title="阅前提示"></a>阅前提示</h1><p>本文章所有内容仅供保护隐私使用，不涉及翻牆等内容，无法帮您突破网络审查！如需要请另寻他处学习。</p>
+<h1 id="什么是1-1-1-1"><a href="#什么是1-1-1-1" class="headerlink" title="什么是1.1.1.1"></a>什么是1.1.1.1</h1><p>这是来自大名鼎鼎的<a href="https://www.cloudflare.com/">Cloudflare</a>所提供的DNS解析与隐私保护服务。</p>
+<p>其提供的服务分为<strong>1.1.1.1 DNS解析</strong>与<strong>WARP+隐私保护</strong>两种。前者不作介绍，后者则是我们今天的主角。</p>
+<h1 id="首先要回答一些问题"><a href="#首先要回答一些问题" class="headerlink" title="首先要回答一些问题"></a>首先要回答一些问题</h1><h3 id="WARP-是什么原理"><a href="#WARP-是什么原理" class="headerlink" title="WARP+是什么原理"></a>WARP+是什么原理</h3><p>通过将您的数据通过Cloudflare服务器进行中转，来隐藏您的真实IP，从而达到保护隐私的效果。在这一点上，其与我之前介绍过的<a href="https://www.alt021.top/0004/">TorBrowser</a>实现的原理大差不差。只是Tor仅供浏览器本身自己使用，而WARP+能在您的几乎所有设备和应用程序中使用</p>
+<h3 id="我能够访问被封锁的服务吗"><a href="#我能够访问被封锁的服务吗" class="headerlink" title="我能够访问被封锁的服务吗"></a><strong>我能够访问被封锁的服务吗</strong></h3><p>Cloudflare 1.1.1.1与WARP+均不会改变您IP对应的国家地区，因此您访问的流量虽被加密且经过转发，但您仍不能访问被封锁的流媒体等服务。</p>
+<h3 id="对我的网络速度有没有影响？"><a href="#对我的网络速度有没有影响？" class="headerlink" title="对我的网络速度有没有影响？"></a>对我的网络速度有没有影响？</h3><p>使用此类任何服务都会些许影响你的网速。但WARP+所提供的网络入口较为优秀，因此您访问所在地和所在地之外网站的速度均不会受到很大的影响。</p>
+<h3 id="适合的使用场景？"><a href="#适合的使用场景？" class="headerlink" title="适合的使用场景？"></a>适合的使用场景？</h3><p>例如您在公共网络、无密码的开放网络下或者某些特殊场合，需要通过诸如此类的方式保护自己的数据不会泄漏。</p>
+<h3 id="100"><a href="#100" class="headerlink" title="100% ?"></a>100% ?</h3><p>任何方式都无法完全保证您的信息不被窃取！请理性看待任何保护隐私的方式。</p>
+<h1 id="开始使用WARP"><a href="#开始使用WARP" class="headerlink" title="开始使用WARP"></a>开始使用WARP</h1><p>WARP的使用十分简单，您只需要前往<a href="https://1.1.1.1/">官方网站</a>安装官方应用程序并打开他。点击那个醒目的按钮即可启用保护。</p>
+<p><img src="/img/0008/1.jpg"></p>
+<h1 id="免费获取WARP"><a href="#免费获取WARP" class="headerlink" title="免费获取WARP+"></a>免费获取WARP+</h1><p><strong>提示：此处教程不配图</strong></p>
+<p>WARP+是WARP服务的高级版本，提供更多的流量和更快的网络入口。我们通过简单的几个步骤即可长期不断获取免费的WARP+流量。</p>
+<p><strong>读前注意：操作此步骤需要您有连接<em>自由网络</em>的能力！</strong></p>
+<p>首先我们需要注册一个Telegram账户，我在这里不解释Telegram是什么，如果您不了解，请自行Google搜索了解相关内容。</p>
+<p>您登录进入Telegram后，请向这个机器人发送”/start”。</p>
+<blockquote>
+<p><a href="https://t.me/generatewarpplusbot">点击这里打开与此Telegram Bot的对话</a></p>
+</blockquote>
+<p>然后向其发送”/generate”</p>
+<p>在初次使用时，您会被要求订阅两个频道。请您直接订阅就好。</p>
+<p><strong>注意判断频道内容，由于此原因对您造成损失我们不承担相关责任。</strong></p>
+<p>在订阅完成后，再次发送”/generate”，机器人会出一道简单的加减算数题来进行人机验证。我们只要计算出结果并发送</p>
+<blockquote>
+<p>/generate &lt;您的答案&gt;</p>
+</blockquote>
+<p>就可以获得一个密钥，接下来我们前往1.1.1.1中输入这个密钥。</p>
+<p>以Android版为例，我们打开APP，<br><strong>点击右上角三横图标 - 账户 - 按键 - 更改密钥</strong></p>
+<p>然后输入您获得的密钥，即可激活拥有20+PB流量剩余的WARP+。</p>
+<p>密钥大概像这样：xxxxxxxx-xxxxxxxx-xxxxxxxx</p>
+<h1 id="尾声"><a href="#尾声" class="headerlink" title="尾声"></a>尾声</h1><p>本篇教程到这里就结束了，希望大家能够共享一个安全隐私的互联网。</p>
+<p>本文评论区禁止讨论有关翻牆，科學上網，等有关话题。仅限于讨论有关隐私保护，WARP+产品使用有关内容。</p>
+]]></content>
+      <categories>
+        <category>教程</category>
+      </categories>
+      <tags>
+        <tag>富强上网</tag>
+        <tag>科学上网</tag>
+        <tag>隐私保护</tag>
+        <tag>Cloudflare</tag>
+        <tag>1.1.1.1</tag>
       </tags>
   </entry>
   <entry>
