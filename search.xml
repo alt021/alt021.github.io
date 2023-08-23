@@ -10,6 +10,7 @@
 ]]></content>
       <categories>
         <category>杂谈</category>
+        <category>随笔</category>
       </categories>
   </entry>
   <entry>
@@ -113,6 +114,7 @@
 ]]></content>
       <categories>
         <category>杂谈</category>
+        <category>博客那些事</category>
       </categories>
       <tags>
         <tag>闲聊</tag>
@@ -242,6 +244,7 @@
 ]]></content>
       <categories>
         <category>杂谈</category>
+        <category>随笔</category>
       </categories>
       <tags>
         <tag>输入</tag>
@@ -383,10 +386,52 @@
 ]]></content>
       <categories>
         <category>杂谈</category>
+        <category>博客那些事</category>
       </categories>
       <tags>
         <tag>闲聊</tag>
         <tag>海文章</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>微软电脑管家究竟走了多远？</title>
+    <url>/0010/</url>
+    <content><![CDATA[<h1 id="先导"><a href="#先导" class="headerlink" title="先导"></a>先导</h1><p>2022 年 7 月 18 日，微软在中国发布了一款全新的产品，名为微软电脑管家，彼时距离Windows 11产品正式发布已经过去了一年多的时间。</p>
+<p>在2023年8月23日，我们再次体验这款产品，来看他今天究竟走了多远。</p>
+<h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><p>安装程序设计十分简洁，只有同意用户协议的复选框与继续安装两格按钮，没有任何多余的选项。我们也不可以手动选择是否创建快捷方式、无法主动修改安装路径。<br><img src="/img/0010/01.png"></p>
+<h1 id="应用体验"><a href="#应用体验" class="headerlink" title="应用体验"></a>应用体验</h1><h2 id="用户界面"><a href="#用户界面" class="headerlink" title="用户界面"></a>用户界面</h2><p>进入微软电脑管家的主页面，整个软件的设计都遵循微软的Fluent Design设计语言，首页罗列着<strong>一键加速 全面体检 进程管理 深度清理 开机管理</strong>五个功能板块，设计与排版较为精美。<br><img src="/img/0010/02.png"></p>
+<p>首页的左侧分别为<strong>首页 保护 存储 应用 工具箱</strong>这类在大多数国产电脑管家类软件上面常见的功能。</p>
+<p>单就软件的用户界面和交互设计来说，微软电脑管家比较有特色，页面设计简洁，使用起来较为舒适。</p>
+<h2 id="功能体验"><a href="#功能体验" class="headerlink" title="功能体验"></a>功能体验</h2><p>我体验了大多数微软电脑管家中的功能，这里挑选出一些比较有代表性的功能，拿出来说一说。</p>
+<h3 id="病毒查杀"><a href="#病毒查杀" class="headerlink" title="病毒查杀"></a>病毒查杀</h3><p>值得注意的是，微软电脑管家并没有内置杀毒引擎，而是直接调用Windows Defender进行病毒查杀。</p>
+<p>毕竟是微软的软件，系统里也已经内置了Windows Defender病毒查杀功能，如果再次内置一个查杀引擎就显得软件过于臃肿了。</p>
+<p>我的系统由于删除了Windows Defender，无法体验病毒查杀功能。</p>
+<p><img src="/img/0010/03.png"></p>
+<h3 id="浏览器保护"><a href="#浏览器保护" class="headerlink" title="浏览器保护"></a>浏览器保护</h3><p>微软电脑管家也具备了国内大多数软件所拥有的默认浏览器保护功能，目前仅支持将<strong>Edge,Firefox,Chrome</strong>锁定为默认，其他浏览器尚未支持。不过说实话，浏览器保护没有锁定默认浏览器为Edge我就已经十分意外，居然还可以选择为Firefox或Chrome。<br><img src="/img/0010/04.png"></p>
+<h3 id="存储清理"><a href="#存储清理" class="headerlink" title="存储清理"></a>存储清理</h3><p>和常规的清理软件差不多，没有什么需要特别说明的。微软电脑管家内也集成了部分系统内关于存储功能的快速入口，使用起来较为方便。<br><img src="/img/0010/05.png"></p>
+<h3 id="进程管理"><a href="#进程管理" class="headerlink" title="进程管理"></a>进程管理</h3><p>在应用管理板块内，我们可以快速进行进程管理、启动项管理或者前往设置中卸载应用亦或是打开微软商店下载新的应用。</p>
+<p>这部分的功能我们都可以在电脑设置、任务管理器中直接进行，微软电脑管家仅仅将这些功能集成在了一部分，方便了不熟悉使用诸如任务管理器这类工具的电脑用户使用这些功能。<br><img src="/img/0010/06.png"></p>
+<h3 id="工具箱"><a href="#工具箱" class="headerlink" title="工具箱"></a>工具箱</h3><p>这部分与其说是工具箱，倒不如说是系统内置小工具的捷径。我们可以在工具箱中快速打开截图工具，计算器，记事本等小工具。</p>
+<p>还可以自定义一些书签用于快速打开。</p>
+<p><img src="/img/0010/07.png"></p>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>微软电脑管家从当初的2.1版本更新到如今的3.4版本，已经完善了不少。</p>
+<p>与其说是一个电脑管家，不如说是一个集成了系统内安全与清理功能的捷径。可以帮助我们快速调用系统功能。</p>
+<p>对于不熟悉电脑的用户可以提供帮助，又因为自身没有内嵌太多的功能，所以占用资源十分小，几乎不影响电脑性能。</p>
+<p><img src="/img/0010/08.png"></p>
+<p>如果你不是很熟悉电脑，那么这款软件可以帮助你找到这些快捷功能，也可以优化电脑内存等等项目。但如果你已经是资深电脑用户，熟悉Windows的各项设置与大部分管理工具，那么这款软件就没必要再使用了。</p>
+<h1 id="相关链接"><a href="#相关链接" class="headerlink" title="相关链接"></a>相关链接</h1><blockquote>
+<p><a href="https://pcmanager.microsoft.com/">微软电脑管家官方网站</a></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>科技</category>
+        <category>软件资源</category>
+      </categories>
+      <tags>
+        <tag>科技</tag>
+        <tag>软件资源</tag>
+        <tag>微软</tag>
+        <tag>安全</tag>
       </tags>
   </entry>
 </search>
