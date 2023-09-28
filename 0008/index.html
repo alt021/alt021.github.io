@@ -1,4 +1,22 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>来自Cloudflare的隐私保护方案 | ALT021的小世界</title><meta name="author" content="ALT021"><meta name="copyright" content="ALT021"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="阅前提示本文章所有内容仅供保护隐私使用，不涉及翻牆等内容，无法帮您突破网络审查！如需要请另寻他处学习。 什么是1.1.1.1这是来自大名鼎鼎的Cloudflare所提供的DNS解析与隐私保护服务。 其提供的服务分为1.1.1.1 DNS解析与WARP+隐私保护两种。前者不作介绍，后者则是我们今天的主角。 首先要回答一些问题WARP+是什么原理通过将您的数据通过Cloudflare服务器进行中转，来">
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="ALT021">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="阅前提示本文章所有内容仅供保护隐私使用，不涉及翻牆等内容，无法帮您突破网络审查！如需要请另寻他处学习。 什么是1.1.1.1这是来自大名鼎鼎的Cloudflare所提供的DNS解析与隐私保护服务。 其提供的服务分为1.1.1.1 DNS解析与WARP+隐私保护两种。前者不作介绍，后者则是我们今天的主角。 首先要回答一些问题WARP+是什么原理通过将您的数据通过Cloudflare服务器进行中转，来">
 <meta property="og:type" content="article">
 <meta property="og:title" content="来自Cloudflare的隐私保护方案">
 <meta property="og:url" content="https://www.alt021.top/0008/index.html">
@@ -7,173 +25,264 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://www.alt021.top/img/0008/index.jpg">
 <meta property="article:published_time" content="2023-06-30T05:50:10.000Z">
-<meta property="article:modified_time" content="2023-08-05T11:30:27.258Z">
+<meta property="article:modified_time" content="2023-09-28T05:49:27.118Z">
 <meta property="article:author" content="ALT021">
 <meta property="article:tag" content="富强上网">
 <meta property="article:tag" content="科学上网">
 <meta property="article:tag" content="隐私保护">
 <meta property="article:tag" content="Cloudflare">
 <meta property="article:tag" content="1.1.1.1">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://www.alt021.top/img/0008/index.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://www.alt021.top/0008/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin=""/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/fancyapps-ui/5.0.19/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;display=swap" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
-  root: '/',
-  algolia: undefined,
-  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"找不到您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
-  translate: undefined,
-  noticeOutdate: undefined,
-  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
-  copy: {
-    success: '复制成功',
-    error: '复制错误',
-    noSupport: '浏览器不支持'
-  },
-  relativeDate: {
-    homepage: false,
-    post: false
-  },
-  runtime: '',
-  dateSuffix: {
-    just: '刚刚',
-    min: '分钟前',
-    hour: '小时前',
-    day: '天前',
-    month: '个月前'
-  },
-  copyright: undefined,
-  lightbox: 'fancybox',
-  Snackbar: undefined,
-  source: {
-    justifiedGallery: {
-      js: 'https://cdn.bootcdn.net/ajax/libs/flickr-justified-gallery/2.1.2/fjGallery.min.js',
-      css: 'https://cdn.bootcdn.net/ajax/libs/flickr-justified-gallery/2.1.2/fjGallery.min.css'
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://www.alt021.top/img/0008/index.jpg">
+  
+  
+  
+  <title>来自Cloudflare的隐私保护方案 - ALT021的小世界</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"www.alt021.top","root":"/","version":"1.9.5","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
     }
-  },
-  isPhotoFigcaption: false,
-  islazyload: false,
-  isAnchor: false,
-  percent: {
-    toc: true,
-    rightside: false,
-  },
-  autoDarkmode: false
-}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
-  title: '来自Cloudflare的隐私保护方案',
-  isPost: true,
-  isHome: false,
-  isHighlightShrink: false,
-  isToc: true,
-  postUpdate: '2023-08-05 19:30:27'
-}</script><noscript><style type="text/css">
-  #nav {
-    opacity: 1
-  }
-  .justified-gallery img {
-    opacity: 1
-  }
-
-  #recent-posts time,
-  #post-meta time {
-    display: inline !important
-  }
-</style></noscript><script>(win=>{
-    win.saveToLocal = {
-      set: function setWithExpiry(key, value, ttl) {
-        if (ttl === 0) return
-        const now = new Date()
-        const expiryDay = ttl * 86400000
-        const item = {
-          value: value,
-          expiry: now.getTime() + expiryDay,
-        }
-        localStorage.setItem(key, JSON.stringify(item))
-      },
-
-      get: function getWithExpiry(key) {
-        const itemStr = localStorage.getItem(key)
-
-        if (!itemStr) {
-          return undefined
-        }
-        const item = JSON.parse(itemStr)
-        const now = new Date()
-
-        if (now.getTime() > item.expiry) {
-          localStorage.removeItem(key)
-          return undefined
-        }
-        return item.value
-      }
-    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
   
-    win.getScript = url => new Promise((resolve, reject) => {
-      const script = document.createElement('script')
-      script.src = url
-      script.async = true
-      script.onerror = reject
-      script.onload = script.onreadystatechange = function() {
-        const loadState = this.readyState
-        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
-        script.onload = script.onreadystatechange = null
-        resolve()
-      }
-      document.head.appendChild(script)
-    })
+
+
   
-    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
-      const link = document.createElement('link')
-      link.rel = 'stylesheet'
-      link.href = url
-      if (id) link.id = id
-      link.onerror = reject
-      link.onload = link.onreadystatechange = function() {
-        const loadState = this.readyState
-        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
-        link.onload = link.onreadystatechange = null
-        resolve()
-      }
-      document.head.appendChild(link)
-    })
+<meta name="generator" content="Hexo 5.4.2"></head>
+
+
+<body>
   
-      win.activateDarkMode = function () {
-        document.documentElement.setAttribute('data-theme', 'dark')
-        if (document.querySelector('meta[name="theme-color"]') !== null) {
-          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
-        }
-      }
-      win.activateLightMode = function () {
-        document.documentElement.setAttribute('data-theme', 'light')
-        if (document.querySelector('meta[name="theme-color"]') !== null) {
-          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
-        }
-      }
-      const t = saveToLocal.get('theme')
+
+  <header>
     
-          if (t === 'dark') activateDarkMode()
-          else if (t === 'light') activateLightMode()
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>ALT021的小世界</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
         
-      const asideStatus = saveToLocal.get('aside-status')
-      if (asideStatus !== undefined) {
-        if (asideStatus === 'hide') {
-          document.documentElement.classList.add('hide-aside')
-        } else {
-          document.documentElement.classList.remove('hide-aside')
-        }
-      }
-    
-    const detectApple = () => {
-      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
-        document.documentElement.classList.add('apple')
-      }
-    }
-    detectApple()
-    })(window)</script><meta name="generator" content="Hexo 5.4.2"></head><body><script>window.paceOptions = {
-  restartOnPushState: false
-}
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/">
+                <i class="iconfont icon-link-fill"></i>
+                <span>友链</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
 
-document.addEventListener('pjax:send', () => {
-  Pace.restart()
-})
-</script><link rel="stylesheet" href="/img/count.css"/><script src="https://cdn.bootcdn.net/ajax/libs/pace/1.2.4/pace.min.js"></script><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">10</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">26</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">6</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa-solid fa-book"></i><span> 阅读</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-link"></i><span> 链接</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" target="_blank" rel="noopener" href="https://mc.alt021.top"><i class="fa-fw fa-solid fa-gamepad"></i><span> PureLife服务器</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://alt021.ysepan.com"><i class="fa-fw fa-solid fa-folder"></i><span> ALT021的杂物间</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://clean.alt021.top"><i class="fa-fw fa-solid fa-broom"></i><span> 纯净计划</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/talk/"><i class="fa-fw fa-solid fa-comment"></i><span> 留言</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/img/0008/index.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="ALT021的小世界"><span class="site-name">ALT021的小世界</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa-solid fa-book"></i><span> 阅读</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-link"></i><span> 链接</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" target="_blank" rel="noopener" href="https://mc.alt021.top"><i class="fa-fw fa-solid fa-gamepad"></i><span> PureLife服务器</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://alt021.ysepan.com"><i class="fa-fw fa-solid fa-folder"></i><span> ALT021的杂物间</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://clean.alt021.top"><i class="fa-fw fa-solid fa-broom"></i><span> 纯净计划</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/talk/"><i class="fa-fw fa-solid fa-comment"></i><span> 留言</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">来自Cloudflare的隐私保护方案</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-06-30T05:50:10.000Z" title="发表于 2023-06-30 13:50:10">2023-06-30</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-08-05T11:30:27.258Z" title="更新于 2023-08-05 19:30:27">2023-08-05</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E7%A7%91%E6%8A%80/">科技</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E7%A7%91%E6%8A%80/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/">软件应用</a></span></div><div class="meta-secondline"></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="阅前提示"><a href="#阅前提示" class="headerlink" title="阅前提示"></a>阅前提示</h1><p>本文章所有内容仅供保护隐私使用，不涉及翻牆等内容，无法帮您突破网络审查！如需要请另寻他处学习。</p>
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/index.jpg') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="来自Cloudflare的隐私保护方案"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2023-06-30 13:50" pubdate>
+          2023年6月30日 下午
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          1.2k 字
+        
+      </span>
+    
+
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">来自Cloudflare的隐私保护方案</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <h1 id="阅前提示"><a href="#阅前提示" class="headerlink" title="阅前提示"></a>阅前提示</h1><p>本文章所有内容仅供保护隐私使用，不涉及翻牆等内容，无法帮您突破网络审查！如需要请另寻他处学习。</p>
 <h1 id="什么是1-1-1-1"><a href="#什么是1-1-1-1" class="headerlink" title="什么是1.1.1.1"></a>什么是1.1.1.1</h1><p>这是来自大名鼎鼎的<a target="_blank" rel="noopener" href="https://www.cloudflare.com/">Cloudflare</a>所提供的DNS解析与隐私保护服务。</p>
 <p>其提供的服务分为<strong>1.1.1.1 DNS解析</strong>与<strong>WARP+隐私保护</strong>两种。前者不作介绍，后者则是我们今天的主角。</p>
 <h1 id="首先要回答一些问题"><a href="#首先要回答一些问题" class="headerlink" title="首先要回答一些问题"></a>首先要回答一些问题</h1><h3 id="WARP-是什么原理"><a href="#WARP-是什么原理" class="headerlink" title="WARP+是什么原理"></a>WARP+是什么原理</h3><p>通过将您的数据通过Cloudflare服务器进行中转，来隐藏您的真实IP，从而达到保护隐私的效果。在这一点上，其与我之前介绍过的<a href="https://www.alt021.top/0004/">TorBrowser</a>实现的原理大差不差。只是Tor仅供浏览器本身自己使用，而WARP+能在您的几乎所有设备和应用程序中使用</p>
@@ -182,7 +291,7 @@ document.addEventListener('pjax:send', () => {
 <h3 id="适合的使用场景？"><a href="#适合的使用场景？" class="headerlink" title="适合的使用场景？"></a>适合的使用场景？</h3><p>例如您在公共网络、无密码的开放网络下或者某些特殊场合，需要通过诸如此类的方式保护自己的数据不会泄漏。</p>
 <h3 id="100"><a href="#100" class="headerlink" title="100% ?"></a>100% ?</h3><p>任何方式都无法完全保证您的信息不被窃取！请理性看待任何保护隐私的方式。</p>
 <h1 id="开始使用WARP"><a href="#开始使用WARP" class="headerlink" title="开始使用WARP"></a>开始使用WARP</h1><p>WARP的使用十分简单，您只需要前往<a target="_blank" rel="noopener" href="https://1.1.1.1/">官方网站</a>安装官方应用程序并打开他。点击那个醒目的按钮即可启用保护。</p>
-<p><img src="/img/0008/1.jpg"></p>
+<p><img src="/img/0008/1.jpg" srcset="/img/loading.gif" lazyload></p>
 <h1 id="免费获取WARP"><a href="#免费获取WARP" class="headerlink" title="免费获取WARP+"></a>免费获取WARP+</h1><p><strong>提示：此处教程不配图</strong></p>
 <p>WARP+是WARP服务的高级版本，提供更多的流量和更快的网络入口。我们通过简单的几个步骤即可长期不断获取免费的WARP+流量。</p>
 <p><strong>读前注意：操作此步骤需要您有连接<em>自由网络</em>的能力！</strong></p>
@@ -204,35 +313,432 @@ document.addEventListener('pjax:send', () => {
 <p>密钥大概像这样：xxxxxxxx-xxxxxxxx-xxxxxxxx</p>
 <h1 id="尾声"><a href="#尾声" class="headerlink" title="尾声"></a>尾声</h1><p>本篇教程到这里就结束了，希望大家能够共享一个安全隐私的互联网。</p>
 <p>本文评论区禁止讨论有关翻牆，科學上網，等有关话题。仅限于讨论有关隐私保护，WARP+产品使用有关内容。</p>
-</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="https://www.alt021.top">ALT021</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://www.alt021.top/0008/">https://www.alt021.top/0008/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://www.alt021.top" target="_blank">ALT021的小世界</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E5%AF%8C%E5%BC%BA%E4%B8%8A%E7%BD%91/">富强上网</a><a class="post-meta__tags" href="/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/">科学上网</a><a class="post-meta__tags" href="/tags/%E9%9A%90%E7%A7%81%E4%BF%9D%E6%8A%A4/">隐私保护</a><a class="post-meta__tags" href="/tags/Cloudflare/">Cloudflare</a><a class="post-meta__tags" href="/tags/1-1-1-1/">1.1.1.1</a></div><div class="post_share"></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/0009/" title="近期博客内的一些变化"><img class="cover" src="/img/0009/index.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">近期博客内的一些变化</div></div></a></div><div class="next-post pull-right"><a href="/0007/" title="ColorOS 13 第三方主题及无限试用教程"><img class="cover" src="/img/0007/cover.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">ColorOS 13 第三方主题及无限试用教程</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/0004/" title="更加私密的浏览体验，Tor Browser"><img class="cover" src="/img/0004/index.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-05-02</div><div class="title">更加私密的浏览体验，Tor Browser</div></div></a></div></div></div><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="waline-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">ALT021</div><div class="author-info__description">一个十六岁高中牲</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">10</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">26</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">6</div></a></div><a id="card-info-btn" href="https://www.alt021.top/about"><i class="fa-solid fa-heart"></i><span>About Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://space.bilibili.com/367094604" target="_blank" title="bilibili"><i class="fa-brands fa-bilibili"></i></a><a class="social-icon" href="https://t.me/alt021" target="_blank" title="Telegram"><i class="fa-brands fa-telegram"></i></a><a class="social-icon" href="/QQ" target="_blank" title="QQ"><i class="fa-brands fa-qq"></i></a><a class="social-icon" href="mailto:root@alt021.top" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%98%85%E5%89%8D%E6%8F%90%E7%A4%BA"><span class="toc-number">1.</span> <span class="toc-text">阅前提示</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF1-1-1-1"><span class="toc-number">2.</span> <span class="toc-text">什么是1.1.1.1</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%A6%96%E5%85%88%E8%A6%81%E5%9B%9E%E7%AD%94%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98"><span class="toc-number">3.</span> <span class="toc-text">首先要回答一些问题</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#WARP-%E6%98%AF%E4%BB%80%E4%B9%88%E5%8E%9F%E7%90%86"><span class="toc-number">3.0.1.</span> <span class="toc-text">WARP+是什么原理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%88%91%E8%83%BD%E5%A4%9F%E8%AE%BF%E9%97%AE%E8%A2%AB%E5%B0%81%E9%94%81%E7%9A%84%E6%9C%8D%E5%8A%A1%E5%90%97"><span class="toc-number">3.0.2.</span> <span class="toc-text">我能够访问被封锁的服务吗</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AF%B9%E6%88%91%E7%9A%84%E7%BD%91%E7%BB%9C%E9%80%9F%E5%BA%A6%E6%9C%89%E6%B2%A1%E6%9C%89%E5%BD%B1%E5%93%8D%EF%BC%9F"><span class="toc-number">3.0.3.</span> <span class="toc-text">对我的网络速度有没有影响？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%80%82%E5%90%88%E7%9A%84%E4%BD%BF%E7%94%A8%E5%9C%BA%E6%99%AF%EF%BC%9F"><span class="toc-number">3.0.4.</span> <span class="toc-text">适合的使用场景？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#100"><span class="toc-number">3.0.5.</span> <span class="toc-text">100% ?</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%BC%80%E5%A7%8B%E4%BD%BF%E7%94%A8WARP"><span class="toc-number">4.</span> <span class="toc-text">开始使用WARP</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%85%8D%E8%B4%B9%E8%8E%B7%E5%8F%96WARP"><span class="toc-number">5.</span> <span class="toc-text">免费获取WARP+</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%B0%BE%E5%A3%B0"><span class="toc-number">6.</span> <span class="toc-text">尾声</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/0010/" title="微软电脑管家究竟走了多远？"><img src="/img/0010/index.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="微软电脑管家究竟走了多远？"/></a><div class="content"><a class="title" href="/0010/" title="微软电脑管家究竟走了多远？">微软电脑管家究竟走了多远？</a><time datetime="2023-08-23T08:00:00.000Z" title="发表于 2023-08-23 16:00:00">2023-08-23</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/0009/" title="近期博客内的一些变化"><img src="/img/0009/index.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="近期博客内的一些变化"/></a><div class="content"><a class="title" href="/0009/" title="近期博客内的一些变化">近期博客内的一些变化</a><time datetime="2023-08-03T06:57:30.000Z" title="发表于 2023-08-03 14:57:30">2023-08-03</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/0008/" title="来自Cloudflare的隐私保护方案"><img src="/img/0008/index.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="来自Cloudflare的隐私保护方案"/></a><div class="content"><a class="title" href="/0008/" title="来自Cloudflare的隐私保护方案">来自Cloudflare的隐私保护方案</a><time datetime="2023-06-30T05:50:10.000Z" title="发表于 2023-06-30 13:50:10">2023-06-30</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/0007/" title="ColorOS 13 第三方主题及无限试用教程"><img src="/img/0007/cover.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="ColorOS 13 第三方主题及无限试用教程"/></a><div class="content"><a class="title" href="/0007/" title="ColorOS 13 第三方主题及无限试用教程">ColorOS 13 第三方主题及无限试用教程</a><time datetime="2023-06-03T14:09:22.000Z" title="发表于 2023-06-03 22:09:22">2023-06-03</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/0006/" title="一个未脱离拼音但不像拼音的输入方案"><img src="/img/0006/index.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="一个未脱离拼音但不像拼音的输入方案"/></a><div class="content"><a class="title" href="/0006/" title="一个未脱离拼音但不像拼音的输入方案">一个未脱离拼音但不像拼音的输入方案</a><time datetime="2023-05-27T21:28:00.000Z" title="发表于 2023-05-28 05:28:00">2023-05-28</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('/img/0008/index.jpg')"><div id="footer-wrap"><div class="copyright">&copy;2023 By ALT021</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="https://cdn.bootcdn.net/ajax/libs/hexo-theme-butterfly/4.9.0/js/utils.min.js"></script><script src="https://cdn.bootcdn.net/ajax/libs/hexo-theme-butterfly/4.9.0/js/main.min.js"></script><script src="https://cdn.bootcdn.net/ajax/libs/fancyapps-ui/5.0.19/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"><script>function loadWaline () {
-  function initWaline () {
-    const waline = Waline.init(Object.assign({
-      el: '#waline-wrap',
-      serverURL: 'https://commentapi.alt021.top',
-      pageview: false,
-      dark: 'html[data-theme="dark"]',
-      path: window.location.pathname,
-      comment: false,
-    }, null))
-  }
 
-  if (typeof Waline === 'object') initWaline()
-  else {
-    getCSS('https://cdn.bootcdn.net/ajax/libs/waline/2.15.5/waline.min.css').then(() => {
-      getScript('https://cdn.bootcdn.net/ajax/libs/waline/2.15.5/waline.min.js').then(initWaline)
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E7%A7%91%E6%8A%80/" class="category-chain-item">科技</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E7%A7%91%E6%8A%80/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/" class="category-chain-item">软件应用</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/%E5%AF%8C%E5%BC%BA%E4%B8%8A%E7%BD%91/" class="print-no-link">#富强上网</a>
+      
+        <a href="/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/" class="print-no-link">#科学上网</a>
+      
+        <a href="/tags/%E9%9A%90%E7%A7%81%E4%BF%9D%E6%8A%A4/" class="print-no-link">#隐私保护</a>
+      
+        <a href="/tags/Cloudflare/" class="print-no-link">#Cloudflare</a>
+      
+        <a href="/tags/1-1-1-1/" class="print-no-link">#1.1.1.1</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>来自Cloudflare的隐私保护方案</div>
+      <div>https://www.alt021.top/0008/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>ALT021</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2023年6月30日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-by"></i>
+                  </span>
+                </a>
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="NC - 非商业性使用">
+                    <i class="iconfont icon-nc"></i>
+                  </span>
+                </a>
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="SA - 相同方式共享">
+                    <i class="iconfont icon-sa"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/0009/" title="近期博客内的一些变化">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">近期博客内的一些变化</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/0007/" title="ColorOS 13 第三方主题及无限试用教程">
+                        <span class="hidden-mobile">ColorOS 13 第三方主题及无限试用教程</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+  
+  
+    <article id="comments" lazyload>
+      
+  <div id="waline"></div>
+  <script type="text/javascript">
+    Fluid.utils.loadComments('#waline', function() {
+      Fluid.utils.createCssLink('https://cdn.staticfile.org/waline/2.15.5/waline.min.css')
+      Fluid.utils.createScript('https://cdn.staticfile.org/waline/2.15.5/waline.min.js', function() {
+        var options = Object.assign(
+          {"serverURL":"waline.alt021.top","path":"window.location.pathname","meta":["nick","mail","link"],"requiredMeta":["nick"],"lang":"zh-CN","emoji":["https://cdn.jsdelivr.net/gh/walinejs/emojis/weibo"],"dark":"html[data-user-color-scheme=\"dark\"]","wordLimit":0,"pageSize":10},
+          {
+            el: '#waline',
+            path: window.location.pathname
+          }
+        )
+        Waline.init(options);
+        Fluid.utils.waitElementVisible('#waline .vcontent', () => {
+          var imgSelector = '#waline .vcontent img:not(.vemoji)';
+          Fluid.plugins.imageCaption(imgSelector);
+          Fluid.plugins.fancyBox(imgSelector);
+        })
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
+
+    </article>
+  
+
+
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+      由ALT021带着 ❤ 制作
+    </div>
+  
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
     })
-  }
-}
+  </script>
 
-if ('Waline' === 'Waline' || !false) {
-  if (false) btf.loadComment(document.getElementById('waline-wrap'),loadWaline)
-  else setTimeout(loadWaline, 0)
-} else {
-  function loadOtherComment () {
-    loadWaline()
-  }
-}</script></div><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="99" mobile="true" src="https://cdn.bootcdn.net/ajax/libs/butterfly-extsrc/1.1.3/canvas-nest.min.js"></script><script src="https://cdn.bootcdn.net/ajax/libs/butterfly-extsrc/1.1.3/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
-POWERMODE.shake = false;
-POWERMODE.mobile = false;
-document.body.addEventListener('input', POWERMODE);
-</script><script id="click-heart" src="https://cdn.bootcdn.net/ajax/libs/butterfly-extsrc/1.1.3/click-heart.min.js" async="async" mobile="true"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div class="no-result" id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="https://cdn.bootcdn.net/ajax/libs/hexo-theme-butterfly/4.9.0/js/search/local-search.min.js"></script></div></div></body></html>
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>

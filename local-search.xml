@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+  
+  <entry>
+    <title>微软电脑管家究竟走了多远？</title>
+    <link href="/0010/"/>
+    <url>/0010/</url>
+    
+    <content type="html"><![CDATA[<h1 id="先导"><a href="#先导" class="headerlink" title="先导"></a>先导</h1><p>2022 年 7 月 18 日，微软在中国发布了一款全新的产品，名为微软电脑管家，彼时距离Windows 11产品正式发布已经过去了一年多的时间。</p><p>在2023年8月23日，我们再次体验这款产品，来看他今天究竟走了多远。</p><h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><p>安装程序设计十分简洁，只有同意用户协议的复选框与继续安装两格按钮，没有任何多余的选项。我们也不可以手动选择是否创建快捷方式、无法主动修改安装路径。<br><img src="/img/0010/01.png"></p><h1 id="应用体验"><a href="#应用体验" class="headerlink" title="应用体验"></a>应用体验</h1><h2 id="用户界面"><a href="#用户界面" class="headerlink" title="用户界面"></a>用户界面</h2><p>进入微软电脑管家的主页面，整个软件的设计都遵循微软的Fluent Design设计语言，首页罗列着<strong>一键加速 全面体检 进程管理 深度清理 开机管理</strong>五个功能板块，设计与排版较为精美。<br><img src="/img/0010/02.png"></p><p>首页的左侧分别为<strong>首页 保护 存储 应用 工具箱</strong>这类在大多数国产电脑管家类软件上面常见的功能。</p><p>单就软件的用户界面和交互设计来说，微软电脑管家比较有特色，页面设计简洁，使用起来较为舒适。</p><h2 id="功能体验"><a href="#功能体验" class="headerlink" title="功能体验"></a>功能体验</h2><p>我体验了大多数微软电脑管家中的功能，这里挑选出一些比较有代表性的功能，拿出来说一说。</p><h3 id="病毒查杀"><a href="#病毒查杀" class="headerlink" title="病毒查杀"></a>病毒查杀</h3><p>值得注意的是，微软电脑管家并没有内置杀毒引擎，而是直接调用Windows Defender进行病毒查杀。</p><p>毕竟是微软的软件，系统里也已经内置了Windows Defender病毒查杀功能，如果再次内置一个查杀引擎就显得软件过于臃肿了。</p><p>我的系统由于删除了Windows Defender，无法体验病毒查杀功能。</p><p><img src="/img/0010/03.png"></p><h3 id="浏览器保护"><a href="#浏览器保护" class="headerlink" title="浏览器保护"></a>浏览器保护</h3><p>微软电脑管家也具备了国内大多数软件所拥有的默认浏览器保护功能，目前仅支持将<strong>Edge,Firefox,Chrome</strong>锁定为默认，其他浏览器尚未支持。不过说实话，浏览器保护没有锁定默认浏览器为Edge我就已经十分意外，居然还可以选择为Firefox或Chrome。<br><img src="/img/0010/04.png"></p><h3 id="存储清理"><a href="#存储清理" class="headerlink" title="存储清理"></a>存储清理</h3><p>和常规的清理软件差不多，没有什么需要特别说明的。微软电脑管家内也集成了部分系统内关于存储功能的快速入口，使用起来较为方便。<br><img src="/img/0010/05.png"></p><h3 id="进程管理"><a href="#进程管理" class="headerlink" title="进程管理"></a>进程管理</h3><p>在应用管理板块内，我们可以快速进行进程管理、启动项管理或者前往设置中卸载应用亦或是打开微软商店下载新的应用。</p><p>这部分的功能我们都可以在电脑设置、任务管理器中直接进行，微软电脑管家仅仅将这些功能集成在了一部分，方便了不熟悉使用诸如任务管理器这类工具的电脑用户使用这些功能。<br><img src="/img/0010/06.png"></p><h3 id="工具箱"><a href="#工具箱" class="headerlink" title="工具箱"></a>工具箱</h3><p>这部分与其说是工具箱，倒不如说是系统内置小工具的捷径。我们可以在工具箱中快速打开截图工具，计算器，记事本等小工具。</p><p>还可以自定义一些书签用于快速打开。</p><p><img src="/img/0010/07.png"></p><h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>微软电脑管家从当初的2.1版本更新到如今的3.4版本，已经完善了不少。</p><p>与其说是一个电脑管家，不如说是一个集成了系统内安全与清理功能的捷径。可以帮助我们快速调用系统功能。</p><p>对于不熟悉电脑的用户可以提供帮助，又因为自身没有内嵌太多的功能，所以占用资源十分小，几乎不影响电脑性能。</p><p><img src="/img/0010/08.png"></p><p>如果你不是很熟悉电脑，那么这款软件可以帮助你找到这些快捷功能，也可以优化电脑内存等等项目。但如果你已经是资深电脑用户，熟悉Windows的各项设置与大部分管理工具，那么这款软件就没必要再使用了。</p><h1 id="相关链接"><a href="#相关链接" class="headerlink" title="相关链接"></a>相关链接</h1><blockquote><p><a href="https://pcmanager.microsoft.com/">微软电脑管家官方网站</a></p></blockquote>]]></content>
+    
+    
+    <categories>
+      
+      <category>科技</category>
+      
+      <category>软件应用</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>科技</tag>
+      
+      <tag>软件资源</tag>
+      
+      <tag>微软</tag>
+      
+      <tag>安全</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>近期博客内的一些变化</title>
+    <link href="/0009/"/>
+    <url>/0009/</url>
+    
+    <content type="html"><![CDATA[<h1 id="主题更换回Butterfly"><a href="#主题更换回Butterfly" class="headerlink" title="主题更换回Butterfly"></a>主题更换回Butterfly</h1><p>博客在今年5月份左右更换了Redefine主题，我本来以为我可以一直使用到主题停止更新或者本博客关站。但我实属没想到，在2023年8月3日，我发现Redefine的更新，并将其安装后，就无法再加载出任何FontAwesome的图标，重载，迁移配置文件几次都无济于事。但假若我删除我的配置文件，FontAwesome就恢复正常。我再次尝试了重新写一份新的配置文件，问题仍没有解决。于是思来想去，我便选择继续回到Butterfly主题，毕竟仍有上次的配置文件可以直接套用。修改回Butterfly后，我便更新了Butterfly主题，并修改了评论系统。目前博客所有内容和功能都不受影响。</p><p>服务器官方网站仍然会使用旧版本的redefine主题，不更新也不会转移到其他主题。</p><h1 id="评论系统更换为Waline"><a href="#评论系统更换为Waline" class="headerlink" title="评论系统更换为Waline"></a>评论系统更换为Waline</h1><p>在更换到Redefine后，由于Redefine不支持使用Livere评论系统。我也没有精力和能力移植评论系统，于是便参照官方说明搭建了Waline评论系统。</p><p>后续搭建了Twikoo评论系统，Twikoo目前只做备用。</p><h1 id="重启Cloudflare代理服务"><a href="#重启Cloudflare代理服务" class="headerlink" title="重启Cloudflare代理服务"></a>重启Cloudflare代理服务</h1><p>本博客自从使用Vercel取代Cloudflare Pages进行托管之后，Cloudflare的代理就一直处于关闭状态。但经过我测试，如果使用Cloudflare代理，访问网站的速度可以比不使用代理快两秒左右，目前我的所有网站已经再次全面启用Cloudflare代理。</p><p>没有备案的网站想要优化到速度够快或者秒开真的是很难，CDN与国内的服务器全都不能使用。</p><h1 id="其他一些方面的变化"><a href="#其他一些方面的变化" class="headerlink" title="其他一些方面的变化"></a>其他一些方面的变化</h1><p>我的服务器起初对外只公开了一条FRP中转线路，在后续的运营中，逐渐发现一条线路出现风险的可能性较大，服务提供商偶尔出现服务不稳定或无法连接、被攻击的情况难以避免。目前服务器同时公开了来自两个不同提供商的两条线路，一方面可用于负载均衡，另一方面也可以避免一个服务商出现问题导致的整个服务器失联。</p><p>游戏服务器目前也面临一些其他方面的问题，具体详情可在有公告后到服务器官方网站查看具体公告。</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>杂谈</category>
+      
+      <category>博客那些事</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>闲聊</tag>
+      
+      <tag>海文章</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>来自Cloudflare的隐私保护方案</title>
+    <link href="/0008/"/>
+    <url>/0008/</url>
+    
+    <content type="html"><![CDATA[<h1 id="阅前提示"><a href="#阅前提示" class="headerlink" title="阅前提示"></a>阅前提示</h1><p>本文章所有内容仅供保护隐私使用，不涉及翻牆等内容，无法帮您突破网络审查！如需要请另寻他处学习。</p><h1 id="什么是1-1-1-1"><a href="#什么是1-1-1-1" class="headerlink" title="什么是1.1.1.1"></a>什么是1.1.1.1</h1><p>这是来自大名鼎鼎的<a href="https://www.cloudflare.com/">Cloudflare</a>所提供的DNS解析与隐私保护服务。</p><p>其提供的服务分为<strong>1.1.1.1 DNS解析</strong>与<strong>WARP+隐私保护</strong>两种。前者不作介绍，后者则是我们今天的主角。</p><h1 id="首先要回答一些问题"><a href="#首先要回答一些问题" class="headerlink" title="首先要回答一些问题"></a>首先要回答一些问题</h1><h3 id="WARP-是什么原理"><a href="#WARP-是什么原理" class="headerlink" title="WARP+是什么原理"></a>WARP+是什么原理</h3><p>通过将您的数据通过Cloudflare服务器进行中转，来隐藏您的真实IP，从而达到保护隐私的效果。在这一点上，其与我之前介绍过的<a href="https://www.alt021.top/0004/">TorBrowser</a>实现的原理大差不差。只是Tor仅供浏览器本身自己使用，而WARP+能在您的几乎所有设备和应用程序中使用</p><h3 id="我能够访问被封锁的服务吗"><a href="#我能够访问被封锁的服务吗" class="headerlink" title="我能够访问被封锁的服务吗"></a><strong>我能够访问被封锁的服务吗</strong></h3><p>Cloudflare 1.1.1.1与WARP+均不会改变您IP对应的国家地区，因此您访问的流量虽被加密且经过转发，但您仍不能访问被封锁的流媒体等服务。</p><h3 id="对我的网络速度有没有影响？"><a href="#对我的网络速度有没有影响？" class="headerlink" title="对我的网络速度有没有影响？"></a>对我的网络速度有没有影响？</h3><p>使用此类任何服务都会些许影响你的网速。但WARP+所提供的网络入口较为优秀，因此您访问所在地和所在地之外网站的速度均不会受到很大的影响。</p><h3 id="适合的使用场景？"><a href="#适合的使用场景？" class="headerlink" title="适合的使用场景？"></a>适合的使用场景？</h3><p>例如您在公共网络、无密码的开放网络下或者某些特殊场合，需要通过诸如此类的方式保护自己的数据不会泄漏。</p><h3 id="100"><a href="#100" class="headerlink" title="100% ?"></a>100% ?</h3><p>任何方式都无法完全保证您的信息不被窃取！请理性看待任何保护隐私的方式。</p><h1 id="开始使用WARP"><a href="#开始使用WARP" class="headerlink" title="开始使用WARP"></a>开始使用WARP</h1><p>WARP的使用十分简单，您只需要前往<a href="https://1.1.1.1/">官方网站</a>安装官方应用程序并打开他。点击那个醒目的按钮即可启用保护。</p><p><img src="/img/0008/1.jpg"></p><h1 id="免费获取WARP"><a href="#免费获取WARP" class="headerlink" title="免费获取WARP+"></a>免费获取WARP+</h1><p><strong>提示：此处教程不配图</strong></p><p>WARP+是WARP服务的高级版本，提供更多的流量和更快的网络入口。我们通过简单的几个步骤即可长期不断获取免费的WARP+流量。</p><p><strong>读前注意：操作此步骤需要您有连接<em>自由网络</em>的能力！</strong></p><p>首先我们需要注册一个Telegram账户，我在这里不解释Telegram是什么，如果您不了解，请自行Google搜索了解相关内容。</p><p>您登录进入Telegram后，请向这个机器人发送”/start”。</p><blockquote><p><a href="https://t.me/generatewarpplusbot">点击这里打开与此Telegram Bot的对话</a></p></blockquote><p>然后向其发送”/generate”</p><p>在初次使用时，您会被要求订阅两个频道。请您直接订阅就好。</p><p><strong>注意判断频道内容，由于此原因对您造成损失我们不承担相关责任。</strong></p><p>在订阅完成后，再次发送”/generate”，机器人会出一道简单的加减算数题来进行人机验证。我们只要计算出结果并发送</p><blockquote><p>/generate &lt;您的答案&gt;</p></blockquote><p>就可以获得一个密钥，接下来我们前往1.1.1.1中输入这个密钥。</p><p>以Android版为例，我们打开APP，<br><strong>点击右上角三横图标 - 账户 - 按键 - 更改密钥</strong></p><p>然后输入您获得的密钥，即可激活拥有20+PB流量剩余的WARP+。</p><p>密钥大概像这样：xxxxxxxx-xxxxxxxx-xxxxxxxx</p><h1 id="尾声"><a href="#尾声" class="headerlink" title="尾声"></a>尾声</h1><p>本篇教程到这里就结束了，希望大家能够共享一个安全隐私的互联网。</p><p>本文评论区禁止讨论有关翻牆，科學上網，等有关话题。仅限于讨论有关隐私保护，WARP+产品使用有关内容。</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>科技</category>
+      
+      <category>软件应用</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>富强上网</tag>
+      
+      <tag>科学上网</tag>
+      
+      <tag>隐私保护</tag>
+      
+      <tag>Cloudflare</tag>
+      
+      <tag>1.1.1.1</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>ColorOS 13 第三方主题及无限试用教程</title>
+    <link href="/0007/"/>
+    <url>/0007/</url>
+    
+    <content type="html"><![CDATA[<h1 id="阅前提示"><a href="#阅前提示" class="headerlink" title="阅前提示"></a>阅前提示</h1><p>本文章仅针对ColorOS 13 用户，如果你使用低版本，不保证文章里的方法对你的设备完全有效。</p><h1 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h1><p>主题商店在试用时通过悬浮窗或者系统对话框提示来提示主题试用结束。在关闭对话框时，试用就会结束。而我们要做的就是阻止这个对话框弹出，以此来达到永久使用的目的。</p><p>在ColorOS 12/11版本，我们都可以通过关闭主题商店的悬浮窗权限来达到永久使用。在ColorOS 13，主题商店9.0.0之后，系统逐渐对此限制更加严格。提示也从悬浮窗变成难以拦截的系统对话框。</p><p>在ColorOS 13的早期版本，我们可以停用主题商店来让其无法启动，在较新版本中，此操作已经被系统拦截，不能使用。</p><h1 id="什么是暂停-Suspend"><a href="#什么是暂停-Suspend" class="headerlink" title="什么是暂停(Suspend)"></a>什么是暂停(Suspend)</h1><p>暂停是Android 7+引入的一个新概念。应用程序在处于暂停状态时，在启动器中的图标变灰，同时无法启动。您在打开它时将显示”xxx目前不可用，该应用是由xxx所管理”。</p><p>在此状态下，APP的一切活动都被停止，无法发送通知，<strong>对话框</strong>或者播放音频。</p><p>要取消暂停，可以使用unsuspend命令。</p><h1 id="开始操作"><a href="#开始操作" class="headerlink" title="开始操作"></a>开始操作</h1><p>使用suspend来阻止试用提示主要有两种解决方案，这里我着重介绍第一种。</p><h2 id="雹-Shizuku"><a href="#雹-Shizuku" class="headerlink" title="雹+Shizuku"></a>雹+Shizuku</h2><p>此方案无需电脑，仅需手机即可激活。我们先安装好这两款软件</p><blockquote><p>通过酷安下载APK安装文件</p><p><a href="https://www.coolapk.com/apk/com.aistra.hail">雹</a></p><p><a href="https://www.coolapk.com/apk/moe.shizuku.privileged.api">Shizuku</a></p></blockquote><h3 id="配对"><a href="#配对" class="headerlink" title="配对"></a>配对</h3><p>先打开Shizuku，给予通知权限。然后点击“通过无线调试激活”下方的配对</p><p><img src="/img/0007/1.png"></p><p>进入开发者选项，找到USB调试和无线调试，全部打开，并点击无线调试进入二级页面。</p><p>点击使用配对码，可以生成一个6位数的配对码</p><p><img src="/img/0007/2.png"></p><p>下拉通知栏并告诉Shizuku配对码</p><p><img src="/img/0007/3.png"></p><p>配对成功后，返回Shizuku点击启动，如果操作无误，用不了多久，即可启动完成。</p><p>如果您被提示ADB权限受限，请打开开发者选项中的“停用ADB授权超时”和“禁止权限监控”即可</p><h3 id="暂停"><a href="#暂停" class="headerlink" title="暂停"></a>暂停</h3><p>接下来返回到“雹”，在设置中选择工作模式为“SHizuku-暂停”并添加主题商店到列表，点击右下角冰冻按钮即可</p><p><img src="/img/0007/4.png"></p><p>如果图标变灰，那么主题商店已经被暂停，现在您可以尽情使用您的主题了。</p><p>要更换主题只需要解除暂停并再次操作即可。</p><h2 id="电脑引导-手动adb"><a href="#电脑引导-手动adb" class="headerlink" title="电脑引导 手动adb"></a>电脑引导 手动adb</h2><p>此方案需要一定的动手能力，以及耐心。且需要一定的命令行基础知识，否则可能不好操作。</p><h3 id="资源准备"><a href="#资源准备" class="headerlink" title="资源准备"></a>资源准备</h3><p>首先前往<a href="https://dl.google.com/android/repository/platform-tools-latest-windows.zip?hl=zh-cn">官方网站</a>获取到最新的platform-tools工具包。</p><p>这其中包含最新的adb,fastboot工具等供我们使用。</p><p>下载好后将其解压放置在您的桌面。</p><p>打开解压获得的文件夹。在地址栏直接输入cmd并回车即可在此文件夹中打开cmd窗口。</p><p><img src="/img/0007/5.png"></p><p>接下来在窗口中输入下面的命令来确定您可以调用ADB</p><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs cmd">adb version<br></code></pre></td></tr></table></figure><p>通常情况这将返回ADB的版本，安装位置。就像这样</p><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs cmd"><span class="hljs-function">C:\<span class="hljs-title">Users</span>\<span class="hljs-title">UserName</span>&gt;<span class="hljs-title">adb</span> <span class="hljs-title">version</span></span><br><span class="hljs-function"><span class="hljs-title">Android</span> <span class="hljs-title">Debug</span> <span class="hljs-title">Bridge</span> <span class="hljs-title">version</span> 1.0.41</span><br><span class="hljs-function"><span class="hljs-title">Version</span> 34.0.1-9680074</span><br><span class="hljs-function"><span class="hljs-title">Installed</span> <span class="hljs-title">as</span> <span class="hljs-title">C</span>:\<span class="hljs-title">platform</span>-<span class="hljs-title">tools</span>\<span class="hljs-title">adb.exe</span></span><br><span class="hljs-function"></span><br><span class="hljs-function"><span class="hljs-title">C</span>:\<span class="hljs-title">Users</span>\<span class="hljs-title">UserName</span>&gt; <span class="hljs-title">_</span> </span><br></code></pre></td></tr></table></figure><p>如果您收到报错，请检查你的安装。</p><h3 id="连接"><a href="#连接" class="headerlink" title="连接"></a>连接</h3><p>接下来将手机连接电脑，选择文件传输模式，并确定USB调试已经打开。如果您的手机上弹出USB调试授权的提示，请点击允许。</p><p>要确定您的电脑是否已经正确与手机建立连接，请执行</p><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs cmd">adb devices<br></code></pre></td></tr></table></figure><p>如果您收到的反馈为两行以上的英文，那么连接已经成功。</p><p>如果您收到的反馈像这样</p><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs cmd"><span class="hljs-function">C:\<span class="hljs-title">Users</span>\<span class="hljs-title">UserName</span>&gt;<span class="hljs-title">adb</span> <span class="hljs-title">devices</span></span><br><span class="hljs-function"><span class="hljs-title">List</span> <span class="hljs-title">of</span> <span class="hljs-title">devices</span> <span class="hljs-title">attached</span></span><br><span class="hljs-function"></span><br><span class="hljs-function"></span><br><span class="hljs-function"><span class="hljs-title">C</span>:\<span class="hljs-title">Users</span>\<span class="hljs-title">UserName</span>&gt; <span class="hljs-title">_</span></span><br></code></pre></td></tr></table></figure><p>那么请检查adb授权以及电脑是否已经安装ADB驱动程序。</p><h3 id="暂停-1"><a href="#暂停-1" class="headerlink" title="暂停"></a>暂停</h3><p>要暂停主题商店，您只需要执行一行代码</p><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs cmd">adb shell pm suspend com.heytap.themestore<br></code></pre></td></tr></table></figure><p>执行成功后，您的主题商店将被暂停</p><h3 id="取消暂停"><a href="#取消暂停" class="headerlink" title="取消暂停"></a>取消暂停</h3><p>要取消暂停，您只需要执行一行代码</p><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs cmd">adb shell pm unsuspend com.heytap.themestore<br></code></pre></td></tr></table></figure><h1 id="尾声"><a href="#尾声" class="headerlink" title="尾声"></a>尾声</h1><p>此方案理论上对任何手机的Android 7.0以上系统都有效，具体可自行测试。</p><p>不保证未来的某次OTA后此方案是否继续可用。</p><h1 id="视频版教程"><a href="#视频版教程" class="headerlink" title="视频版教程"></a>视频版教程</h1><p>欲观看视频版，请前往bilibili。<br><a href="https://www.bilibili.com/video/BV1jL411i7LN/">https://www.bilibili.com/video/BV1jL411i7LN/</a></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>科技</category>
+      
+      <category>教程</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>教程</tag>
+      
+      <tag>主题</tag>
+      
+      <tag>ColorOS</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>一个未脱离拼音但不像拼音的输入方案</title>
+    <link href="/0006/"/>
+    <url>/0006/</url>
+    
+    <content type="html"><![CDATA[<h1 id="什么是双拼"><a href="#什么是双拼" class="headerlink" title="什么是双拼"></a>什么是双拼</h1><p>双拼（也称双打）是一种建立在拼音输入法基础上的输入方法，可视为全拼的一种改进，它通过将汉语拼音中每个含多个字母的声母或韵母各自映射到某个按键上，使得每个音都可以用两个按键打出，极大地提高了拼音输入法的输入速度。这种声母或韵母到按键的对应表通常称之为双拼方案，这种方案不是固定的，流行的大多数拼音输入法都支持双拼，并且有各自不同的方案，还允许用户自定义方案。(摘自百度百科)</p><p>这篇文章自然也是用双拼打出来的。</p><h1 id="双拼的方案"><a href="#双拼的方案" class="headerlink" title="双拼的方案"></a>双拼的方案</h1><p>常见的双拼方案有很多，比如微软双拼，智能ABC，拼音加加，搜狗双拼，紫光双拼，自然码等等。而我所选择的，就是在为数不多双拼使用者中，用户比较多的小鹤双拼。</p><p><del>本身打字方法就很小众，再选个更小众的输入方案岂不是真成孤儿了</del></p><p>小鹤除双拼方案外，还有小鹤双形输入，可以做到无候选框完全盲打(类似五笔)，这里先入门小鹤双拼对后续想要学习小鹤双形也是很有必要的。</p><h1 id="入门"><a href="#入门" class="headerlink" title="入门"></a>入门</h1><p>双拼的入门难度十分低，花一个小时背诵一下键位就可以初步尝试开始使用，当然如果像我一样直接对着键位图开始抠字尝试我个人觉得也是可以的。一天之内，就可以开始正式使用双拼输入了。</p><p>在走出新手村后，我建议把日常的输入场景下使用的输入法全部换成双拼，这样可以强迫自己练习双拼，加快形成肌肉记忆。<br><br>同时，也可以保留一个全拼输入，来在自己打字速度还不够用的时候临时应急。</p><p>前期记不住键位的话，也可以在手机上用助记的皮肤帮助初期的练习，不过需要尽快关闭并开始熟悉没有助记皮肤的双拼输入。(我建议1天以内就要换掉)</p><h1 id="练习"><a href="#练习" class="headerlink" title="练习"></a>练习</h1><p>在入门之后，接下来就是提高打字速度、逃离初期的“一指禅”了。双拼想要提高速度，可以说是非常简单了，直接把日常生活中的打字方案全部换成双拼，长期使用下来，有几周左右，速度就和最初使用全拼时相差不大了。</p><p>也可以通过<a href="https://api.ihint.me/shuang/">BlueSky所制作的双拼练习</a>逐个练习打常见字</p><h1 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h1><p>与全拼相比，自然是速度能够更快，打字体验也更加舒适。毕竟每打一个音节只需要按键两次。</p><p>在提高打字速度的同时，双拼输入也比其他输入方案更加容易学习，容易上手。也基本不需要专门的训练。只需要在日常生活，聊天中多多使用就可以了。</p><h1 id="开始使用？"><a href="#开始使用？" class="headerlink" title="开始使用？"></a>开始使用？</h1><p>如果你看了这篇文章，对双拼输入产生了兴趣，想要开始练习的话。我在此处附上一些键位图，和小教程。</p><h2 id="常见双拼方案键位图"><a href="#常见双拼方案键位图" class="headerlink" title="常见双拼方案键位图"></a>常见双拼方案键位图</h2><p><strong>小鹤双拼</strong></p><p><img src="/img/0006/xnhe.png" alt="小鹤双拼"></p><hr><p><strong>自然码</strong></p><p><img src="/img/0006/zirjma.png" alt="自然码"></p><hr><p><strong>搜狗双拼</strong></p><p><img src="/img/0006/szgz.png" alt="搜狗双拼"></p><hr><p><strong>微软双拼</strong></p><p><img src="/img/0006/wwrr.png" alt="微软双拼"></p><h2 id="如何使用"><a href="#如何使用" class="headerlink" title="如何使用"></a>如何使用</h2><p>在你的输入法拼音设置中，打开双拼输入即可。常见的输入法均有这个选项</p><p>然后选择你想要的双拼方案</p><p><img src="/img/0006/xrze.png"></p><p>这里我建议直接使用搜狗输入法，搜狗输入法Windows版已经不再有广告，词库积累也比较全面，值得推荐。</p><p>关于Weasel(小狼毫)安装双拼输入，以及微软输入法如何快速导入小鹤双拼方案，以后可能会有文章详细讲解，在此我就不赘述了。</p><h1 id="尾声"><a href="#尾声" class="headerlink" title="尾声"></a>尾声</h1><p>此文章仅介绍部分入门时的知识，有关如果想更加详细的了解，请自行搜索。我的学习方案也不一定适合所有人。</p><p>如果你需要更高效率的输入，我建议可以了解声笔系列码或者开始学习五笔输入。</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>杂谈</category>
+      
+      <category>随笔</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>输入</tag>
+      
+      <tag>双拼</tag>
+      
+      <tag>打字</tag>
+      
+      <tag>效率</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>部分GPT镜像及其他生成式AI汇总</title>
+    <link href="/0005/"/>
+    <url>/0005/</url>
+    
+    <content type="html"><![CDATA[<h1 id="读前提示"><a href="#读前提示" class="headerlink" title="读前提示"></a>读前提示</h1><p>本文汇总了一部分ChatGPT资源以及其他的生成式AI，但并不包含使用方式、上网方式等内容，且本文内没有汇总国内的ChatGPT镜像。请确认自己需要再继续阅读。</p><h1 id="ChatGPT是什么"><a href="#ChatGPT是什么" class="headerlink" title="ChatGPT是什么"></a>ChatGPT是什么</h1><p>想必能看到这篇文章的大家都知道ChatGPT是什么以及他如何使用。至于其它的信息就让ChatGPT自己来告诉大家吧。</p><blockquote><p>我可以帮助您解决各种问题和任务。以下是一些我可以提供帮助的领域：<br></p><p>   1.回答一般性问题，例如科学、历史、地理等主题。<br><br>   2提供技术支持，例如计算机、软件和硬件问题。<br><br>   3.编写和解释代码示例（例如Python、JavaScript、C++等）。<br><br>   4.提供生活建议，例如健康、饮食和锻炼。<br><br>   5.帮助您学习新技能，例如语言、编程或者其他技能。<br><br>   6.提供旅行建议，例如目的地、酒店和交通方式。<br><br>   7.解答关于文化、艺术和娱乐的问题。<br></p></blockquote><p>总之，妥善利用可以提高我们的工作和学习效率。帮我们更好地查找互联网上的信息。</p><h1 id="为什么选择镜像"><a href="#为什么选择镜像" class="headerlink" title="为什么选择镜像"></a>为什么选择镜像</h1><p>由于OpenAI的设定，中国大陆的IP与手机号码都不能用于ChatGPT的注册。但由于OpenAI开放付费的API可供使用，于是大量的镜像站便诞生了。</p><p>但我这里并不着重介绍大陆可用的镜像，我主要介绍需要特殊上网但不需要非大陆手机号码的镜像站。这类镜像通常能够获得更好的体验。</p><h1 id="ChatGPT镜像链接"><a href="#ChatGPT镜像链接" class="headerlink" title="ChatGPT镜像链接"></a>ChatGPT镜像链接</h1><p>ChatGPT的镜像众多，这里我只选出两个给大家推荐。</p><h2 id="Poe"><a href="#Poe" class="headerlink" title="Poe"></a>Poe</h2><p><strong>介绍：</strong> 由美版知乎Quora提供的在线AI聊天服务，内有GPT-3.5 turbo和其他多个模型。</p><p><strong>费用：</strong> GPT-3.5免费，GPT-4每日仅限使用一次，需要付费成为会员才能无限使用</p><p><strong>传送门：</strong> <a href="http://www.poe.com/">www.poe.com</a></p><h2 id="ForeFront"><a href="#ForeFront" class="headerlink" title="ForeFront"></a>ForeFront</h2><p><strong>介绍：</strong> 目前体验最佳的GPT-4镜像，内置100多个已经预训练的角色。可使用3.5-Turbo与GPT-4两种模型</p><p><strong>费用：</strong> <em>完全免费！包括GPT-4模型</em></p><p><strong>传送门：</strong> <a href="https://chat.forefront.ai/">chat.forefront.ai</a></p><h1 id="其他模型"><a href="#其他模型" class="headerlink" title="其他模型"></a>其他模型</h1><p>国内互联网厂商与海外大厂已经推出很多ChatGPT的”竞品”，虽目前实力难敌GPT，但也可以尝鲜试一试。</p><h2 id="Google-Bard"><a href="#Google-Bard" class="headerlink" title="Google Bard"></a>Google Bard</h2><p><strong>介绍：</strong> 由Google训练的模型，目前仅在部分国家开启测试，且目前仍不支持中文。</p><p><strong>传送门：</strong> <a href="https://bard.google.com/">bard.google.com</a></p><h2 id="New-Bing"><a href="#New-Bing" class="headerlink" title="New Bing"></a>New Bing</h2><p><strong>介绍：</strong> 仍使用GPT模型，但被微软添加了联网查找信息的能力。使其在处理时效性强的问题时更有优势。</p><p><strong>请使用富强上网访问！若已被重定向到国内版，请使用Ctrl+F5强制刷新浏览器缓存</strong></p><p><strong>传送门：</strong> <a href="https://www.bing.com/new?toWww=1&redig=EB553815C3354C00A69242B6A479DE94">www.bing.com</a></p><h2 id="文心一言"><a href="#文心一言" class="headerlink" title="文心一言"></a>文心一言</h2><p><strong>介绍：</strong> 百度训练的大语言模型</p><p><strong>传送门：</strong><a href="https://yiyan.baidu.com/">yiyan.baidu.com</a></p><h2 id="星火"><a href="#星火" class="headerlink" title="星火"></a>星火</h2><p><strong>介绍：</strong> 由科大讯飞训练，能力强于文心一言</p><p><strong>传送门：</strong> <a href="https://xinghuo.xfyun.cn/">xinghuo.xfyun.cn</a></p><h1 id="尾声"><a href="#尾声" class="headerlink" title="尾声"></a>尾声</h1><p>本文章不保持更新，但你仍可以前往资源站及时获取以及打包下载最新的书签信息！</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>科技</category>
+      
+      <category>软件应用</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>ChatGPT</tag>
+      
+      <tag>AI</tag>
+      
+      <tag>教程</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>更加私密的浏览体验，Tor Browser</title>
+    <link href="/0004/"/>
+    <url>/0004/</url>
+    
+    <content type="html"><![CDATA[<h1 id="写在开头"><a href="#写在开头" class="headerlink" title="写在开头"></a>写在开头</h1><p>此文章只介绍有关使用方法以及保护原理。如果您想对Tor及Tor Network了解更加”深入”请移步别家。</p><h1 id="使用初衷"><a href="#使用初衷" class="headerlink" title="使用初衷"></a>使用初衷</h1><p>因为极其完善的Tor网络以及网桥，让隐私浏览更加接近隐私。更加接近真正的”无痕模式”，我选择了使用Tor，并让其完全接替我的常规浏览器的匿名模式。<br><br>无论是处于保护隐私，亦或是其他一些不便于说的原因，我也会建议使用Tor进行私密浏览。至于流传甚广的”暗网”，我不在意，也不想在意。</p><h1 id="实现原理"><a href="#实现原理" class="headerlink" title="实现原理"></a>实现原理</h1><p>至于具体原理，我只了解了大概。具体的，不妨连接上Tor Network问问ChatGPT！</p><p><strong>我：</strong></p><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs">Tor如何保护我的隐私<br></code></pre></td></tr></table></figure><p><strong>ChatGPT：</strong></p><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs markdown">Tor是一种匿名网络，它通过将您的网络流量路由通过多个节点来保护您的隐私。当您使用Tor时，您的数据将通过称为“中继”的服务器进行路由，这些服务器由志愿者维护。每个中继只知道数据来自前一个中继，并将数据发送到下一个中继，以便在传输过程中匿名化您的身份和位置。<br><br>以下是Tor如何保护您的隐私的一些关键方面：<br><br><span class="hljs-bullet">1.</span> 匿名化您的IP地址：Tor将您的数据流量路由通过多个中继，使得目标网站无法看到您的真实IP地址。取而代之的是，他们只能看到中继节点的IP地址。<br><br><span class="hljs-bullet">2.</span> 加密您的数据：Tor使用多层加密来保护您的数据，以确保只有您和最终目标网站能够读取您的通信内容。<br><br><span class="hljs-bullet">3.</span> 防止流量分析：Tor还会随机化数据包的大小，时间和路由路径，防止攻击者通过流量分析来确定您的身份和位置。<br><br><span class="hljs-bullet">4.</span> 避免DNS泄漏：Tor使用自己的DNS解析器来避免您的DNS请求暴露您的位置。<br><br>总的来说，使用Tor可以帮助您保护您的隐私和匿名性，但请记住，Tor并非完美的工具，因此请注意在使用Tor时采取其他隐私保护措施，例如使用端到端加密的通信和避免向任何人透露您的真实身份和位置信息。<br></code></pre></td></tr></table></figure><p>以上即是Tor浏览更加匿名化的原因。<br><br>但这些干干的东西显然对我们没有很大用处。我们更加在意的，还是…</p><h1 id="对我们有什么影响"><a href="#对我们有什么影响" class="headerlink" title="对我们有什么影响"></a>对我们有什么影响</h1><p>过去你只能对使用同一台机器的用户匿名，现在则不然，你可以对你的ISP甚至你要访问的网站匿名。你的数据包在整个传输过程中都是加密的，被截取的可能性也微乎其微。(毕竟SSL/TLS也在从中保护).<br>这可以有效的帮助我们远离跟踪与数据收集。某些情况下也可以减少你收到垃圾短信和电话的数量。</p><h1 id="有什么缺点"><a href="#有什么缺点" class="headerlink" title="有什么缺点"></a>有什么缺点</h1><p>经过我数次浏览体验，发现了这么几点问题</p><ul><li><strong>访问速度慢</strong><br>由于你的请求经过数次转发，最终到达客户端的速度会变得十分慢，在我这里，使用DuckDuckGO搜索一次内容需要至少等上5秒，这可能使很多人难以接受</li><li><strong>无法保存登录状态</strong><br>这不算缺点，但我觉得值得一说。Tor被配置为不保存任何浏览数据，意味着即使你使用你自己的计算机，并且你希望在对匿名浏览时保存状态，这也是不被允许的。</li><li><strong>部分地区难以连接</strong><br>Tor Network也许部分地区与运营商无法访问，即使配置网桥也无济于事。我建议想办法启用IPv6，这将使你更加容易连接到Tor，因为这些服务在IPv6下大多数未被封锁。</li></ul><h1 id="安装使用"><a href="#安装使用" class="headerlink" title="安装使用"></a>安装使用</h1><p>这一步没有什么难度，请直接去往官方网站进行下载。使用IPv6可直接访问。<br>您亦可直接前往下在本站提供的安装包。</p><p>下载完成后，请按照说明进行安装。</p><blockquote><p><a href="https://torproject.netcologne.de/">点这去往Tor Project</a></p></blockquote><p>打开Tor，您将被立刻要求连接到Tor，点击连接。如果您的运营商没有封锁Tor，过不了多久，您便可以开始私密浏览了。<br></p><p><img src="https://i.328888.xyz/2023/05/02/iMVnio.png"></p><h1 id="Q-amp-A"><a href="#Q-amp-A" class="headerlink" title="Q&amp;A"></a>Q&amp;A</h1><h2 id="能否稳定使用"><a href="#能否稳定使用" class="headerlink" title="能否稳定使用"></a>能否稳定使用</h2><p>我的地区没有问题，且不需要使用网桥。</p><h2 id="为什么不直接使用VPN"><a href="#为什么不直接使用VPN" class="headerlink" title="为什么不直接使用VPN"></a>为什么不直接使用VPN</h2><p>Tor其实与VPN的实现相差不大，但我之所以选择Tor完全是因为使用方便而且成本更低。我的其他应用也并不会受到Tor Network的影响。</p><p>Tor也比VPN法律风险更低。</p><h1 id="尾声"><a href="#尾声" class="headerlink" title="尾声"></a>尾声</h1><p>所有资源将在藏宝阁有更新，如您需要可自行前往下载。</p><p>此文章评论部分禁止讨论有关富强上网一类的话题，仅限于交流技术与使用问题。</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>科技</category>
+      
+      <category>软件应用</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Tor</tag>
+      
+      <tag>匿名</tag>
+      
+      <tag>富强上网</tag>
+      
+      <tag>科学上网</tag>
+      
+      <tag>隐私保护</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>小小博客的新发展</title>
+    <link href="/0003/"/>
+    <url>/0003/</url>
+    
+    <content type="html"><![CDATA[<h1 id="写在开头"><a href="#写在开头" class="headerlink" title="写在开头"></a>写在开头</h1><p>本博客现已经开启Livere评论系统，可对我的文章发表评论了！</p><p>不过请文明发言，Livere会对垃圾留言进行过滤，博主也会清理不当言论。</p><hr><h1 id="最新的进展"><a href="#最新的进展" class="headerlink" title="最新的进展"></a>最新的进展</h1><p>我等不及要想告诉大家最近折腾的新成果了！！！</p><hr><h2 id="更换新的域名"><a href="#更换新的域名" class="headerlink" title="更换新的域名"></a>更换新的域名</h2><p>此前我使用过<a href="https://cloudflare.com/">Cloudflare</a>提供的二级域名，和<a href="https://nic.eu.org/">eu.org</a>,虽说后者的权重和顶级域名差不了太多，但还是会有点难看的，对吧？</p><p>某天在网上冲浪时，得知了硅云，硅云目前正在进行“首年0元”的活动。新用户的首个域名首年免费(仅限.top等部分顶级域名)，如果你正需要，请<a href="https://www.vpsor.cn/?userCode=yh21c0e">点击这里注册</a>，这是我的推广链接，你使用此链接注册我将获得部分返利。提前感谢大家。</p><p>我的所有站点都已换到<a href="https://www.alt021.top/">alt021.top</a>的域名。</p><hr><h2 id="更换CDN改善速度"><a href="#更换CDN改善速度" class="headerlink" title="更换CDN改善速度"></a>更换CDN改善速度</h2><p>博客的部分服务此前使用Jsdelivr的CDN，其在国内由于特殊原因很难正常访问。导致本网站打开速度异常缓慢，图标文件几乎不能正常加载。</p><p>目前已更换到另外的CDN，网页打开速度显著改善，基本3-5秒即可完成加载。</p><hr><h2 id="开通评论"><a href="#开通评论" class="headerlink" title="开通评论"></a>开通评论</h2><p>此博客已经成功接入Livere评论系统，现在您可以对我的博文发表评论了。</p><p>不过请注意，您的评论若包含不当言论或垃圾内容，将会被Livere过滤，博主也将不定期主动删除不当言论。</p><hr><h1 id="在网络之外"><a href="#在网络之外" class="headerlink" title="在网络之外"></a>在网络之外</h1><p>博主离中考越来越近了，近期的一次模拟考试部分成绩些许不理想。等两个月之后，我的自我介绍大抵是该更新了。</p><p>到那时候就真的没时间管理博客了，我的<strong>Pure Life纯净生存服务器</strong>会不会开下去也成了谜，谁知道呢，到时再看。</p><hr><h1 id="尾声"><a href="#尾声" class="headerlink" title="尾声"></a>尾声</h1><p>这次的文章有点水( 自 知 之 明 )，下次好好更新就是了。。。</p><p>总之以后空闲时间可能会越来越少，尽量多管理一下博客吧。感谢来阅读的各位！</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>杂谈</category>
+      
+      <category>博客那些事</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>闲聊</tag>
+      
+      <tag>hexo</tag>
+      
+      <tag>海文章</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Minecraft远程联机方法汇总</title>
+    <link href="/0002/"/>
+    <url>/0002/</url>
+    
+    <content type="html"><![CDATA[<h1 id="准备开始！"><a href="#准备开始！" class="headerlink" title="准备开始！"></a>准备开始！</h1><p>这篇文章的内容主要适用于<strong>Java版本</strong>远程联机，如果您是基岩版，双方可直接添加xbox好友进行联机，不需要再进行其他操作。</p><p>本文部分内容需要有计算机使用基础和对网络有初步了解后使用。</p><p>本文默认运营商没有为您分配公网IP，如果您拥有公网IP，请自行在路由器处配置端口转发。</p><hr><blockquote><p>提示：本文图片已遗失，博主实在无力全部补完。</p></blockquote><h1 id="方案1-内网穿透"><a href="#方案1-内网穿透" class="headerlink" title="方案1 内网穿透"></a>方案1 内网穿透</h1><p>此方法使用较为容易，也已经被广泛传播。免费的内网穿透服务商比比皆是，诸如<em>SakuraFrp、NATAPP、花生壳等等。<br>今天我要为大家推荐的是另一款目前体验较为优秀的穿透提供商*<em>OpenFrp</em></em></p><h2 id="创建账号"><a href="#创建账号" class="headerlink" title="创建账号"></a>创建账号</h2><p>首先，打开<a href="https://www.openfrp.net/">OpenFrp官网</a>进行账号注册，这一步不过多讲述，请按照网页上的提示进行注册</p><h2 id="下载软件"><a href="#下载软件" class="headerlink" title="下载软件"></a>下载软件</h2><p>进入<a href="https://console.openfrp.net/">管理面板</a>后，点击侧边下载软件，下载启动器即可。如果您是新手则不建议使用客户端。</p><p>![下载指引](https:// /2023/04/02/iHIBza.png)</p><h2 id="获得端口号"><a href="#获得端口号" class="headerlink" title="获得端口号"></a>获得端口号</h2><p>打开您的Minecraft:Java Edtion实例，进入要游玩的世界。按Esc键暂停游戏，选择对局域网开启</p><p>开启后，您会在聊天框中收到一条消息，此消息包含了端口号。</p><p>请记住此端口号，将在稍后创建隧道的步骤中使用到</p><h2 id="创建隧道"><a href="#创建隧道" class="headerlink" title="创建隧道"></a>创建隧道</h2><p>进入OpenFrp管理面板，点击侧边创建隧道</p><p>进入后，在左侧选择好节点，在右侧输入信息的位置中。协议请选择TCP(基岩版本则使用UDP)，本地地址一般填写<strong>127.0.0.1</strong>(即本地计算机)，本地端口填写游戏中提示的端口号。远程端口建议随机，隧道名称可按自己的喜好填写</p><p>完成填写后，点击创建即可。</p><p>请注意，在此过程中，不要关闭您的游戏实例。重启局域网联机会导致本地端口变化，您则需要重新配置穿透隧道。</p><h2 id="启动穿透"><a href="#启动穿透" class="headerlink" title="启动穿透"></a>启动穿透</h2><p>打开您的启动器，启动时会要求您登录，请输入与<a href="https://console.openfrp.net/">管理面板</a><strong>相同</strong>的账号密码登录启动器</p><p>点击左侧隧道按钮即可，启动您创建好的隧道</p><p>启动完成后，您通常会收到一条来自Of启动器的通知，如果通知中向您提示端口被占用等，请<strong>重启电脑</strong>或<strong>前往管理面板强制下线</strong>。</p><h2 id="好友方加入"><a href="#好友方加入" class="headerlink" title="好友方加入"></a>好友方加入</h2><p>隧道启动完成后，点击左侧日志按钮，在最底部会获得连接到此隧道的IP，请完整的复制这串地址并发送给朋友</p><p>让朋友使用添加并加入服务器的方式连接到此地址即可与您联机</p><h2 id="提示"><a href="#提示" class="headerlink" title="提示"></a>提示</h2><p>此方式是否稳定依赖于穿透服务商网络及延迟是否优秀，如服务商较为火爆则您的体验可能较差。此方式默认情况下可能需要正版账号方可连接。</p><hr><h1 id="方案2-虚拟局域网"><a href="#方案2-虚拟局域网" class="headerlink" title="方案2 虚拟局域网"></a>方案2 虚拟局域网</h1><p>此方法体验会优于前者，在服务器转发握手完成后，您和您朋友的计算机将直接点对点通信，因此可以获得更优异的延迟体验。本文以<a href="https://my.zerotier.com/">Zerotier</a>为例</p><h2 id="注册与下载"><a href="#注册与下载" class="headerlink" title="注册与下载"></a>注册与下载</h2><p>在<a href="https://my.zerotier.com/">Zerotier 官方网站</a>下载软件，并注册登录账号。网站和客户端界面全部为英文，如果您无法阅读，请使用翻译工具。</p><p>请注意，您的朋友也需要安装Zerotier客户端！</p><h2 id="创建虚拟局域网并加入"><a href="#创建虚拟局域网并加入" class="headerlink" title="创建虚拟局域网并加入"></a>创建虚拟局域网并加入</h2><p>登录官网后，点击”Create a network”即可创建并获得一串网络ID，请将此ID发送给您的朋友</p><p>取得网络ID后，右键任务栏上的Zerotier图标，选择“Join New Network”</p><p>在打开的对话框中，输入您的网络ID。添加完成后，点击这个ID即可进行连接。</p><p>连接后打开网络和共享中心，如果可以看到Zerotier One则说明已经成功连接。</p><p>请注意，您和您的朋友需要<strong>同时连接</strong>才可以正常联机</p><h2 id="开始联机"><a href="#开始联机" class="headerlink" title="开始联机"></a>开始联机</h2><p>要建立连接，您首先需要查询您在虚拟局域网中的IP地址是什么</p><p>打开cmd并输入”ipconfig”，在输出的信息中，找到”网络适配器 - Zerotier One”</p><p>这里的IPv4地址就是您在此虚拟局域网中的IP地址。</p><p>使用和方法1相同的方式创建一个局域网世界，并将虚拟局域网中的IP和端口号进行组合，发送给您的朋友，就像这样。</p><blockquote><p>172.24.0.1:63024</p></blockquote><p>然后使用连接服务器的方式连接即可。</p><hr><h1 id="方案3-IPv6公网直连"><a href="#方案3-IPv6公网直连" class="headerlink" title="方案3 IPv6公网直连"></a>方案3 IPv6公网直连</h1><p>如果您和朋友都可以使用IPv6，那么此方法就是最推荐的方法。</p><h2 id="查看是否支持IPv6"><a href="#查看是否支持IPv6" class="headerlink" title="查看是否支持IPv6"></a>查看是否支持IPv6</h2><p>打开网络与共享中心，点击您的网络适配器。如果IPv6一栏为“Internet”，则说明您可以使用IPv6。如果为”无网络访问权限”，请尝试修改路由器设置或者将网线直接插入光猫LAN口</p><p>如果您和您的朋友都拥有IPv6，则可以使用此方式联机。</p><h2 id="查找IPv6地址"><a href="#查找IPv6地址" class="headerlink" title="查找IPv6地址"></a>查找IPv6地址</h2><p>同样打开cmd输入”ipconfig”，找到自己联网所使用的网络适配器，您将可以找到您的IPv6地址。请复制这串地址</p><p>您通常会拥有多个IPv6地址，如果使用其中一个无法连接，请依次使用其他的地址进行尝试。</p><p>另外请不要使用类似”fe80”开头的本地链接IPv6地址，此地址<strong>无法连接</strong>。</p><h2 id="开始联机-1"><a href="#开始联机-1" class="headerlink" title="开始联机"></a>开始联机</h2><p>请将IPv6地址套在中括号内，并加上游戏给出的端口号，就像这样</p><blockquote><p> 【240e:000:00ee:ee00:0e00:ee00:000e:0ee0】:22333 </p></blockquote><p><strong>此处演示使用全角括号，您需要使用英文半角括号</strong></p><p>并发送这串地址给您的朋友，让他使用加入服务器的方式连接到您的游戏。</p><hr><h1 id="无正版简单解决方式"><a href="#无正版简单解决方式" class="headerlink" title="无正版简单解决方式"></a>无正版简单解决方式</h1><p>如果您或您的朋友没有正版，那么可能在使用上述方式时无法正常连接。针对此情况的简单解决办法是：注册并使用第三方验证。<br>诸如HMCL、PCL2等启动器均支持使用第三方验证进行登录。登陆后，您和您的朋友便可以正常连接</p><p>我建议尝试<a href="https://littleskin.cn/">LittleSkin</a></p><p>您也可以使用类似“自定义局域网”的Fabric或Forge模组来关闭正版验证。在此处不再赘述</p><h1 id="提示-1"><a href="#提示-1" class="headerlink" title="提示"></a>提示</h1><p>如果您要游玩mod版，则双方需要使用相同的客户端，您可直接拷贝**.minecraft**文件夹发送给您的朋友。</p><h1 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h1><p>本教程可能无法细致入微，请学会参考官方教程使用这些方式。</p><p>让我们离开网易版的限制，拥抱自由的Minecraft</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>科技</category>
+      
+      <category>教程</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Minecraft</tag>
+      
+      <tag>网络</tag>
+      
+      <tag>内网穿透</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>你好，世界！</title>
+    <link href="/0001/"/>
+    <url>/0001/</url>
+    
+    <content type="html"><![CDATA[<h1 id="你好，世界！"><a href="#你好，世界！" class="headerlink" title="你好，世界！"></a>你好，世界！</h1><p>我的首个个人博客终于成功上线了，这篇博文就来说说主要写点啥和以后的规划吧！</p><h1 id="更新的内容"><a href="#更新的内容" class="headerlink" title="更新的内容"></a>更新的内容</h1><p>更新的内容嘛，估计会很杂，但是不一定会多。更新会需要很久，但一定会有<br>现在主要存放我的B站视频的文字版文章。</p><h1 id="以后的规划"><a href="#以后的规划" class="headerlink" title="以后的规划"></a>以后的规划</h1><p>关于这一块，我没有想过，也不想去做什么。只想安静的写一些我想要表达的东西。如果你有想看的东西，请告诉我！<br>你可以在博客主页，友链页，我的个人网站了解如何联系我。</p><h1 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h1><p>首篇博文就这么草草的结束吧，感谢留在网页的大家的支持。希望我可以输出让大家喜欢的内容。</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>杂谈</category>
+      
+      <category>随笔</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  
+</search>
