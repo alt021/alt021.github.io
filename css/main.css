@@ -574,10 +574,10 @@ sup > a::before,
 }
 #nprogress .bar {
   height: 3px !important;
-  background-color: #29d !important;
+  background-color: #425aef !important;
 }
 #nprogress .peg {
-  box-shadow: 0 0 14px #29d, 0 0 8px #29d !important;
+  box-shadow: 0 0 14px #425aef, 0 0 8px #425aef !important;
 }
 @media (max-width: 575px) {
   #nprogress .bar {
@@ -851,15 +851,15 @@ i.iconfont {
   --sec-text-color: #718096;
   --post-text-color: #2c3e50;
   --post-heading-color: #1a202c;
-  --post-link-color: #0366d6;
-  --link-hover-color: #30a9de;
-  --link-hover-bg-color: #f8f9fa;
+  --post-link-color: #425aef;
+  --link-hover-color: #425aef;
+  --link-hover-bg-color: #D6EAF8;
   --line-color: #eaecef;
   --navbar-bg-color: #2f4154;
   --navbar-text-color: #fff;
   --subtitle-color: #fff;
-  --scrollbar-color: #c4c6c9;
-  --scrollbar-hover-color: #a6a6a6;
+  --scrollbar-color: #425aef;
+  --scrollbar-hover-color: #425aef;
   --button-bg-color: transparent;
   --button-hover-bg-color: #f2f3f5;
   --highlight-bg-color: #f6f8fa;
@@ -876,15 +876,15 @@ i.iconfont {
     --sec-text-color: #a7a9ad;
     --post-text-color: #c4c6c9;
     --post-heading-color: #c4c6c9;
-    --post-link-color: #1589e9;
-    --link-hover-color: #30a9de;
-    --link-hover-bg-color: #364151;
+    --post-link-color: #425aef;
+    --link-hover-color: #425aef;
+    --link-hover-bg-color: #D6EAF8;
     --line-color: #435266;
     --navbar-bg-color: #1f3144;
     --navbar-text-color: #d0d0d0;
     --subtitle-color: #d0d0d0;
-    --scrollbar-color: #687582;
-    --scrollbar-hover-color: #9da8b3;
+    --scrollbar-color: #425aef;
+    --scrollbar-hover-color: #425aef;
     --button-bg-color: transparent;
     --button-hover-bg-color: #46647e;
     --highlight-bg-color: #303030;
@@ -928,15 +928,15 @@ i.iconfont {
     --sec-text-color: #a7a9ad;
     --post-text-color: #c4c6c9;
     --post-heading-color: #c4c6c9;
-    --post-link-color: #1589e9;
-    --link-hover-color: #30a9de;
-    --link-hover-bg-color: #364151;
+    --post-link-color: #425aef;
+    --link-hover-color: #425aef;
+    --link-hover-bg-color: #D6EAF8;
     --line-color: #435266;
     --navbar-bg-color: #1f3144;
     --navbar-text-color: #d0d0d0;
     --subtitle-color: #d0d0d0;
-    --scrollbar-color: #687582;
-    --scrollbar-hover-color: #9da8b3;
+    --scrollbar-color: #425aef;
+    --scrollbar-hover-color: #425aef;
     --button-bg-color: transparent;
     --button-hover-bg-color: #46647e;
     --highlight-bg-color: #303030;
