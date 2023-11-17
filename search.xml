@@ -20,16 +20,9 @@
 <p>本文部分内容需要有计算机使用基础和对网络有初步了解后使用。</p>
 <p>本文默认运营商没有为您分配公网IP，如果您拥有公网IP，请自行在路由器处配置端口转发。</p>
 <hr>
-<blockquote><span class="custom-blockquote-svg"><svg width="24" height="24" viewBox="0 0 24 24" fill="" xmlns="http://www.w3.org/2000/svg" data-reactroot="">
-<path fill="" d="M22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22C13.8 22 15.5 21.5 17 20.6L22 22L20.7 17C21.5 15.5 22 13.8 22 12Z" undefined="1"></path>
-<path fill="" d="M15.97 11.5H16.04C17.12 11.5 18 12.38 18 13.47V13.53C18 14.62 17.12 15.5 16.03 15.5H15.96C14.88 15.5 14 14.62 14 13.53V13.46C14 12.38 14.88 11.5 15.97 11.5Z" undefined="1"></path>
-<path fill="" d="M7.97 11.5H8.04C9.12 11.5 10 12.38 10 13.47V13.53C10 14.62 9.12 15.5 8.03 15.5H7.97C6.88 15.5 6 14.62 6 13.53V13.46C6 12.38 6.88 11.5 7.97 11.5Z" undefined="1"></path>
-<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke="" d="M17 8.5C15.23 8.97 14.07 10.84 14.01 13.27C14 13.33 14 13.4 14 13.47V13.5"></path>
-<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke="" d="M9 8.5C7.23 8.97 6.07 10.84 6.01 13.27C6 13.33 6 13.4 6 13.47V13.5"></path>
-<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke="" d="M15.97 11.5H16.04C17.12 11.5 18 12.38 18 13.47V13.53C18 14.62 17.12 15.5 16.03 15.5H15.96C14.88 15.5 14 14.62 14 13.53V13.46C14 12.38 14.88 11.5 15.97 11.5Z"></path>
-<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke="" d="M7.97 11.5H8.04C9.12 11.5 10 12.38 10 13.47V13.53C10 14.62 9.12 15.5 8.03 15.5H7.97C6.88 15.5 6 14.62 6 13.53V13.46C6 12.38 6.88 11.5 7.97 11.5Z"></path>
-</svg>
-</span><p>提示：本文图片已遗失，博主实在无力全部补完。</p></blockquote>
+<blockquote>
+<p>提示：本文图片已遗失，博主实在无力全部补完。</p>
+</blockquote>
 <h1 id="方案1-内网穿透"><a href="#方案1-内网穿透" class="headerlink" title="方案1 内网穿透"></a>方案1 内网穿透</h1><p>此方法使用较为容易，也已经被广泛传播。免费的内网穿透服务商比比皆是，诸如<em>SakuraFrp、NATAPP、花生壳等等。<br>今天我要为大家推荐的是另一款目前体验较为优秀的穿透提供商*<em>OpenFrp</em></em></p>
 <h2 id="创建账号"><a href="#创建账号" class="headerlink" title="创建账号"></a>创建账号</h2><p>首先，打开<a href="https://www.openfrp.net/">OpenFrp官网</a>进行账号注册，这一步不过多讲述，请按照网页上的提示进行注册</p>
 <h2 id="下载软件"><a href="#下载软件" class="headerlink" title="下载软件"></a>下载软件</h2><p>进入<a href="https://console.openfrp.net/">管理面板</a>后，点击侧边下载软件，下载启动器即可。如果您是新手则不建议使用客户端。</p>
@@ -60,16 +53,9 @@
 <p>打开cmd并输入”ipconfig”，在输出的信息中，找到”网络适配器 - Zerotier One”</p>
 <p>这里的IPv4地址就是您在此虚拟局域网中的IP地址。</p>
 <p>使用和方法1相同的方式创建一个局域网世界，并将虚拟局域网中的IP和端口号进行组合，发送给您的朋友，就像这样。</p>
-<blockquote><span class="custom-blockquote-svg"><svg width="24" height="24" viewBox="0 0 24 24" fill="" xmlns="http://www.w3.org/2000/svg" data-reactroot="">
-<path fill="" d="M22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22C13.8 22 15.5 21.5 17 20.6L22 22L20.7 17C21.5 15.5 22 13.8 22 12Z" undefined="1"></path>
-<path fill="" d="M15.97 11.5H16.04C17.12 11.5 18 12.38 18 13.47V13.53C18 14.62 17.12 15.5 16.03 15.5H15.96C14.88 15.5 14 14.62 14 13.53V13.46C14 12.38 14.88 11.5 15.97 11.5Z" undefined="1"></path>
-<path fill="" d="M7.97 11.5H8.04C9.12 11.5 10 12.38 10 13.47V13.53C10 14.62 9.12 15.5 8.03 15.5H7.97C6.88 15.5 6 14.62 6 13.53V13.46C6 12.38 6.88 11.5 7.97 11.5Z" undefined="1"></path>
-<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke="" d="M17 8.5C15.23 8.97 14.07 10.84 14.01 13.27C14 13.33 14 13.4 14 13.47V13.5"></path>
-<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke="" d="M9 8.5C7.23 8.97 6.07 10.84 6.01 13.27C6 13.33 6 13.4 6 13.47V13.5"></path>
-<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke="" d="M15.97 11.5H16.04C17.12 11.5 18 12.38 18 13.47V13.53C18 14.62 17.12 15.5 16.03 15.5H15.96C14.88 15.5 14 14.62 14 13.53V13.46C14 12.38 14.88 11.5 15.97 11.5Z"></path>
-<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke="" d="M7.97 11.5H8.04C9.12 11.5 10 12.38 10 13.47V13.53C10 14.62 9.12 15.5 8.03 15.5H7.97C6.88 15.5 6 14.62 6 13.53V13.46C6 12.38 6.88 11.5 7.97 11.5Z"></path>
-</svg>
-</span><p>172.24.0.1:63024</p></blockquote>
+<blockquote>
+<p>172.24.0.1:63024</p>
+</blockquote>
 <p>然后使用连接服务器的方式连接即可。</p>
 <hr>
 <h1 id="方案3-IPv6公网直连"><a href="#方案3-IPv6公网直连" class="headerlink" title="方案3 IPv6公网直连"></a>方案3 IPv6公网直连</h1><p>如果您和朋友都可以使用IPv6，那么此方法就是最推荐的方法。</p>
@@ -79,16 +65,9 @@
 <p>您通常会拥有多个IPv6地址，如果使用其中一个无法连接，请依次使用其他的地址进行尝试。</p>
 <p>另外请不要使用类似”fe80”开头的本地链接IPv6地址，此地址<strong>无法连接</strong>。</p>
 <h2 id="开始联机-1"><a href="#开始联机-1" class="headerlink" title="开始联机"></a>开始联机</h2><p>请将IPv6地址套在中括号内，并加上游戏给出的端口号，就像这样</p>
-<blockquote><span class="custom-blockquote-svg"><svg width="24" height="24" viewBox="0 0 24 24" fill="" xmlns="http://www.w3.org/2000/svg" data-reactroot="">
-<path fill="" d="M22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22C13.8 22 15.5 21.5 17 20.6L22 22L20.7 17C21.5 15.5 22 13.8 22 12Z" undefined="1"></path>
-<path fill="" d="M15.97 11.5H16.04C17.12 11.5 18 12.38 18 13.47V13.53C18 14.62 17.12 15.5 16.03 15.5H15.96C14.88 15.5 14 14.62 14 13.53V13.46C14 12.38 14.88 11.5 15.97 11.5Z" undefined="1"></path>
-<path fill="" d="M7.97 11.5H8.04C9.12 11.5 10 12.38 10 13.47V13.53C10 14.62 9.12 15.5 8.03 15.5H7.97C6.88 15.5 6 14.62 6 13.53V13.46C6 12.38 6.88 11.5 7.97 11.5Z" undefined="1"></path>
-<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke="" d="M17 8.5C15.23 8.97 14.07 10.84 14.01 13.27C14 13.33 14 13.4 14 13.47V13.5"></path>
-<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke="" d="M9 8.5C7.23 8.97 6.07 10.84 6.01 13.27C6 13.33 6 13.4 6 13.47V13.5"></path>
-<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke="" d="M15.97 11.5H16.04C17.12 11.5 18 12.38 18 13.47V13.53C18 14.62 17.12 15.5 16.03 15.5H15.96C14.88 15.5 14 14.62 14 13.53V13.46C14 12.38 14.88 11.5 15.97 11.5Z"></path>
-<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke="" d="M7.97 11.5H8.04C9.12 11.5 10 12.38 10 13.47V13.53C10 14.62 9.12 15.5 8.03 15.5H7.97C6.88 15.5 6 14.62 6 13.53V13.46C6 12.38 6.88 11.5 7.97 11.5Z"></path>
-</svg>
-</span><p> 【240e:000:00ee:ee00:0e00:ee00:000e:0ee0】:22333 </p></blockquote>
+<blockquote>
+<p> 【240e:000:00ee:ee00:0e00:ee00:000e:0ee0】:22333 </p>
+</blockquote>
 <p><strong>此处演示使用全角括号，您需要使用英文半角括号</strong></p>
 <p>并发送这串地址给您的朋友，让他使用加入服务器的方式连接到您的游戏。</p>
 <hr>
@@ -150,20 +129,11 @@
 <h1 id="使用初衷"><a href="#使用初衷" class="headerlink" title="使用初衷"></a>使用初衷</h1><p>因为极其完善的Tor网络以及网桥，让隐私浏览更加接近隐私。更加接近真正的”无痕模式”，我选择了使用Tor，并让其完全接替我的常规浏览器的匿名模式。<br><br>无论是处于保护隐私，亦或是其他一些不便于说的原因，我也会建议使用Tor进行私密浏览。至于流传甚广的”暗网”，我不在意，也不想在意。</p>
 <h1 id="实现原理"><a href="#实现原理" class="headerlink" title="实现原理"></a>实现原理</h1><p>至于具体原理，我只了解了大概。具体的，不妨连接上Tor Network问问ChatGPT！</p>
 <p><strong>我：</strong></p>
-<div class="language-txt"><button title="Copy code" class="copy"></button><span class="lang">txt</span><pre class="shiki material-theme-palenight" style="background-color: #1a1a1a" tabindex="0"><code><span class="line"><span style="color: #babed8">Tor如何保护我的隐私</span></span></code></pre></div><p><strong>ChatGPT：</strong></p>
-<div class="language-txt"><button title="Copy code" class="copy"></button><span class="lang">txt</span><pre class="shiki material-theme-palenight" style="background-color: #1a1a1a" tabindex="0"><code><span class="line"><span style="color: #babed8">Tor是一种匿名网络，它通过将您的网络流量路由通过多个节点来保护您的隐私。当您使用Tor时，您的数据将通过称为“中继”的服务器进行路由，这些服务器由志愿者维护。每个中继只知道数据来自前一个中继，并将数据发送到下一个中继，以便在传输过程中匿名化您的身份和位置。</span></span>
-<span class="line"><span style="color: #babed8"></span></span>
-<span class="line"><span style="color: #babed8">以下是Tor如何保护您的隐私的一些关键方面：</span></span>
-<span class="line"><span style="color: #babed8"></span></span>
-<span class="line"><span style="color: #babed8">1. 匿名化您的IP地址：Tor将您的数据流量路由通过多个中继，使得目标网站无法看到您的真实IP地址。取而代之的是，他们只能看到中继节点的IP地址。</span></span>
-<span class="line"><span style="color: #babed8"></span></span>
-<span class="line"><span style="color: #babed8">2. 加密您的数据：Tor使用多层加密来保护您的数据，以确保只有您和最终目标网站能够读取您的通信内容。</span></span>
-<span class="line"><span style="color: #babed8"></span></span>
-<span class="line"><span style="color: #babed8">3. 防止流量分析：Tor还会随机化数据包的大小，时间和路由路径，防止攻击者通过流量分析来确定您的身份和位置。</span></span>
-<span class="line"><span style="color: #babed8"></span></span>
-<span class="line"><span style="color: #babed8">4. 避免DNS泄漏：Tor使用自己的DNS解析器来避免您的DNS请求暴露您的位置。</span></span>
-<span class="line"><span style="color: #babed8"></span></span>
-<span class="line"><span style="color: #babed8">总的来说，使用Tor可以帮助您保护您的隐私和匿名性，但请记住，Tor并非完美的工具，因此请注意在使用Tor时采取其他隐私保护措施，例如使用端到端加密的通信和避免向任何人透露您的真实身份和位置信息。</span></span></code></pre></div><p>以上即是Tor浏览更加匿名化的原因。<br><br>但这些干干的东西显然对我们没有很大用处。我们更加在意的，还是…</p>
+<figure class="highlight"><table><tr><td class="code"><pre><code class="hljs">Tor如何保护我的隐私<br></code></pre></td></tr></table></figure>
+<p><strong>ChatGPT：</strong></p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><code class="hljs markdown">Tor是一种匿名网络，它通过将您的网络流量路由通过多个节点来保护您的隐私。当您使用Tor时，您的数据将通过称为“中继”的服务器进行路由，这些服务器由志愿者维护。每个中继只知道数据来自前一个中继，并将数据发送到下一个中继，以便在传输过程中匿名化您的身份和位置。<br><br>以下是Tor如何保护您的隐私的一些关键方面：<br><br><span class="hljs-bullet">1.</span> 匿名化您的IP地址：Tor将您的数据流量路由通过多个中继，使得目标网站无法看到您的真实IP地址。取而代之的是，他们只能看到中继节点的IP地址。<br><br><span class="hljs-bullet">2.</span> 加密您的数据：Tor使用多层加密来保护您的数据，以确保只有您和最终目标网站能够读取您的通信内容。<br><br><span class="hljs-bullet">3.</span> 防止流量分析：Tor还会随机化数据包的大小，时间和路由路径，防止攻击者通过流量分析来确定您的身份和位置。<br><br><span class="hljs-bullet">4.</span> 避免DNS泄漏：Tor使用自己的DNS解析器来避免您的DNS请求暴露您的位置。<br><br>总的来说，使用Tor可以帮助您保护您的隐私和匿名性，但请记住，Tor并非完美的工具，因此请注意在使用Tor时采取其他隐私保护措施，例如使用端到端加密的通信和避免向任何人透露您的真实身份和位置信息。<br></code></pre></td></tr></table></figure>
+
+<p>以上即是Tor浏览更加匿名化的原因。<br><br>但这些干干的东西显然对我们没有很大用处。我们更加在意的，还是…</p>
 <h1 id="对我们有什么影响"><a href="#对我们有什么影响" class="headerlink" title="对我们有什么影响"></a>对我们有什么影响</h1><p>过去你只能对使用同一台机器的用户匿名，现在则不然，你可以对你的ISP甚至你要访问的网站匿名。你的数据包在整个传输过程中都是加密的，被截取的可能性也微乎其微。(毕竟SSL/TLS也在从中保护).<br>这可以有效的帮助我们远离跟踪与数据收集。某些情况下也可以减少你收到垃圾短信和电话的数量。</p>
 <h1 id="有什么缺点"><a href="#有什么缺点" class="headerlink" title="有什么缺点"></a>有什么缺点</h1><p>经过我数次浏览体验，发现了这么几点问题</p>
 <ul>
@@ -173,16 +143,9 @@
 </ul>
 <h1 id="安装使用"><a href="#安装使用" class="headerlink" title="安装使用"></a>安装使用</h1><p>这一步没有什么难度，请直接去往官方网站进行下载。使用IPv6可直接访问。<br>您亦可直接前往下在本站提供的安装包。</p>
 <p>下载完成后，请按照说明进行安装。</p>
-<blockquote><span class="custom-blockquote-svg"><svg width="24" height="24" viewBox="0 0 24 24" fill="" xmlns="http://www.w3.org/2000/svg" data-reactroot="">
-<path fill="" d="M22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22C13.8 22 15.5 21.5 17 20.6L22 22L20.7 17C21.5 15.5 22 13.8 22 12Z" undefined="1"></path>
-<path fill="" d="M15.97 11.5H16.04C17.12 11.5 18 12.38 18 13.47V13.53C18 14.62 17.12 15.5 16.03 15.5H15.96C14.88 15.5 14 14.62 14 13.53V13.46C14 12.38 14.88 11.5 15.97 11.5Z" undefined="1"></path>
-<path fill="" d="M7.97 11.5H8.04C9.12 11.5 10 12.38 10 13.47V13.53C10 14.62 9.12 15.5 8.03 15.5H7.97C6.88 15.5 6 14.62 6 13.53V13.46C6 12.38 6.88 11.5 7.97 11.5Z" undefined="1"></path>
-<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke="" d="M17 8.5C15.23 8.97 14.07 10.84 14.01 13.27C14 13.33 14 13.4 14 13.47V13.5"></path>
-<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke="" d="M9 8.5C7.23 8.97 6.07 10.84 6.01 13.27C6 13.33 6 13.4 6 13.47V13.5"></path>
-<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke="" d="M15.97 11.5H16.04C17.12 11.5 18 12.38 18 13.47V13.53C18 14.62 17.12 15.5 16.03 15.5H15.96C14.88 15.5 14 14.62 14 13.53V13.46C14 12.38 14.88 11.5 15.97 11.5Z"></path>
-<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke="" d="M7.97 11.5H8.04C9.12 11.5 10 12.38 10 13.47V13.53C10 14.62 9.12 15.5 8.03 15.5H7.97C6.88 15.5 6 14.62 6 13.53V13.46C6 12.38 6.88 11.5 7.97 11.5Z"></path>
-</svg>
-</span><p><a href="https://torproject.netcologne.de/">点这去往Tor Project</a></p></blockquote>
+<blockquote>
+<p><a href="https://torproject.netcologne.de/">点这去往Tor Project</a></p>
+</blockquote>
 <p>打开Tor，您将被立刻要求连接到Tor，点击连接。如果您的运营商没有封锁Tor，过不了多久，您便可以开始私密浏览了。<br></p>
 <p><img src="https://i.328888.xyz/2023/05/02/iMVnio.png"></p>
 <h1 id="Q-amp-A"><a href="#Q-amp-A" class="headerlink" title="Q&amp;A"></a>Q&amp;A</h1><h2 id="能否稳定使用"><a href="#能否稳定使用" class="headerlink" title="能否稳定使用"></a>能否稳定使用</h2><p>我的地区没有问题，且不需要使用网桥。</p>
@@ -208,17 +171,10 @@
     <url>//post/0005</url>
     <content><![CDATA[<h1 id="读前提示"><a href="#读前提示" class="headerlink" title="读前提示"></a>读前提示</h1><p>本文汇总了一部分ChatGPT资源以及其他的生成式AI，但并不包含使用方式、上网方式等内容，且本文内没有汇总国内的ChatGPT镜像。请确认自己需要再继续阅读。</p>
 <h1 id="ChatGPT是什么"><a href="#ChatGPT是什么" class="headerlink" title="ChatGPT是什么"></a>ChatGPT是什么</h1><p>想必能看到这篇文章的大家都知道ChatGPT是什么以及他如何使用。至于其它的信息就让ChatGPT自己来告诉大家吧。</p>
-<blockquote><span class="custom-blockquote-svg"><svg width="24" height="24" viewBox="0 0 24 24" fill="" xmlns="http://www.w3.org/2000/svg" data-reactroot="">
-<path fill="" d="M22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22C13.8 22 15.5 21.5 17 20.6L22 22L20.7 17C21.5 15.5 22 13.8 22 12Z" undefined="1"></path>
-<path fill="" d="M15.97 11.5H16.04C17.12 11.5 18 12.38 18 13.47V13.53C18 14.62 17.12 15.5 16.03 15.5H15.96C14.88 15.5 14 14.62 14 13.53V13.46C14 12.38 14.88 11.5 15.97 11.5Z" undefined="1"></path>
-<path fill="" d="M7.97 11.5H8.04C9.12 11.5 10 12.38 10 13.47V13.53C10 14.62 9.12 15.5 8.03 15.5H7.97C6.88 15.5 6 14.62 6 13.53V13.46C6 12.38 6.88 11.5 7.97 11.5Z" undefined="1"></path>
-<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke="" d="M17 8.5C15.23 8.97 14.07 10.84 14.01 13.27C14 13.33 14 13.4 14 13.47V13.5"></path>
-<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke="" d="M9 8.5C7.23 8.97 6.07 10.84 6.01 13.27C6 13.33 6 13.4 6 13.47V13.5"></path>
-<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke="" d="M15.97 11.5H16.04C17.12 11.5 18 12.38 18 13.47V13.53C18 14.62 17.12 15.5 16.03 15.5H15.96C14.88 15.5 14 14.62 14 13.53V13.46C14 12.38 14.88 11.5 15.97 11.5Z"></path>
-<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke="" d="M7.97 11.5H8.04C9.12 11.5 10 12.38 10 13.47V13.53C10 14.62 9.12 15.5 8.03 15.5H7.97C6.88 15.5 6 14.62 6 13.53V13.46C6 12.38 6.88 11.5 7.97 11.5Z"></path>
-</svg>
-</span><p>我可以帮助您解决各种问题和任务。以下是一些我可以提供帮助的领域：<br></p>
-<p>   1.回答一般性问题，例如科学、历史、地理等主题。<br><br>   2提供技术支持，例如计算机、软件和硬件问题。<br><br>   3.编写和解释代码示例（例如Python、JavaScript、C++等）。<br><br>   4.提供生活建议，例如健康、饮食和锻炼。<br><br>   5.帮助您学习新技能，例如语言、编程或者其他技能。<br><br>   6.提供旅行建议，例如目的地、酒店和交通方式。<br><br>   7.解答关于文化、艺术和娱乐的问题。<br></p></blockquote>
+<blockquote>
+<p>我可以帮助您解决各种问题和任务。以下是一些我可以提供帮助的领域：<br></p>
+<p>   1.回答一般性问题，例如科学、历史、地理等主题。<br><br>   2提供技术支持，例如计算机、软件和硬件问题。<br><br>   3.编写和解释代码示例（例如Python、JavaScript、C++等）。<br><br>   4.提供生活建议，例如健康、饮食和锻炼。<br><br>   5.帮助您学习新技能，例如语言、编程或者其他技能。<br><br>   6.提供旅行建议，例如目的地、酒店和交通方式。<br><br>   7.解答关于文化、艺术和娱乐的问题。<br></p>
+</blockquote>
 <p>总之，妥善利用可以提高我们的工作和学习效率。帮我们更好地查找互联网上的信息。</p>
 <h1 id="为什么选择镜像"><a href="#为什么选择镜像" class="headerlink" title="为什么选择镜像"></a>为什么选择镜像</h1><p>由于OpenAI的设定，中国大陆的IP与手机号码都不能用于ChatGPT的注册。但由于OpenAI开放付费的API可供使用，于是大量的镜像站便诞生了。</p>
 <p>但我这里并不着重介绍大陆可用的镜像，我主要介绍需要特殊上网但不需要非大陆手机号码的镜像站。这类镜像通常能够获得更好的体验。</p>
@@ -309,18 +265,11 @@
 <p>要取消暂停，可以使用unsuspend命令。</p>
 <h1 id="开始操作"><a href="#开始操作" class="headerlink" title="开始操作"></a>开始操作</h1><p>使用suspend来阻止试用提示主要有两种解决方案，这里我着重介绍第一种。</p>
 <h2 id="雹-Shizuku"><a href="#雹-Shizuku" class="headerlink" title="雹+Shizuku"></a>雹+Shizuku</h2><p>此方案无需电脑，仅需手机即可激活。我们先安装好这两款软件</p>
-<blockquote><span class="custom-blockquote-svg"><svg width="24" height="24" viewBox="0 0 24 24" fill="" xmlns="http://www.w3.org/2000/svg" data-reactroot="">
-<path fill="" d="M22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22C13.8 22 15.5 21.5 17 20.6L22 22L20.7 17C21.5 15.5 22 13.8 22 12Z" undefined="1"></path>
-<path fill="" d="M15.97 11.5H16.04C17.12 11.5 18 12.38 18 13.47V13.53C18 14.62 17.12 15.5 16.03 15.5H15.96C14.88 15.5 14 14.62 14 13.53V13.46C14 12.38 14.88 11.5 15.97 11.5Z" undefined="1"></path>
-<path fill="" d="M7.97 11.5H8.04C9.12 11.5 10 12.38 10 13.47V13.53C10 14.62 9.12 15.5 8.03 15.5H7.97C6.88 15.5 6 14.62 6 13.53V13.46C6 12.38 6.88 11.5 7.97 11.5Z" undefined="1"></path>
-<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke="" d="M17 8.5C15.23 8.97 14.07 10.84 14.01 13.27C14 13.33 14 13.4 14 13.47V13.5"></path>
-<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke="" d="M9 8.5C7.23 8.97 6.07 10.84 6.01 13.27C6 13.33 6 13.4 6 13.47V13.5"></path>
-<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke="" d="M15.97 11.5H16.04C17.12 11.5 18 12.38 18 13.47V13.53C18 14.62 17.12 15.5 16.03 15.5H15.96C14.88 15.5 14 14.62 14 13.53V13.46C14 12.38 14.88 11.5 15.97 11.5Z"></path>
-<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke="" d="M7.97 11.5H8.04C9.12 11.5 10 12.38 10 13.47V13.53C10 14.62 9.12 15.5 8.03 15.5H7.97C6.88 15.5 6 14.62 6 13.53V13.46C6 12.38 6.88 11.5 7.97 11.5Z"></path>
-</svg>
-</span><p>通过酷安下载APK安装文件</p>
+<blockquote>
+<p>通过酷安下载APK安装文件</p>
 <p><a href="https://www.coolapk.com/apk/com.aistra.hail">雹</a></p>
-<p><a href="https://www.coolapk.com/apk/moe.shizuku.privileged.api">Shizuku</a></p></blockquote>
+<p><a href="https://www.coolapk.com/apk/moe.shizuku.privileged.api">Shizuku</a></p>
+</blockquote>
 <h3 id="配对"><a href="#配对" class="headerlink" title="配对"></a>配对</h3><p>先打开Shizuku，给予通知权限。然后点击“通过无线调试激活”下方的配对</p>
 <p><img src="/img/0007/1.png"></p>
 <p>进入开发者选项，找到USB调试和无线调试，全部打开，并点击无线调试进入二级页面。</p>
@@ -341,26 +290,28 @@
 <p>打开解压获得的文件夹。在地址栏直接输入cmd并回车即可在此文件夹中打开cmd窗口。</p>
 <p><img src="/img/0007/5.png"></p>
 <p>接下来在窗口中输入下面的命令来确定您可以调用ADB</p>
-<div class="language-cmd"><button title="Copy code" class="copy"></button><span class="lang">cmd</span><pre class="shiki material-theme-palenight" style="background-color: #1a1a1a" tabindex="0"><code><span class="line"><span style="color: #BABED8">adb version</span></span></code></pre></div><p>通常情况这将返回ADB的版本，安装位置。就像这样</p>
-<div class="language-cmd"><button title="Copy code" class="copy"></button><span class="lang">cmd</span><pre class="shiki material-theme-palenight" style="background-color: #1a1a1a" tabindex="0"><code><span class="line"><span style="color: #BABED8">C:\Users\UserName</span><span style="color: #89DDFF">&gt;</span><span style="color: #BABED8">adb version</span></span>
-<span class="line"><span style="color: #BABED8">Android Debug Bridge version </span><span style="color: #F78C6C">1.0.41</span></span>
-<span class="line"><span style="color: #BABED8">Version </span><span style="color: #F78C6C">34.0.1-9680074</span></span>
-<span class="line"><span style="color: #BABED8">Installed </span><span style="color: #89DDFF">as</span><span style="color: #BABED8"> </span><span style="color: #FFCB6B">C</span><span style="color: #BABED8">:\platform</span><span style="color: #89DDFF">-</span><span style="color: #BABED8">tools\adb.exe</span></span>
-<span class="line"></span>
-<span class="line"><span style="color: #BABED8">C:\Users\UserName</span><span style="color: #89DDFF">&gt;</span><span style="color: #BABED8"> _ </span></span></code></pre></div><p>如果您收到报错，请检查你的安装。</p>
+<figure class="highlight cmd"><table><tr><td class="code"><pre><code class="hljs cmd">adb version<br></code></pre></td></tr></table></figure>
+
+<p>通常情况这将返回ADB的版本，安装位置。就像这样</p>
+<figure class="highlight cmd"><table><tr><td class="code"><pre><code class="hljs cmd"><span class="hljs-function">C:\<span class="hljs-title">Users</span>\<span class="hljs-title">UserName</span>&gt;<span class="hljs-title">adb</span> <span class="hljs-title">version</span></span><br><span class="hljs-function"><span class="hljs-title">Android</span> <span class="hljs-title">Debug</span> <span class="hljs-title">Bridge</span> <span class="hljs-title">version</span> 1.0.41</span><br><span class="hljs-function"><span class="hljs-title">Version</span> 34.0.1-9680074</span><br><span class="hljs-function"><span class="hljs-title">Installed</span> <span class="hljs-title">as</span> <span class="hljs-title">C</span>:\<span class="hljs-title">platform</span>-<span class="hljs-title">tools</span>\<span class="hljs-title">adb.exe</span></span><br><span class="hljs-function"></span><br><span class="hljs-function"><span class="hljs-title">C</span>:\<span class="hljs-title">Users</span>\<span class="hljs-title">UserName</span>&gt; <span class="hljs-title">_</span> </span><br></code></pre></td></tr></table></figure>
+
+<p>如果您收到报错，请检查你的安装。</p>
 <h3 id="连接"><a href="#连接" class="headerlink" title="连接"></a>连接</h3><p>接下来将手机连接电脑，选择文件传输模式，并确定USB调试已经打开。如果您的手机上弹出USB调试授权的提示，请点击允许。</p>
 <p>要确定您的电脑是否已经正确与手机建立连接，请执行</p>
-<div class="language-cmd"><button title="Copy code" class="copy"></button><span class="lang">cmd</span><pre class="shiki material-theme-palenight" style="background-color: #1a1a1a" tabindex="0"><code><span class="line"><span style="color: #BABED8">adb devices</span></span></code></pre></div><p>如果您收到的反馈为两行以上的英文，那么连接已经成功。</p>
+<figure class="highlight cmd"><table><tr><td class="code"><pre><code class="hljs cmd">adb devices<br></code></pre></td></tr></table></figure>
+<p>如果您收到的反馈为两行以上的英文，那么连接已经成功。</p>
 <p>如果您收到的反馈像这样</p>
-<div class="language-cmd"><button title="Copy code" class="copy"></button><span class="lang">cmd</span><pre class="shiki material-theme-palenight" style="background-color: #1a1a1a" tabindex="0"><code><span class="line"><span style="color: #BABED8">C:\Users\UserName</span><span style="color: #89DDFF">&gt;</span><span style="color: #BABED8">adb devices</span></span>
-<span class="line"><span style="color: #BABED8">List of devices attached</span></span>
-<span class="line"></span>
-<span class="line"></span>
-<span class="line"><span style="color: #BABED8">C:\Users\UserName</span><span style="color: #89DDFF">&gt;</span><span style="color: #BABED8"> _</span></span></code></pre></div><p>那么请检查adb授权以及电脑是否已经安装ADB驱动程序。</p>
+<figure class="highlight cmd"><table><tr><td class="code"><pre><code class="hljs cmd"><span class="hljs-function">C:\<span class="hljs-title">Users</span>\<span class="hljs-title">UserName</span>&gt;<span class="hljs-title">adb</span> <span class="hljs-title">devices</span></span><br><span class="hljs-function"><span class="hljs-title">List</span> <span class="hljs-title">of</span> <span class="hljs-title">devices</span> <span class="hljs-title">attached</span></span><br><span class="hljs-function"></span><br><span class="hljs-function"></span><br><span class="hljs-function"><span class="hljs-title">C</span>:\<span class="hljs-title">Users</span>\<span class="hljs-title">UserName</span>&gt; <span class="hljs-title">_</span></span><br></code></pre></td></tr></table></figure>
+
+<p>那么请检查adb授权以及电脑是否已经安装ADB驱动程序。</p>
 <h3 id="暂停-1"><a href="#暂停-1" class="headerlink" title="暂停"></a>暂停</h3><p>要暂停主题商店，您只需要执行一行代码</p>
-<div class="language-cmd"><button title="Copy code" class="copy"></button><span class="lang">cmd</span><pre class="shiki material-theme-palenight" style="background-color: #1a1a1a" tabindex="0"><code><span class="line"><span style="color: #BABED8">adb shell pm suspend com.heytap.themestore</span></span></code></pre></div><p>执行成功后，您的主题商店将被暂停</p>
+<figure class="highlight cmd"><table><tr><td class="code"><pre><code class="hljs cmd">adb shell pm suspend com.heytap.themestore<br></code></pre></td></tr></table></figure>
+
+<p>执行成功后，您的主题商店将被暂停</p>
 <h3 id="取消暂停"><a href="#取消暂停" class="headerlink" title="取消暂停"></a>取消暂停</h3><p>要取消暂停，您只需要执行一行代码</p>
-<div class="language-cmd"><button title="Copy code" class="copy"></button><span class="lang">cmd</span><pre class="shiki material-theme-palenight" style="background-color: #1a1a1a" tabindex="0"><code><span class="line"><span style="color: #BABED8">adb shell pm unsuspend com.heytap.themestore</span></span></code></pre></div><h1 id="尾声"><a href="#尾声" class="headerlink" title="尾声"></a>尾声</h1><p>此方案理论上对任何手机的Android 7.0以上系统都有效，具体可自行测试。</p>
+<figure class="highlight cmd"><table><tr><td class="code"><pre><code class="hljs cmd">adb shell pm unsuspend com.heytap.themestore<br></code></pre></td></tr></table></figure>
+
+<h1 id="尾声"><a href="#尾声" class="headerlink" title="尾声"></a>尾声</h1><p>此方案理论上对任何手机的Android 7.0以上系统都有效，具体可自行测试。</p>
 <p>不保证未来的某次OTA后此方案是否继续可用。</p>
 <h1 id="视频版教程"><a href="#视频版教程" class="headerlink" title="视频版教程"></a>视频版教程</h1><p>欲观看视频版，请前往bilibili。<br><a href="https://www.bilibili.com/video/BV1jL411i7LN/">https://www.bilibili.com/video/BV1jL411i7LN/</a></p>
 ]]></content>
@@ -392,30 +343,16 @@
 <p><strong>读前注意：操作此步骤需要您有连接<em>自由网络</em>的能力！</strong></p>
 <p>首先我们需要注册一个Telegram账户，我在这里不解释Telegram是什么，如果您不了解，请自行Google搜索了解相关内容。</p>
 <p>您登录进入Telegram后，请向这个机器人发送”/start”。</p>
-<blockquote><span class="custom-blockquote-svg"><svg width="24" height="24" viewBox="0 0 24 24" fill="" xmlns="http://www.w3.org/2000/svg" data-reactroot="">
-<path fill="" d="M22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22C13.8 22 15.5 21.5 17 20.6L22 22L20.7 17C21.5 15.5 22 13.8 22 12Z" undefined="1"></path>
-<path fill="" d="M15.97 11.5H16.04C17.12 11.5 18 12.38 18 13.47V13.53C18 14.62 17.12 15.5 16.03 15.5H15.96C14.88 15.5 14 14.62 14 13.53V13.46C14 12.38 14.88 11.5 15.97 11.5Z" undefined="1"></path>
-<path fill="" d="M7.97 11.5H8.04C9.12 11.5 10 12.38 10 13.47V13.53C10 14.62 9.12 15.5 8.03 15.5H7.97C6.88 15.5 6 14.62 6 13.53V13.46C6 12.38 6.88 11.5 7.97 11.5Z" undefined="1"></path>
-<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke="" d="M17 8.5C15.23 8.97 14.07 10.84 14.01 13.27C14 13.33 14 13.4 14 13.47V13.5"></path>
-<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke="" d="M9 8.5C7.23 8.97 6.07 10.84 6.01 13.27C6 13.33 6 13.4 6 13.47V13.5"></path>
-<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke="" d="M15.97 11.5H16.04C17.12 11.5 18 12.38 18 13.47V13.53C18 14.62 17.12 15.5 16.03 15.5H15.96C14.88 15.5 14 14.62 14 13.53V13.46C14 12.38 14.88 11.5 15.97 11.5Z"></path>
-<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke="" d="M7.97 11.5H8.04C9.12 11.5 10 12.38 10 13.47V13.53C10 14.62 9.12 15.5 8.03 15.5H7.97C6.88 15.5 6 14.62 6 13.53V13.46C6 12.38 6.88 11.5 7.97 11.5Z"></path>
-</svg>
-</span><p><a href="https://t.me/generatewarpplusbot">点击这里打开与此Telegram Bot的对话</a></p></blockquote>
+<blockquote>
+<p><a href="https://t.me/generatewarpplusbot">点击这里打开与此Telegram Bot的对话</a></p>
+</blockquote>
 <p>然后向其发送”/generate”</p>
 <p>在初次使用时，您会被要求订阅两个频道。请您直接订阅就好。</p>
 <p><strong>注意判断频道内容，由于此原因对您造成损失我们不承担相关责任。</strong></p>
 <p>在订阅完成后，再次发送”/generate”，机器人会出一道简单的加减算数题来进行人机验证。我们只要计算出结果并发送</p>
-<blockquote><span class="custom-blockquote-svg"><svg width="24" height="24" viewBox="0 0 24 24" fill="" xmlns="http://www.w3.org/2000/svg" data-reactroot="">
-<path fill="" d="M22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22C13.8 22 15.5 21.5 17 20.6L22 22L20.7 17C21.5 15.5 22 13.8 22 12Z" undefined="1"></path>
-<path fill="" d="M15.97 11.5H16.04C17.12 11.5 18 12.38 18 13.47V13.53C18 14.62 17.12 15.5 16.03 15.5H15.96C14.88 15.5 14 14.62 14 13.53V13.46C14 12.38 14.88 11.5 15.97 11.5Z" undefined="1"></path>
-<path fill="" d="M7.97 11.5H8.04C9.12 11.5 10 12.38 10 13.47V13.53C10 14.62 9.12 15.5 8.03 15.5H7.97C6.88 15.5 6 14.62 6 13.53V13.46C6 12.38 6.88 11.5 7.97 11.5Z" undefined="1"></path>
-<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke="" d="M17 8.5C15.23 8.97 14.07 10.84 14.01 13.27C14 13.33 14 13.4 14 13.47V13.5"></path>
-<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke="" d="M9 8.5C7.23 8.97 6.07 10.84 6.01 13.27C6 13.33 6 13.4 6 13.47V13.5"></path>
-<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke="" d="M15.97 11.5H16.04C17.12 11.5 18 12.38 18 13.47V13.53C18 14.62 17.12 15.5 16.03 15.5H15.96C14.88 15.5 14 14.62 14 13.53V13.46C14 12.38 14.88 11.5 15.97 11.5Z"></path>
-<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke="" d="M7.97 11.5H8.04C9.12 11.5 10 12.38 10 13.47V13.53C10 14.62 9.12 15.5 8.03 15.5H7.97C6.88 15.5 6 14.62 6 13.53V13.46C6 12.38 6.88 11.5 7.97 11.5Z"></path>
-</svg>
-</span><p>/generate &lt;您的答案&gt;</p></blockquote>
+<blockquote>
+<p>/generate &lt;您的答案&gt;</p>
+</blockquote>
 <p>就可以获得一个密钥，接下来我们前往1.1.1.1中输入这个密钥。</p>
 <p>以Android版为例，我们打开APP，<br><strong>点击右上角三横图标 - 账户 - 按键 - 更改密钥</strong></p>
 <p>然后输入您获得的密钥，即可激活拥有20+PB流量剩余的WARP+。</p>
@@ -482,16 +419,9 @@
 <p>对于不熟悉电脑的用户可以提供帮助，又因为自身没有内嵌太多的功能，所以占用资源十分小，几乎不影响电脑性能。</p>
 <p><img src="/img/0010/08.png"></p>
 <p>如果你不是很熟悉电脑，那么这款软件可以帮助你找到这些快捷功能，也可以优化电脑内存等等项目。但如果你已经是资深电脑用户，熟悉Windows的各项设置与大部分管理工具，那么这款软件就没必要再使用了。</p>
-<h1 id="相关链接"><a href="#相关链接" class="headerlink" title="相关链接"></a>相关链接</h1><blockquote><span class="custom-blockquote-svg"><svg width="24" height="24" viewBox="0 0 24 24" fill="" xmlns="http://www.w3.org/2000/svg" data-reactroot="">
-<path fill="" d="M22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22C13.8 22 15.5 21.5 17 20.6L22 22L20.7 17C21.5 15.5 22 13.8 22 12Z" undefined="1"></path>
-<path fill="" d="M15.97 11.5H16.04C17.12 11.5 18 12.38 18 13.47V13.53C18 14.62 17.12 15.5 16.03 15.5H15.96C14.88 15.5 14 14.62 14 13.53V13.46C14 12.38 14.88 11.5 15.97 11.5Z" undefined="1"></path>
-<path fill="" d="M7.97 11.5H8.04C9.12 11.5 10 12.38 10 13.47V13.53C10 14.62 9.12 15.5 8.03 15.5H7.97C6.88 15.5 6 14.62 6 13.53V13.46C6 12.38 6.88 11.5 7.97 11.5Z" undefined="1"></path>
-<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke="" d="M17 8.5C15.23 8.97 14.07 10.84 14.01 13.27C14 13.33 14 13.4 14 13.47V13.5"></path>
-<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke="" d="M9 8.5C7.23 8.97 6.07 10.84 6.01 13.27C6 13.33 6 13.4 6 13.47V13.5"></path>
-<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke="" d="M15.97 11.5H16.04C17.12 11.5 18 12.38 18 13.47V13.53C18 14.62 17.12 15.5 16.03 15.5H15.96C14.88 15.5 14 14.62 14 13.53V13.46C14 12.38 14.88 11.5 15.97 11.5Z"></path>
-<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke="" d="M7.97 11.5H8.04C9.12 11.5 10 12.38 10 13.47V13.53C10 14.62 9.12 15.5 8.03 15.5H7.97C6.88 15.5 6 14.62 6 13.53V13.46C6 12.38 6.88 11.5 7.97 11.5Z"></path>
-</svg>
-</span><p><a href="https://pcmanager.microsoft.com/">微软电脑管家官方网站</a></p></blockquote>
+<h1 id="相关链接"><a href="#相关链接" class="headerlink" title="相关链接"></a>相关链接</h1><blockquote>
+<p><a href="https://pcmanager.microsoft.com/">微软电脑管家官方网站</a></p>
+</blockquote>
 ]]></content>
       <categories>
         <category>科技</category>
