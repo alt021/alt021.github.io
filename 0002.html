@@ -16,26 +16,26 @@
   <meta name="author" content="ALT021">
   <meta name="keywords" content="">
   
-    <meta name="description" content="写在开头本博客现已经开启Livere评论系统，可对我的文章发表评论了！ 不过请文明发言，Livere会对垃圾留言进行过滤，博主也会清理不当言论。  最新的进展我等不及要想告诉大家最近折腾的新成果了！！！  更换新的域名此前我使用过Cloudflare提供的二级域名，和eu.org,虽说后者的权重和顶级域名差不了太多，但还是会有点难看的，对吧？ 某天在网上冲浪时，得知了硅云，硅云目前正在进行“首年0">
+    <meta name="description" content="准备开始！这篇文章的内容主要适用于Java版本远程联机，如果您是基岩版，双方可直接添加xbox好友进行联机，不需要再进行其他操作。 本文部分内容需要有计算机使用基础和对网络有初步了解后使用。 本文默认运营商没有为您分配公网IP，如果您拥有公网IP，请自行在路由器处配置端口转发。   提示：本文图片已遗失，博主实在无力全部补完。  方案1 内网穿透此方法使用较为容易，也已经被广泛传播。免费的内网穿透">
 <meta property="og:type" content="article">
-<meta property="og:title" content="小小博客的新发展">
-<meta property="og:url" content="https://www.alt021.top/post/0003">
+<meta property="og:title" content="Minecraft远程联机方法汇总">
+<meta property="og:url" content="https://www.alt021.top/0002.html">
 <meta property="og:site_name" content="ALT021的小世界">
-<meta property="og:description" content="写在开头本博客现已经开启Livere评论系统，可对我的文章发表评论了！ 不过请文明发言，Livere会对垃圾留言进行过滤，博主也会清理不当言论。  最新的进展我等不及要想告诉大家最近折腾的新成果了！！！  更换新的域名此前我使用过Cloudflare提供的二级域名，和eu.org,虽说后者的权重和顶级域名差不了太多，但还是会有点难看的，对吧？ 某天在网上冲浪时，得知了硅云，硅云目前正在进行“首年0">
+<meta property="og:description" content="准备开始！这篇文章的内容主要适用于Java版本远程联机，如果您是基岩版，双方可直接添加xbox好友进行联机，不需要再进行其他操作。 本文部分内容需要有计算机使用基础和对网络有初步了解后使用。 本文默认运营商没有为您分配公网IP，如果您拥有公网IP，请自行在路由器处配置端口转发。   提示：本文图片已遗失，博主实在无力全部补完。  方案1 内网穿透此方法使用较为容易，也已经被广泛传播。免费的内网穿透">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://www.alt021.top/img/0003/index.jpg">
-<meta property="article:published_time" content="2023-04-09T11:44:18.000Z">
-<meta property="article:modified_time" content="2023-09-28T05:46:51.831Z">
+<meta property="og:image" content="https://www.alt021.top/img/0002/index.jpg">
+<meta property="article:published_time" content="2023-04-02T05:52:20.000Z">
+<meta property="article:modified_time" content="2023-09-28T05:46:43.869Z">
 <meta property="article:author" content="ALT021">
-<meta property="article:tag" content="闲聊">
-<meta property="article:tag" content="hexo">
-<meta property="article:tag" content="海文章">
+<meta property="article:tag" content="Minecraft">
+<meta property="article:tag" content="网络">
+<meta property="article:tag" content="内网穿透">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://www.alt021.top/img/0003/index.jpg">
+<meta name="twitter:image" content="https://www.alt021.top/img/0002/index.jpg">
   
   
   
-  <title>小小博客的新发展 - ALT021的小世界</title>
+  <title>Minecraft远程联机方法汇总 - ALT021的小世界</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -225,7 +225,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="小小博客的新发展"></span>
+            <span id="subtitle" data-typed-text="Minecraft远程联机方法汇总"></span>
           
         </div>
 
@@ -236,8 +236,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-04-09 19:44" pubdate>
-          2023年4月9日 晚上
+        <time datetime="2023-04-02 13:52" pubdate>
+          2023年4月2日 下午
         </time>
       </span>
     
@@ -248,7 +248,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          680 字
+          2.3k 字
         
       </span>
     
@@ -287,31 +287,72 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">小小博客的新发展</h1>
+            <h1 id="seo-header">Minecraft远程联机方法汇总</h1>
             
             
               <div class="markdown-body">
                 
-                <h1 id="写在开头"><a href="#写在开头" class="headerlink" title="写在开头"></a>写在开头</h1><p>本博客现已经开启Livere评论系统，可对我的文章发表评论了！</p>
-<p>不过请文明发言，Livere会对垃圾留言进行过滤，博主也会清理不当言论。</p>
+                <h1 id="准备开始！"><a href="#准备开始！" class="headerlink" title="准备开始！"></a>准备开始！</h1><p>这篇文章的内容主要适用于<strong>Java版本</strong>远程联机，如果您是基岩版，双方可直接添加xbox好友进行联机，不需要再进行其他操作。</p>
+<p>本文部分内容需要有计算机使用基础和对网络有初步了解后使用。</p>
+<p>本文默认运营商没有为您分配公网IP，如果您拥有公网IP，请自行在路由器处配置端口转发。</p>
 <hr>
-<h1 id="最新的进展"><a href="#最新的进展" class="headerlink" title="最新的进展"></a>最新的进展</h1><p>我等不及要想告诉大家最近折腾的新成果了！！！</p>
+<blockquote>
+<p>提示：本文图片已遗失，博主实在无力全部补完。</p>
+</blockquote>
+<h1 id="方案1-内网穿透"><a href="#方案1-内网穿透" class="headerlink" title="方案1 内网穿透"></a>方案1 内网穿透</h1><p>此方法使用较为容易，也已经被广泛传播。免费的内网穿透服务商比比皆是，诸如<em>SakuraFrp、NATAPP、花生壳等等。<br>今天我要为大家推荐的是另一款目前体验较为优秀的穿透提供商*<em>OpenFrp</em></em></p>
+<h2 id="创建账号"><a href="#创建账号" class="headerlink" title="创建账号"></a>创建账号</h2><p>首先，打开<a target="_blank" rel="noopener" href="https://www.openfrp.net/">OpenFrp官网</a>进行账号注册，这一步不过多讲述，请按照网页上的提示进行注册</p>
+<h2 id="下载软件"><a href="#下载软件" class="headerlink" title="下载软件"></a>下载软件</h2><p>进入<a target="_blank" rel="noopener" href="https://console.openfrp.net/">管理面板</a>后，点击侧边下载软件，下载启动器即可。如果您是新手则不建议使用客户端。</p>
+<p>![下载指引](https:// /2023/04/02/iHIBza.png)</p>
+<h2 id="获得端口号"><a href="#获得端口号" class="headerlink" title="获得端口号"></a>获得端口号</h2><p>打开您的Minecraft:Java Edtion实例，进入要游玩的世界。按Esc键暂停游戏，选择对局域网开启</p>
+<p>开启后，您会在聊天框中收到一条消息，此消息包含了端口号。</p>
+<p>请记住此端口号，将在稍后创建隧道的步骤中使用到</p>
+<h2 id="创建隧道"><a href="#创建隧道" class="headerlink" title="创建隧道"></a>创建隧道</h2><p>进入OpenFrp管理面板，点击侧边创建隧道</p>
+<p>进入后，在左侧选择好节点，在右侧输入信息的位置中。协议请选择TCP(基岩版本则使用UDP)，本地地址一般填写<strong>127.0.0.1</strong>(即本地计算机)，本地端口填写游戏中提示的端口号。远程端口建议随机，隧道名称可按自己的喜好填写</p>
+<p>完成填写后，点击创建即可。</p>
+<p>请注意，在此过程中，不要关闭您的游戏实例。重启局域网联机会导致本地端口变化，您则需要重新配置穿透隧道。</p>
+<h2 id="启动穿透"><a href="#启动穿透" class="headerlink" title="启动穿透"></a>启动穿透</h2><p>打开您的启动器，启动时会要求您登录，请输入与<a target="_blank" rel="noopener" href="https://console.openfrp.net/">管理面板</a><strong>相同</strong>的账号密码登录启动器</p>
+<p>点击左侧隧道按钮即可，启动您创建好的隧道</p>
+<p>启动完成后，您通常会收到一条来自Of启动器的通知，如果通知中向您提示端口被占用等，请<strong>重启电脑</strong>或<strong>前往管理面板强制下线</strong>。</p>
+<h2 id="好友方加入"><a href="#好友方加入" class="headerlink" title="好友方加入"></a>好友方加入</h2><p>隧道启动完成后，点击左侧日志按钮，在最底部会获得连接到此隧道的IP，请完整的复制这串地址并发送给朋友</p>
+<p>让朋友使用添加并加入服务器的方式连接到此地址即可与您联机</p>
+<h2 id="提示"><a href="#提示" class="headerlink" title="提示"></a>提示</h2><p>此方式是否稳定依赖于穿透服务商网络及延迟是否优秀，如服务商较为火爆则您的体验可能较差。此方式默认情况下可能需要正版账号方可连接。</p>
 <hr>
-<h2 id="更换新的域名"><a href="#更换新的域名" class="headerlink" title="更换新的域名"></a>更换新的域名</h2><p>此前我使用过<a target="_blank" rel="noopener" href="https://cloudflare.com/">Cloudflare</a>提供的二级域名，和<a target="_blank" rel="noopener" href="https://nic.eu.org/">eu.org</a>,虽说后者的权重和顶级域名差不了太多，但还是会有点难看的，对吧？</p>
-<p>某天在网上冲浪时，得知了硅云，硅云目前正在进行“首年0元”的活动。新用户的首个域名首年免费(仅限.top等部分顶级域名)，如果你正需要，请<a target="_blank" rel="noopener" href="https://www.vpsor.cn/?userCode=yh21c0e">点击这里注册</a>，这是我的推广链接，你使用此链接注册我将获得部分返利。提前感谢大家。</p>
-<p>我的所有站点都已换到<a href="https://www.alt021.top/">alt021.top</a>的域名。</p>
+<h1 id="方案2-虚拟局域网"><a href="#方案2-虚拟局域网" class="headerlink" title="方案2 虚拟局域网"></a>方案2 虚拟局域网</h1><p>此方法体验会优于前者，在服务器转发握手完成后，您和您朋友的计算机将直接点对点通信，因此可以获得更优异的延迟体验。本文以<a target="_blank" rel="noopener" href="https://my.zerotier.com/">Zerotier</a>为例</p>
+<h2 id="注册与下载"><a href="#注册与下载" class="headerlink" title="注册与下载"></a>注册与下载</h2><p>在<a target="_blank" rel="noopener" href="https://my.zerotier.com/">Zerotier 官方网站</a>下载软件，并注册登录账号。网站和客户端界面全部为英文，如果您无法阅读，请使用翻译工具。</p>
+<p>请注意，您的朋友也需要安装Zerotier客户端！</p>
+<h2 id="创建虚拟局域网并加入"><a href="#创建虚拟局域网并加入" class="headerlink" title="创建虚拟局域网并加入"></a>创建虚拟局域网并加入</h2><p>登录官网后，点击”Create a network”即可创建并获得一串网络ID，请将此ID发送给您的朋友</p>
+<p>取得网络ID后，右键任务栏上的Zerotier图标，选择“Join New Network”</p>
+<p>在打开的对话框中，输入您的网络ID。添加完成后，点击这个ID即可进行连接。</p>
+<p>连接后打开网络和共享中心，如果可以看到Zerotier One则说明已经成功连接。</p>
+<p>请注意，您和您的朋友需要<strong>同时连接</strong>才可以正常联机</p>
+<h2 id="开始联机"><a href="#开始联机" class="headerlink" title="开始联机"></a>开始联机</h2><p>要建立连接，您首先需要查询您在虚拟局域网中的IP地址是什么</p>
+<p>打开cmd并输入”ipconfig”，在输出的信息中，找到”网络适配器 - Zerotier One”</p>
+<p>这里的IPv4地址就是您在此虚拟局域网中的IP地址。</p>
+<p>使用和方法1相同的方式创建一个局域网世界，并将虚拟局域网中的IP和端口号进行组合，发送给您的朋友，就像这样。</p>
+<blockquote>
+<p>172.24.0.1:63024</p>
+</blockquote>
+<p>然后使用连接服务器的方式连接即可。</p>
 <hr>
-<h2 id="更换CDN改善速度"><a href="#更换CDN改善速度" class="headerlink" title="更换CDN改善速度"></a>更换CDN改善速度</h2><p>博客的部分服务此前使用Jsdelivr的CDN，其在国内由于特殊原因很难正常访问。导致本网站打开速度异常缓慢，图标文件几乎不能正常加载。</p>
-<p>目前已更换到另外的CDN，网页打开速度显著改善，基本3-5秒即可完成加载。</p>
+<h1 id="方案3-IPv6公网直连"><a href="#方案3-IPv6公网直连" class="headerlink" title="方案3 IPv6公网直连"></a>方案3 IPv6公网直连</h1><p>如果您和朋友都可以使用IPv6，那么此方法就是最推荐的方法。</p>
+<h2 id="查看是否支持IPv6"><a href="#查看是否支持IPv6" class="headerlink" title="查看是否支持IPv6"></a>查看是否支持IPv6</h2><p>打开网络与共享中心，点击您的网络适配器。如果IPv6一栏为“Internet”，则说明您可以使用IPv6。如果为”无网络访问权限”，请尝试修改路由器设置或者将网线直接插入光猫LAN口</p>
+<p>如果您和您的朋友都拥有IPv6，则可以使用此方式联机。</p>
+<h2 id="查找IPv6地址"><a href="#查找IPv6地址" class="headerlink" title="查找IPv6地址"></a>查找IPv6地址</h2><p>同样打开cmd输入”ipconfig”，找到自己联网所使用的网络适配器，您将可以找到您的IPv6地址。请复制这串地址</p>
+<p>您通常会拥有多个IPv6地址，如果使用其中一个无法连接，请依次使用其他的地址进行尝试。</p>
+<p>另外请不要使用类似”fe80”开头的本地链接IPv6地址，此地址<strong>无法连接</strong>。</p>
+<h2 id="开始联机-1"><a href="#开始联机-1" class="headerlink" title="开始联机"></a>开始联机</h2><p>请将IPv6地址套在中括号内，并加上游戏给出的端口号，就像这样</p>
+<blockquote>
+<p> 【240e:000:00ee:ee00:0e00:ee00:000e:0ee0】:22333 </p>
+</blockquote>
+<p><strong>此处演示使用全角括号，您需要使用英文半角括号</strong></p>
+<p>并发送这串地址给您的朋友，让他使用加入服务器的方式连接到您的游戏。</p>
 <hr>
-<h2 id="开通评论"><a href="#开通评论" class="headerlink" title="开通评论"></a>开通评论</h2><p>此博客已经成功接入Livere评论系统，现在您可以对我的博文发表评论了。</p>
-<p>不过请注意，您的评论若包含不当言论或垃圾内容，将会被Livere过滤，博主也将不定期主动删除不当言论。</p>
-<hr>
-<h1 id="在网络之外"><a href="#在网络之外" class="headerlink" title="在网络之外"></a>在网络之外</h1><p>博主离中考越来越近了，近期的一次模拟考试部分成绩些许不理想。等两个月之后，我的自我介绍大抵是该更新了。</p>
-<p>到那时候就真的没时间管理博客了，我的<strong>Pure Life纯净生存服务器</strong>会不会开下去也成了谜，谁知道呢，到时再看。</p>
-<hr>
-<h1 id="尾声"><a href="#尾声" class="headerlink" title="尾声"></a>尾声</h1><p>这次的文章有点水( 自 知 之 明 )，下次好好更新就是了。。。</p>
-<p>总之以后空闲时间可能会越来越少，尽量多管理一下博客吧。感谢来阅读的各位！</p>
+<h1 id="无正版简单解决方式"><a href="#无正版简单解决方式" class="headerlink" title="无正版简单解决方式"></a>无正版简单解决方式</h1><p>如果您或您的朋友没有正版，那么可能在使用上述方式时无法正常连接。针对此情况的简单解决办法是：注册并使用第三方验证。<br>诸如HMCL、PCL2等启动器均支持使用第三方验证进行登录。登陆后，您和您的朋友便可以正常连接</p>
+<p>我建议尝试<a target="_blank" rel="noopener" href="https://littleskin.cn/">LittleSkin</a></p>
+<p>您也可以使用类似“自定义局域网”的Fabric或Forge模组来关闭正版验证。在此处不再赘述</p>
+<h1 id="提示-1"><a href="#提示-1" class="headerlink" title="提示"></a>提示</h1><p>如果您要游玩mod版，则双方需要使用相同的客户端，您可直接拷贝**.minecraft**文件夹发送给您的朋友。</p>
+<h1 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h1><p>本教程可能无法细致入微，请学会参考官方教程使用这些方式。</p>
+<p>让我们离开网易版的限制，拥抱自由的Minecraft</p>
 
                 
               </div>
@@ -330,12 +371,12 @@
     
       <span class="category-chain">
         
-  <a href="/categories/%E6%9D%82%E8%B0%88/" class="category-chain-item">杂谈</a>
+  <a href="/categories/%E7%A7%91%E6%8A%80/" class="category-chain-item">科技</a>
   
   
     <span>></span>
     
-  <a href="/categories/%E6%9D%82%E8%B0%88/%E5%8D%9A%E5%AE%A2%E9%82%A3%E4%BA%9B%E4%BA%8B/" class="category-chain-item">博客那些事</a>
+  <a href="/categories/%E7%A7%91%E6%8A%80/%E6%95%99%E7%A8%8B/" class="category-chain-item">教程</a>
   
   
 
@@ -352,11 +393,11 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/%E9%97%B2%E8%81%8A/" class="print-no-link">#闲聊</a>
+        <a href="/tags/Minecraft/" class="print-no-link">#Minecraft</a>
       
-        <a href="/tags/hexo/" class="print-no-link">#hexo</a>
+        <a href="/tags/%E7%BD%91%E7%BB%9C/" class="print-no-link">#网络</a>
       
-        <a href="/tags/%E6%B5%B7%E6%96%87%E7%AB%A0/" class="print-no-link">#海文章</a>
+        <a href="/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/" class="print-no-link">#内网穿透</a>
       
     </div>
   
@@ -368,8 +409,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>小小博客的新发展</div>
-      <div>https://www.alt021.top/post/0003</div>
+      <div>Minecraft远程联机方法汇总</div>
+      <div>https://www.alt021.top/0002.html</div>
     </div>
     <div class="license-meta">
       
@@ -381,7 +422,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2023年4月9日</div>
+          <div>2023年4月2日</div>
         </div>
       
       
@@ -425,9 +466,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/post/0004" title="更加私密的浏览体验，Tor Browser">
+                      <a href="/0003.html" title="小小博客的新发展">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">更加私密的浏览体验，Tor Browser</span>
+                        <span class="hidden-mobile">小小博客的新发展</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -435,8 +476,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/post/0002" title="Minecraft远程联机方法汇总">
-                        <span class="hidden-mobile">Minecraft远程联机方法汇总</span>
+                      <a href="/0001.html" title="你好，世界！">
+                        <span class="hidden-mobile">你好，世界！</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

@@ -16,28 +16,28 @@
   <meta name="author" content="ALT021">
   <meta name="keywords" content="">
   
-    <meta name="description" content="写在开头此文章只介绍有关使用方法以及保护原理。如果您想对Tor及Tor Network了解更加”深入”请移步别家。 使用初衷因为极其完善的Tor网络以及网桥，让隐私浏览更加接近隐私。更加接近真正的”无痕模式”，我选择了使用Tor，并让其完全接替我的常规浏览器的匿名模式。无论是处于保护隐私，亦或是其他一些不便于说的原因，我也会建议使用Tor进行私密浏览。至于流传甚广的”暗网”，我不在意，也不想在意。">
+    <meta name="description" content="阅前提示本文章所有内容仅供保护隐私使用，不涉及翻牆等内容，无法帮您突破网络审查！如需要请另寻他处学习。 什么是1.1.1.1这是来自大名鼎鼎的Cloudflare所提供的DNS解析与隐私保护服务。 其提供的服务分为1.1.1.1 DNS解析与WARP+隐私保护两种。前者不作介绍，后者则是我们今天的主角。 首先要回答一些问题WARP+是什么原理通过将您的数据通过Cloudflare服务器进行中转，来">
 <meta property="og:type" content="article">
-<meta property="og:title" content="更加私密的浏览体验，Tor Browser">
-<meta property="og:url" content="https://www.alt021.top/post/0004">
+<meta property="og:title" content="来自Cloudflare的隐私保护方案">
+<meta property="og:url" content="https://www.alt021.top/0008.html">
 <meta property="og:site_name" content="ALT021的小世界">
-<meta property="og:description" content="写在开头此文章只介绍有关使用方法以及保护原理。如果您想对Tor及Tor Network了解更加”深入”请移步别家。 使用初衷因为极其完善的Tor网络以及网桥，让隐私浏览更加接近隐私。更加接近真正的”无痕模式”，我选择了使用Tor，并让其完全接替我的常规浏览器的匿名模式。无论是处于保护隐私，亦或是其他一些不便于说的原因，我也会建议使用Tor进行私密浏览。至于流传甚广的”暗网”，我不在意，也不想在意。">
+<meta property="og:description" content="阅前提示本文章所有内容仅供保护隐私使用，不涉及翻牆等内容，无法帮您突破网络审查！如需要请另寻他处学习。 什么是1.1.1.1这是来自大名鼎鼎的Cloudflare所提供的DNS解析与隐私保护服务。 其提供的服务分为1.1.1.1 DNS解析与WARP+隐私保护两种。前者不作介绍，后者则是我们今天的主角。 首先要回答一些问题WARP+是什么原理通过将您的数据通过Cloudflare服务器进行中转，来">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://www.alt021.top/img/0004/index.jpg">
-<meta property="article:published_time" content="2023-05-02T05:19:36.000Z">
-<meta property="article:modified_time" content="2023-09-28T05:46:59.157Z">
+<meta property="og:image" content="https://www.alt021.top/img/0008/index.jpg">
+<meta property="article:published_time" content="2023-06-30T05:50:10.000Z">
+<meta property="article:modified_time" content="2023-09-28T05:49:27.118Z">
 <meta property="article:author" content="ALT021">
-<meta property="article:tag" content="Tor">
-<meta property="article:tag" content="匿名">
 <meta property="article:tag" content="富强上网">
 <meta property="article:tag" content="科学上网">
 <meta property="article:tag" content="隐私保护">
+<meta property="article:tag" content="Cloudflare">
+<meta property="article:tag" content="1.1.1.1">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://www.alt021.top/img/0004/index.jpg">
+<meta name="twitter:image" content="https://www.alt021.top/img/0008/index.jpg">
   
   
   
-  <title>更加私密的浏览体验，Tor Browser - ALT021的小世界</title>
+  <title>来自Cloudflare的隐私保护方案 - ALT021的小世界</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -227,7 +227,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="更加私密的浏览体验，Tor Browser"></span>
+            <span id="subtitle" data-typed-text="来自Cloudflare的隐私保护方案"></span>
           
         </div>
 
@@ -238,8 +238,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-05-02 13:19" pubdate>
-          2023年5月2日 下午
+        <time datetime="2023-06-30 13:50" pubdate>
+          2023年6月30日 下午
         </time>
       </span>
     
@@ -250,7 +250,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.6k 字
+          1.2k 字
         
       </span>
     
@@ -289,39 +289,42 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">更加私密的浏览体验，Tor Browser</h1>
+            <h1 id="seo-header">来自Cloudflare的隐私保护方案</h1>
             
             
               <div class="markdown-body">
                 
-                <h1 id="写在开头"><a href="#写在开头" class="headerlink" title="写在开头"></a>写在开头</h1><p>此文章只介绍有关使用方法以及保护原理。如果您想对Tor及Tor Network了解更加”深入”请移步别家。</p>
-<h1 id="使用初衷"><a href="#使用初衷" class="headerlink" title="使用初衷"></a>使用初衷</h1><p>因为极其完善的Tor网络以及网桥，让隐私浏览更加接近隐私。更加接近真正的”无痕模式”，我选择了使用Tor，并让其完全接替我的常规浏览器的匿名模式。<br><br>无论是处于保护隐私，亦或是其他一些不便于说的原因，我也会建议使用Tor进行私密浏览。至于流传甚广的”暗网”，我不在意，也不想在意。</p>
-<h1 id="实现原理"><a href="#实现原理" class="headerlink" title="实现原理"></a>实现原理</h1><p>至于具体原理，我只了解了大概。具体的，不妨连接上Tor Network问问ChatGPT！</p>
-<p><strong>我：</strong></p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs">Tor如何保护我的隐私<br></code></pre></td></tr></table></figure>
-<p><strong>ChatGPT：</strong></p>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs markdown">Tor是一种匿名网络，它通过将您的网络流量路由通过多个节点来保护您的隐私。当您使用Tor时，您的数据将通过称为“中继”的服务器进行路由，这些服务器由志愿者维护。每个中继只知道数据来自前一个中继，并将数据发送到下一个中继，以便在传输过程中匿名化您的身份和位置。<br><br>以下是Tor如何保护您的隐私的一些关键方面：<br><br><span class="hljs-bullet">1.</span> 匿名化您的IP地址：Tor将您的数据流量路由通过多个中继，使得目标网站无法看到您的真实IP地址。取而代之的是，他们只能看到中继节点的IP地址。<br><br><span class="hljs-bullet">2.</span> 加密您的数据：Tor使用多层加密来保护您的数据，以确保只有您和最终目标网站能够读取您的通信内容。<br><br><span class="hljs-bullet">3.</span> 防止流量分析：Tor还会随机化数据包的大小，时间和路由路径，防止攻击者通过流量分析来确定您的身份和位置。<br><br><span class="hljs-bullet">4.</span> 避免DNS泄漏：Tor使用自己的DNS解析器来避免您的DNS请求暴露您的位置。<br><br>总的来说，使用Tor可以帮助您保护您的隐私和匿名性，但请记住，Tor并非完美的工具，因此请注意在使用Tor时采取其他隐私保护措施，例如使用端到端加密的通信和避免向任何人透露您的真实身份和位置信息。<br></code></pre></td></tr></table></figure>
-
-<p>以上即是Tor浏览更加匿名化的原因。<br><br>但这些干干的东西显然对我们没有很大用处。我们更加在意的，还是…</p>
-<h1 id="对我们有什么影响"><a href="#对我们有什么影响" class="headerlink" title="对我们有什么影响"></a>对我们有什么影响</h1><p>过去你只能对使用同一台机器的用户匿名，现在则不然，你可以对你的ISP甚至你要访问的网站匿名。你的数据包在整个传输过程中都是加密的，被截取的可能性也微乎其微。(毕竟SSL/TLS也在从中保护).<br>这可以有效的帮助我们远离跟踪与数据收集。某些情况下也可以减少你收到垃圾短信和电话的数量。</p>
-<h1 id="有什么缺点"><a href="#有什么缺点" class="headerlink" title="有什么缺点"></a>有什么缺点</h1><p>经过我数次浏览体验，发现了这么几点问题</p>
-<ul>
-<li><strong>访问速度慢</strong><br>由于你的请求经过数次转发，最终到达客户端的速度会变得十分慢，在我这里，使用DuckDuckGO搜索一次内容需要至少等上5秒，这可能使很多人难以接受</li>
-<li><strong>无法保存登录状态</strong><br>这不算缺点，但我觉得值得一说。Tor被配置为不保存任何浏览数据，意味着即使你使用你自己的计算机，并且你希望在对匿名浏览时保存状态，这也是不被允许的。</li>
-<li><strong>部分地区难以连接</strong><br>Tor Network也许部分地区与运营商无法访问，即使配置网桥也无济于事。我建议想办法启用IPv6，这将使你更加容易连接到Tor，因为这些服务在IPv6下大多数未被封锁。</li>
-</ul>
-<h1 id="安装使用"><a href="#安装使用" class="headerlink" title="安装使用"></a>安装使用</h1><p>这一步没有什么难度，请直接去往官方网站进行下载。使用IPv6可直接访问。<br>您亦可直接前往下在本站提供的安装包。</p>
-<p>下载完成后，请按照说明进行安装。</p>
+                <h1 id="阅前提示"><a href="#阅前提示" class="headerlink" title="阅前提示"></a>阅前提示</h1><p>本文章所有内容仅供保护隐私使用，不涉及翻牆等内容，无法帮您突破网络审查！如需要请另寻他处学习。</p>
+<h1 id="什么是1-1-1-1"><a href="#什么是1-1-1-1" class="headerlink" title="什么是1.1.1.1"></a>什么是1.1.1.1</h1><p>这是来自大名鼎鼎的<a target="_blank" rel="noopener" href="https://www.cloudflare.com/">Cloudflare</a>所提供的DNS解析与隐私保护服务。</p>
+<p>其提供的服务分为<strong>1.1.1.1 DNS解析</strong>与<strong>WARP+隐私保护</strong>两种。前者不作介绍，后者则是我们今天的主角。</p>
+<h1 id="首先要回答一些问题"><a href="#首先要回答一些问题" class="headerlink" title="首先要回答一些问题"></a>首先要回答一些问题</h1><h3 id="WARP-是什么原理"><a href="#WARP-是什么原理" class="headerlink" title="WARP+是什么原理"></a>WARP+是什么原理</h3><p>通过将您的数据通过Cloudflare服务器进行中转，来隐藏您的真实IP，从而达到保护隐私的效果。在这一点上，其与我之前介绍过的<a href="https://www.alt021.top/0004/">TorBrowser</a>实现的原理大差不差。只是Tor仅供浏览器本身自己使用，而WARP+能在您的几乎所有设备和应用程序中使用</p>
+<h3 id="我能够访问被封锁的服务吗"><a href="#我能够访问被封锁的服务吗" class="headerlink" title="我能够访问被封锁的服务吗"></a><strong>我能够访问被封锁的服务吗</strong></h3><p>Cloudflare 1.1.1.1与WARP+均不会改变您IP对应的国家地区，因此您访问的流量虽被加密且经过转发，但您仍不能访问被封锁的流媒体等服务。</p>
+<h3 id="对我的网络速度有没有影响？"><a href="#对我的网络速度有没有影响？" class="headerlink" title="对我的网络速度有没有影响？"></a>对我的网络速度有没有影响？</h3><p>使用此类任何服务都会些许影响你的网速。但WARP+所提供的网络入口较为优秀，因此您访问所在地和所在地之外网站的速度均不会受到很大的影响。</p>
+<h3 id="适合的使用场景？"><a href="#适合的使用场景？" class="headerlink" title="适合的使用场景？"></a>适合的使用场景？</h3><p>例如您在公共网络、无密码的开放网络下或者某些特殊场合，需要通过诸如此类的方式保护自己的数据不会泄漏。</p>
+<h3 id="100"><a href="#100" class="headerlink" title="100% ?"></a>100% ?</h3><p>任何方式都无法完全保证您的信息不被窃取！请理性看待任何保护隐私的方式。</p>
+<h1 id="开始使用WARP"><a href="#开始使用WARP" class="headerlink" title="开始使用WARP"></a>开始使用WARP</h1><p>WARP的使用十分简单，您只需要前往<a target="_blank" rel="noopener" href="https://1.1.1.1/">官方网站</a>安装官方应用程序并打开他。点击那个醒目的按钮即可启用保护。</p>
+<p><img src="/img/0008/1.jpg" srcset="/img/loading.gif" lazyload></p>
+<h1 id="免费获取WARP"><a href="#免费获取WARP" class="headerlink" title="免费获取WARP+"></a>免费获取WARP+</h1><p><strong>提示：此处教程不配图</strong></p>
+<p>WARP+是WARP服务的高级版本，提供更多的流量和更快的网络入口。我们通过简单的几个步骤即可长期不断获取免费的WARP+流量。</p>
+<p><strong>读前注意：操作此步骤需要您有连接<em>自由网络</em>的能力！</strong></p>
+<p>首先我们需要注册一个Telegram账户，我在这里不解释Telegram是什么，如果您不了解，请自行Google搜索了解相关内容。</p>
+<p>您登录进入Telegram后，请向这个机器人发送”/start”。</p>
 <blockquote>
-<p><a target="_blank" rel="noopener" href="https://torproject.netcologne.de/">点这去往Tor Project</a></p>
+<p><a target="_blank" rel="noopener" href="https://t.me/generatewarpplusbot">点击这里打开与此Telegram Bot的对话</a></p>
 </blockquote>
-<p>打开Tor，您将被立刻要求连接到Tor，点击连接。如果您的运营商没有封锁Tor，过不了多久，您便可以开始私密浏览了。<br></p>
-<p><img src="https://i.328888.xyz/2023/05/02/iMVnio.png" srcset="/img/loading.gif" lazyload></p>
-<h1 id="Q-amp-A"><a href="#Q-amp-A" class="headerlink" title="Q&amp;A"></a>Q&amp;A</h1><h2 id="能否稳定使用"><a href="#能否稳定使用" class="headerlink" title="能否稳定使用"></a>能否稳定使用</h2><p>我的地区没有问题，且不需要使用网桥。</p>
-<h2 id="为什么不直接使用VPN"><a href="#为什么不直接使用VPN" class="headerlink" title="为什么不直接使用VPN"></a>为什么不直接使用VPN</h2><p>Tor其实与VPN的实现相差不大，但我之所以选择Tor完全是因为使用方便而且成本更低。我的其他应用也并不会受到Tor Network的影响。</p>
-<p>Tor也比VPN法律风险更低。</p>
-<h1 id="尾声"><a href="#尾声" class="headerlink" title="尾声"></a>尾声</h1><p>所有资源将在藏宝阁有更新，如您需要可自行前往下载。</p>
-<p>此文章评论部分禁止讨论有关富强上网一类的话题，仅限于交流技术与使用问题。</p>
+<p>然后向其发送”/generate”</p>
+<p>在初次使用时，您会被要求订阅两个频道。请您直接订阅就好。</p>
+<p><strong>注意判断频道内容，由于此原因对您造成损失我们不承担相关责任。</strong></p>
+<p>在订阅完成后，再次发送”/generate”，机器人会出一道简单的加减算数题来进行人机验证。我们只要计算出结果并发送</p>
+<blockquote>
+<p>/generate &lt;您的答案&gt;</p>
+</blockquote>
+<p>就可以获得一个密钥，接下来我们前往1.1.1.1中输入这个密钥。</p>
+<p>以Android版为例，我们打开APP，<br><strong>点击右上角三横图标 - 账户 - 按键 - 更改密钥</strong></p>
+<p>然后输入您获得的密钥，即可激活拥有20+PB流量剩余的WARP+。</p>
+<p>密钥大概像这样：xxxxxxxx-xxxxxxxx-xxxxxxxx</p>
+<h1 id="尾声"><a href="#尾声" class="headerlink" title="尾声"></a>尾声</h1><p>本篇教程到这里就结束了，希望大家能够共享一个安全隐私的互联网。</p>
+<p>本文评论区禁止讨论有关翻牆，科學上網，等有关话题。仅限于讨论有关隐私保护，WARP+产品使用有关内容。</p>
 
                 
               </div>
@@ -362,15 +365,15 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/Tor/" class="print-no-link">#Tor</a>
-      
-        <a href="/tags/%E5%8C%BF%E5%90%8D/" class="print-no-link">#匿名</a>
-      
         <a href="/tags/%E5%AF%8C%E5%BC%BA%E4%B8%8A%E7%BD%91/" class="print-no-link">#富强上网</a>
       
         <a href="/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/" class="print-no-link">#科学上网</a>
       
         <a href="/tags/%E9%9A%90%E7%A7%81%E4%BF%9D%E6%8A%A4/" class="print-no-link">#隐私保护</a>
+      
+        <a href="/tags/Cloudflare/" class="print-no-link">#Cloudflare</a>
+      
+        <a href="/tags/1-1-1-1/" class="print-no-link">#1.1.1.1</a>
       
     </div>
   
@@ -382,8 +385,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>更加私密的浏览体验，Tor Browser</div>
-      <div>https://www.alt021.top/post/0004</div>
+      <div>来自Cloudflare的隐私保护方案</div>
+      <div>https://www.alt021.top/0008.html</div>
     </div>
     <div class="license-meta">
       
@@ -395,7 +398,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2023年5月2日</div>
+          <div>2023年6月30日</div>
         </div>
       
       
@@ -439,9 +442,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/post/0005" title="部分GPT镜像及其他生成式AI汇总">
+                      <a href="/0009.html" title="近期博客内的一些变化">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">部分GPT镜像及其他生成式AI汇总</span>
+                        <span class="hidden-mobile">近期博客内的一些变化</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -449,8 +452,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/post/0003" title="小小博客的新发展">
-                        <span class="hidden-mobile">小小博客的新发展</span>
+                      <a href="/0007.html" title="ColorOS 13 第三方主题及无限试用教程">
+                        <span class="hidden-mobile">ColorOS 13 第三方主题及无限试用教程</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
