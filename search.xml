@@ -1,19 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>你好，世界！</title>
-    <url>//post/0001</url>
-    <content><![CDATA[<h1 id="你好，世界！"><a href="#你好，世界！" class="headerlink" title="你好，世界！"></a>你好，世界！</h1><p>我的首个个人博客终于成功上线了，这篇博文就来说说主要写点啥和以后的规划吧！</p>
-<h1 id="更新的内容"><a href="#更新的内容" class="headerlink" title="更新的内容"></a>更新的内容</h1><p>更新的内容嘛，估计会很杂，但是不一定会多。更新会需要很久，但一定会有<br>现在主要存放我的B站视频的文字版文章。</p>
-<h1 id="以后的规划"><a href="#以后的规划" class="headerlink" title="以后的规划"></a>以后的规划</h1><p>关于这一块，我没有想过，也不想去做什么。只想安静的写一些我想要表达的东西。如果你有想看的东西，请告诉我！<br>你可以在博客主页，友链页，我的个人网站了解如何联系我。</p>
-<h1 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h1><p>首篇博文就这么草草的结束吧，感谢留在网页的大家的支持。希望我可以输出让大家喜欢的内容。</p>
-]]></content>
-      <categories>
-        <category>杂谈</category>
-        <category>随笔</category>
-      </categories>
-  </entry>
-  <entry>
     <title>Minecraft远程联机方法汇总</title>
     <url>//post/0002</url>
     <content><![CDATA[<h1 id="准备开始！"><a href="#准备开始！" class="headerlink" title="准备开始！"></a>准备开始！</h1><p>这篇文章的内容主要适用于<strong>Java版本</strong>远程联机，如果您是基岩版，双方可直接添加xbox好友进行联机，不需要再进行其他操作。</p>
@@ -144,54 +131,6 @@
       </tags>
   </entry>
   <entry>
-    <title>部分GPT镜像及其他生成式AI汇总</title>
-    <url>//post/0005</url>
-    <content><![CDATA[<h1 id="读前提示"><a href="#读前提示" class="headerlink" title="读前提示"></a>读前提示</h1><p>本文汇总了一部分ChatGPT资源以及其他的生成式AI，但并不包含使用方式、上网方式等内容，且本文内没有汇总国内的ChatGPT镜像。请确认自己需要再继续阅读。</p>
-<h1 id="ChatGPT是什么"><a href="#ChatGPT是什么" class="headerlink" title="ChatGPT是什么"></a>ChatGPT是什么</h1><p>想必能看到这篇文章的大家都知道ChatGPT是什么以及他如何使用。至于其它的信息就让ChatGPT自己来告诉大家吧。</p>
-<blockquote><span class="custom-blockquote-svg"><svg width="24" height="24" viewBox="0 0 24 24" fill="" xmlns="http://www.w3.org/2000/svg" data-reactroot="">
-<path fill="" d="M22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22C13.8 22 15.5 21.5 17 20.6L22 22L20.7 17C21.5 15.5 22 13.8 22 12Z" undefined="1"></path>
-<path fill="" d="M15.97 11.5H16.04C17.12 11.5 18 12.38 18 13.47V13.53C18 14.62 17.12 15.5 16.03 15.5H15.96C14.88 15.5 14 14.62 14 13.53V13.46C14 12.38 14.88 11.5 15.97 11.5Z" undefined="1"></path>
-<path fill="" d="M7.97 11.5H8.04C9.12 11.5 10 12.38 10 13.47V13.53C10 14.62 9.12 15.5 8.03 15.5H7.97C6.88 15.5 6 14.62 6 13.53V13.46C6 12.38 6.88 11.5 7.97 11.5Z" undefined="1"></path>
-<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke="" d="M17 8.5C15.23 8.97 14.07 10.84 14.01 13.27C14 13.33 14 13.4 14 13.47V13.5"></path>
-<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke="" d="M9 8.5C7.23 8.97 6.07 10.84 6.01 13.27C6 13.33 6 13.4 6 13.47V13.5"></path>
-<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke="" d="M15.97 11.5H16.04C17.12 11.5 18 12.38 18 13.47V13.53C18 14.62 17.12 15.5 16.03 15.5H15.96C14.88 15.5 14 14.62 14 13.53V13.46C14 12.38 14.88 11.5 15.97 11.5Z"></path>
-<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke="" d="M7.97 11.5H8.04C9.12 11.5 10 12.38 10 13.47V13.53C10 14.62 9.12 15.5 8.03 15.5H7.97C6.88 15.5 6 14.62 6 13.53V13.46C6 12.38 6.88 11.5 7.97 11.5Z"></path>
-</svg>
-</span><p>我可以帮助您解决各种问题和任务。以下是一些我可以提供帮助的领域：<br></p>
-<p>   1.回答一般性问题，例如科学、历史、地理等主题。<br><br>   2提供技术支持，例如计算机、软件和硬件问题。<br><br>   3.编写和解释代码示例（例如Python、JavaScript、C++等）。<br><br>   4.提供生活建议，例如健康、饮食和锻炼。<br><br>   5.帮助您学习新技能，例如语言、编程或者其他技能。<br><br>   6.提供旅行建议，例如目的地、酒店和交通方式。<br><br>   7.解答关于文化、艺术和娱乐的问题。<br></p></blockquote>
-<p>总之，妥善利用可以提高我们的工作和学习效率。帮我们更好地查找互联网上的信息。</p>
-<h1 id="为什么选择镜像"><a href="#为什么选择镜像" class="headerlink" title="为什么选择镜像"></a>为什么选择镜像</h1><p>由于OpenAI的设定，中国大陆的IP与手机号码都不能用于ChatGPT的注册。但由于OpenAI开放付费的API可供使用，于是大量的镜像站便诞生了。</p>
-<p>但我这里并不着重介绍大陆可用的镜像，我主要介绍需要特殊上网但不需要非大陆手机号码的镜像站。这类镜像通常能够获得更好的体验。</p>
-<h1 id="ChatGPT镜像链接"><a href="#ChatGPT镜像链接" class="headerlink" title="ChatGPT镜像链接"></a>ChatGPT镜像链接</h1><p>ChatGPT的镜像众多，这里我只选出两个给大家推荐。</p>
-<h2 id="Poe"><a href="#Poe" class="headerlink" title="Poe"></a>Poe</h2><p><strong>介绍：</strong> 由美版知乎Quora提供的在线AI聊天服务，内有GPT-3.5 turbo和其他多个模型。</p>
-<p><strong>费用：</strong> GPT-3.5免费，GPT-4每日仅限使用一次，需要付费成为会员才能无限使用</p>
-<p><strong>传送门：</strong> <a href="http://www.poe.com/">www.poe.com</a></p>
-<h2 id="ForeFront"><a href="#ForeFront" class="headerlink" title="ForeFront"></a>ForeFront</h2><p><strong>介绍：</strong> 目前体验最佳的GPT-4镜像，内置100多个已经预训练的角色。可使用3.5-Turbo与GPT-4两种模型</p>
-<p><strong>费用：</strong> <em>完全免费！包括GPT-4模型</em></p>
-<p><strong>传送门：</strong> <a href="https://chat.forefront.ai/">chat.forefront.ai</a></p>
-<h1 id="其他模型"><a href="#其他模型" class="headerlink" title="其他模型"></a>其他模型</h1><p>国内互联网厂商与海外大厂已经推出很多ChatGPT的”竞品”，虽目前实力难敌GPT，但也可以尝鲜试一试。</p>
-<h2 id="Google-Bard"><a href="#Google-Bard" class="headerlink" title="Google Bard"></a>Google Bard</h2><p><strong>介绍：</strong> 由Google训练的模型，目前仅在部分国家开启测试，且目前仍不支持中文。</p>
-<p><strong>传送门：</strong> <a href="https://bard.google.com/">bard.google.com</a></p>
-<h2 id="New-Bing"><a href="#New-Bing" class="headerlink" title="New Bing"></a>New Bing</h2><p><strong>介绍：</strong> 仍使用GPT模型，但被微软添加了联网查找信息的能力。使其在处理时效性强的问题时更有优势。</p>
-<p><strong>请使用富强上网访问！若已被重定向到国内版，请使用Ctrl+F5强制刷新浏览器缓存</strong></p>
-<p><strong>传送门：</strong> <a href="https://www.bing.com/new?toWww=1&redig=EB553815C3354C00A69242B6A479DE94">www.bing.com</a></p>
-<h2 id="文心一言"><a href="#文心一言" class="headerlink" title="文心一言"></a>文心一言</h2><p><strong>介绍：</strong> 百度训练的大语言模型</p>
-<p><strong>传送门：</strong><a href="https://yiyan.baidu.com/">yiyan.baidu.com</a></p>
-<h2 id="星火"><a href="#星火" class="headerlink" title="星火"></a>星火</h2><p><strong>介绍：</strong> 由科大讯飞训练，能力强于文心一言</p>
-<p><strong>传送门：</strong> <a href="https://xinghuo.xfyun.cn/">xinghuo.xfyun.cn</a></p>
-<h1 id="尾声"><a href="#尾声" class="headerlink" title="尾声"></a>尾声</h1><p>本文章不保持更新，但你仍可以前往资源站及时获取以及打包下载最新的书签信息！</p>
-]]></content>
-      <categories>
-        <category>科技</category>
-        <category>软件应用</category>
-      </categories>
-      <tags>
-        <tag>ChatGPT</tag>
-        <tag>AI</tag>
-        <tag>教程</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>更加私密的浏览体验，Tor Browser</title>
     <url>//post/0004</url>
     <content><![CDATA[<h1 id="写在开头"><a href="#写在开头" class="headerlink" title="写在开头"></a>写在开头</h1><p>此文章只介绍有关使用方法以及保护原理。如果您想对Tor及Tor Network了解更加”深入”请移步别家。</p>
@@ -249,6 +188,54 @@
         <tag>富强上网</tag>
         <tag>科学上网</tag>
         <tag>隐私保护</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>部分GPT镜像及其他生成式AI汇总</title>
+    <url>//post/0005</url>
+    <content><![CDATA[<h1 id="读前提示"><a href="#读前提示" class="headerlink" title="读前提示"></a>读前提示</h1><p>本文汇总了一部分ChatGPT资源以及其他的生成式AI，但并不包含使用方式、上网方式等内容，且本文内没有汇总国内的ChatGPT镜像。请确认自己需要再继续阅读。</p>
+<h1 id="ChatGPT是什么"><a href="#ChatGPT是什么" class="headerlink" title="ChatGPT是什么"></a>ChatGPT是什么</h1><p>想必能看到这篇文章的大家都知道ChatGPT是什么以及他如何使用。至于其它的信息就让ChatGPT自己来告诉大家吧。</p>
+<blockquote><span class="custom-blockquote-svg"><svg width="24" height="24" viewBox="0 0 24 24" fill="" xmlns="http://www.w3.org/2000/svg" data-reactroot="">
+<path fill="" d="M22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22C13.8 22 15.5 21.5 17 20.6L22 22L20.7 17C21.5 15.5 22 13.8 22 12Z" undefined="1"></path>
+<path fill="" d="M15.97 11.5H16.04C17.12 11.5 18 12.38 18 13.47V13.53C18 14.62 17.12 15.5 16.03 15.5H15.96C14.88 15.5 14 14.62 14 13.53V13.46C14 12.38 14.88 11.5 15.97 11.5Z" undefined="1"></path>
+<path fill="" d="M7.97 11.5H8.04C9.12 11.5 10 12.38 10 13.47V13.53C10 14.62 9.12 15.5 8.03 15.5H7.97C6.88 15.5 6 14.62 6 13.53V13.46C6 12.38 6.88 11.5 7.97 11.5Z" undefined="1"></path>
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke="" d="M17 8.5C15.23 8.97 14.07 10.84 14.01 13.27C14 13.33 14 13.4 14 13.47V13.5"></path>
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke="" d="M9 8.5C7.23 8.97 6.07 10.84 6.01 13.27C6 13.33 6 13.4 6 13.47V13.5"></path>
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke="" d="M15.97 11.5H16.04C17.12 11.5 18 12.38 18 13.47V13.53C18 14.62 17.12 15.5 16.03 15.5H15.96C14.88 15.5 14 14.62 14 13.53V13.46C14 12.38 14.88 11.5 15.97 11.5Z"></path>
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke="" d="M7.97 11.5H8.04C9.12 11.5 10 12.38 10 13.47V13.53C10 14.62 9.12 15.5 8.03 15.5H7.97C6.88 15.5 6 14.62 6 13.53V13.46C6 12.38 6.88 11.5 7.97 11.5Z"></path>
+</svg>
+</span><p>我可以帮助您解决各种问题和任务。以下是一些我可以提供帮助的领域：<br></p>
+<p>   1.回答一般性问题，例如科学、历史、地理等主题。<br><br>   2提供技术支持，例如计算机、软件和硬件问题。<br><br>   3.编写和解释代码示例（例如Python、JavaScript、C++等）。<br><br>   4.提供生活建议，例如健康、饮食和锻炼。<br><br>   5.帮助您学习新技能，例如语言、编程或者其他技能。<br><br>   6.提供旅行建议，例如目的地、酒店和交通方式。<br><br>   7.解答关于文化、艺术和娱乐的问题。<br></p></blockquote>
+<p>总之，妥善利用可以提高我们的工作和学习效率。帮我们更好地查找互联网上的信息。</p>
+<h1 id="为什么选择镜像"><a href="#为什么选择镜像" class="headerlink" title="为什么选择镜像"></a>为什么选择镜像</h1><p>由于OpenAI的设定，中国大陆的IP与手机号码都不能用于ChatGPT的注册。但由于OpenAI开放付费的API可供使用，于是大量的镜像站便诞生了。</p>
+<p>但我这里并不着重介绍大陆可用的镜像，我主要介绍需要特殊上网但不需要非大陆手机号码的镜像站。这类镜像通常能够获得更好的体验。</p>
+<h1 id="ChatGPT镜像链接"><a href="#ChatGPT镜像链接" class="headerlink" title="ChatGPT镜像链接"></a>ChatGPT镜像链接</h1><p>ChatGPT的镜像众多，这里我只选出两个给大家推荐。</p>
+<h2 id="Poe"><a href="#Poe" class="headerlink" title="Poe"></a>Poe</h2><p><strong>介绍：</strong> 由美版知乎Quora提供的在线AI聊天服务，内有GPT-3.5 turbo和其他多个模型。</p>
+<p><strong>费用：</strong> GPT-3.5免费，GPT-4每日仅限使用一次，需要付费成为会员才能无限使用</p>
+<p><strong>传送门：</strong> <a href="http://www.poe.com/">www.poe.com</a></p>
+<h2 id="ForeFront"><a href="#ForeFront" class="headerlink" title="ForeFront"></a>ForeFront</h2><p><strong>介绍：</strong> 目前体验最佳的GPT-4镜像，内置100多个已经预训练的角色。可使用3.5-Turbo与GPT-4两种模型</p>
+<p><strong>费用：</strong> <em>完全免费！包括GPT-4模型</em></p>
+<p><strong>传送门：</strong> <a href="https://chat.forefront.ai/">chat.forefront.ai</a></p>
+<h1 id="其他模型"><a href="#其他模型" class="headerlink" title="其他模型"></a>其他模型</h1><p>国内互联网厂商与海外大厂已经推出很多ChatGPT的”竞品”，虽目前实力难敌GPT，但也可以尝鲜试一试。</p>
+<h2 id="Google-Bard"><a href="#Google-Bard" class="headerlink" title="Google Bard"></a>Google Bard</h2><p><strong>介绍：</strong> 由Google训练的模型，目前仅在部分国家开启测试，且目前仍不支持中文。</p>
+<p><strong>传送门：</strong> <a href="https://bard.google.com/">bard.google.com</a></p>
+<h2 id="New-Bing"><a href="#New-Bing" class="headerlink" title="New Bing"></a>New Bing</h2><p><strong>介绍：</strong> 仍使用GPT模型，但被微软添加了联网查找信息的能力。使其在处理时效性强的问题时更有优势。</p>
+<p><strong>请使用富强上网访问！若已被重定向到国内版，请使用Ctrl+F5强制刷新浏览器缓存</strong></p>
+<p><strong>传送门：</strong> <a href="https://www.bing.com/new?toWww=1&redig=EB553815C3354C00A69242B6A479DE94">www.bing.com</a></p>
+<h2 id="文心一言"><a href="#文心一言" class="headerlink" title="文心一言"></a>文心一言</h2><p><strong>介绍：</strong> 百度训练的大语言模型</p>
+<p><strong>传送门：</strong><a href="https://yiyan.baidu.com/">yiyan.baidu.com</a></p>
+<h2 id="星火"><a href="#星火" class="headerlink" title="星火"></a>星火</h2><p><strong>介绍：</strong> 由科大讯飞训练，能力强于文心一言</p>
+<p><strong>传送门：</strong> <a href="https://xinghuo.xfyun.cn/">xinghuo.xfyun.cn</a></p>
+<h1 id="尾声"><a href="#尾声" class="headerlink" title="尾声"></a>尾声</h1><p>本文章不保持更新，但你仍可以前往资源站及时获取以及打包下载最新的书签信息！</p>
+]]></content>
+      <categories>
+        <category>科技</category>
+        <category>软件应用</category>
+      </categories>
+      <tags>
+        <tag>ChatGPT</tag>
+        <tag>AI</tag>
+        <tag>教程</tag>
       </tags>
   </entry>
   <entry>
@@ -503,5 +490,18 @@
         <tag>微软</tag>
         <tag>安全</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>你好，世界！</title>
+    <url>//post/0001</url>
+    <content><![CDATA[<h1 id="你好，世界！"><a href="#你好，世界！" class="headerlink" title="你好，世界！"></a>你好，世界！</h1><p>我的首个个人博客终于成功上线了，这篇博文就来说说主要写点啥和以后的规划吧！</p>
+<h1 id="更新的内容"><a href="#更新的内容" class="headerlink" title="更新的内容"></a>更新的内容</h1><p>更新的内容嘛，估计会很杂，但是不一定会多。更新会需要很久，但一定会有<br>现在主要存放我的B站视频的文字版文章。</p>
+<h1 id="以后的规划"><a href="#以后的规划" class="headerlink" title="以后的规划"></a>以后的规划</h1><p>关于这一块，我没有想过，也不想去做什么。只想安静的写一些我想要表达的东西。如果你有想看的东西，请告诉我！<br>你可以在博客主页，友链页，我的个人网站了解如何联系我。</p>
+<h1 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h1><p>首篇博文就这么草草的结束吧，感谢留在网页的大家的支持。希望我可以输出让大家喜欢的内容。</p>
+]]></content>
+      <categories>
+        <category>杂谈</category>
+        <category>随笔</category>
+      </categories>
   </entry>
 </search>
