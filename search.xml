@@ -373,6 +373,27 @@
       </tags>
   </entry>
   <entry>
+    <title>近期博客内的一些变化</title>
+    <url>//0009.html</url>
+    <content><![CDATA[<h1 id="主题更换回Butterfly"><a href="#主题更换回Butterfly" class="headerlink" title="主题更换回Butterfly"></a>主题更换回Butterfly</h1><p>博客在今年5月份左右更换了Redefine主题，我本来以为我可以一直使用到主题停止更新或者本博客关站。但我实属没想到，在2023年8月3日，我发现Redefine的更新，并将其安装后，就无法再加载出任何FontAwesome的图标，重载，迁移配置文件几次都无济于事。但假若我删除我的配置文件，FontAwesome就恢复正常。我再次尝试了重新写一份新的配置文件，问题仍没有解决。于是思来想去，我便选择继续回到Butterfly主题，毕竟仍有上次的配置文件可以直接套用。修改回Butterfly后，我便更新了Butterfly主题，并修改了评论系统。目前博客所有内容和功能都不受影响。</p>
+<p>服务器官方网站仍然会使用旧版本的redefine主题，不更新也不会转移到其他主题。</p>
+<h1 id="评论系统更换为Waline"><a href="#评论系统更换为Waline" class="headerlink" title="评论系统更换为Waline"></a>评论系统更换为Waline</h1><p>在更换到Redefine后，由于Redefine不支持使用Livere评论系统。我也没有精力和能力移植评论系统，于是便参照官方说明搭建了Waline评论系统。</p>
+<p>后续搭建了Twikoo评论系统，Twikoo目前只做备用。</p>
+<h1 id="重启Cloudflare代理服务"><a href="#重启Cloudflare代理服务" class="headerlink" title="重启Cloudflare代理服务"></a>重启Cloudflare代理服务</h1><p>本博客自从使用Vercel取代Cloudflare Pages进行托管之后，Cloudflare的代理就一直处于关闭状态。但经过我测试，如果使用Cloudflare代理，访问网站的速度可以比不使用代理快两秒左右，目前我的所有网站已经再次全面启用Cloudflare代理。</p>
+<p>没有备案的网站想要优化到速度够快或者秒开真的是很难，CDN与国内的服务器全都不能使用。</p>
+<h1 id="其他一些方面的变化"><a href="#其他一些方面的变化" class="headerlink" title="其他一些方面的变化"></a>其他一些方面的变化</h1><p>我的服务器起初对外只公开了一条FRP中转线路，在后续的运营中，逐渐发现一条线路出现风险的可能性较大，服务提供商偶尔出现服务不稳定或无法连接、被攻击的情况难以避免。目前服务器同时公开了来自两个不同提供商的两条线路，一方面可用于负载均衡，另一方面也可以避免一个服务商出现问题导致的整个服务器失联。</p>
+<p>游戏服务器目前也面临一些其他方面的问题，具体详情可在有公告后到服务器官方网站查看具体公告。</p>
+]]></content>
+      <categories>
+        <category>杂谈</category>
+        <category>博客那些事</category>
+      </categories>
+      <tags>
+        <tag>闲聊</tag>
+        <tag>海文章</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>微软电脑管家究竟走了多远？</title>
     <url>//0010.html</url>
     <content><![CDATA[<h1 id="先导"><a href="#先导" class="headerlink" title="先导"></a>先导</h1><p>2022 年 7 月 18 日，微软在中国发布了一款全新的产品，名为微软电脑管家，彼时距离Windows 11产品正式发布已经过去了一年多的时间。</p>
@@ -411,27 +432,6 @@
         <tag>软件资源</tag>
         <tag>微软</tag>
         <tag>安全</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>近期博客内的一些变化</title>
-    <url>//0009.html</url>
-    <content><![CDATA[<h1 id="主题更换回Butterfly"><a href="#主题更换回Butterfly" class="headerlink" title="主题更换回Butterfly"></a>主题更换回Butterfly</h1><p>博客在今年5月份左右更换了Redefine主题，我本来以为我可以一直使用到主题停止更新或者本博客关站。但我实属没想到，在2023年8月3日，我发现Redefine的更新，并将其安装后，就无法再加载出任何FontAwesome的图标，重载，迁移配置文件几次都无济于事。但假若我删除我的配置文件，FontAwesome就恢复正常。我再次尝试了重新写一份新的配置文件，问题仍没有解决。于是思来想去，我便选择继续回到Butterfly主题，毕竟仍有上次的配置文件可以直接套用。修改回Butterfly后，我便更新了Butterfly主题，并修改了评论系统。目前博客所有内容和功能都不受影响。</p>
-<p>服务器官方网站仍然会使用旧版本的redefine主题，不更新也不会转移到其他主题。</p>
-<h1 id="评论系统更换为Waline"><a href="#评论系统更换为Waline" class="headerlink" title="评论系统更换为Waline"></a>评论系统更换为Waline</h1><p>在更换到Redefine后，由于Redefine不支持使用Livere评论系统。我也没有精力和能力移植评论系统，于是便参照官方说明搭建了Waline评论系统。</p>
-<p>后续搭建了Twikoo评论系统，Twikoo目前只做备用。</p>
-<h1 id="重启Cloudflare代理服务"><a href="#重启Cloudflare代理服务" class="headerlink" title="重启Cloudflare代理服务"></a>重启Cloudflare代理服务</h1><p>本博客自从使用Vercel取代Cloudflare Pages进行托管之后，Cloudflare的代理就一直处于关闭状态。但经过我测试，如果使用Cloudflare代理，访问网站的速度可以比不使用代理快两秒左右，目前我的所有网站已经再次全面启用Cloudflare代理。</p>
-<p>没有备案的网站想要优化到速度够快或者秒开真的是很难，CDN与国内的服务器全都不能使用。</p>
-<h1 id="其他一些方面的变化"><a href="#其他一些方面的变化" class="headerlink" title="其他一些方面的变化"></a>其他一些方面的变化</h1><p>我的服务器起初对外只公开了一条FRP中转线路，在后续的运营中，逐渐发现一条线路出现风险的可能性较大，服务提供商偶尔出现服务不稳定或无法连接、被攻击的情况难以避免。目前服务器同时公开了来自两个不同提供商的两条线路，一方面可用于负载均衡，另一方面也可以避免一个服务商出现问题导致的整个服务器失联。</p>
-<p>游戏服务器目前也面临一些其他方面的问题，具体详情可在有公告后到服务器官方网站查看具体公告。</p>
-]]></content>
-      <categories>
-        <category>杂谈</category>
-        <category>博客那些事</category>
-      </categories>
-      <tags>
-        <tag>闲聊</tag>
-        <tag>海文章</tag>
       </tags>
   </entry>
 </search>
