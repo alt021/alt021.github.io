@@ -9,8 +9,8 @@
 <h1 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h1><p>首篇博文就这么草草的结束吧，感谢留在网页的大家的支持。希望我可以输出让大家喜欢的内容。</p>
 ]]></content>
       <categories>
-        <category>杂谈</category>
-        <category>随笔</category>
+        <category>动态</category>
+        <category>个人动态</category>
       </categories>
   </entry>
   <entry>
@@ -79,7 +79,6 @@
 <p>让我们离开网易版的限制，拥抱自由的Minecraft</p>
 ]]></content>
       <categories>
-        <category>科技</category>
         <category>教程</category>
       </categories>
       <tags>
@@ -113,8 +112,8 @@
 <p>总之以后空闲时间可能会越来越少，尽量多管理一下博客吧。感谢来阅读的各位！</p>
 ]]></content>
       <categories>
-        <category>杂谈</category>
-        <category>博客那些事</category>
+        <category>动态</category>
+        <category>博客动态</category>
       </categories>
       <tags>
         <tag>闲聊</tag>
@@ -155,8 +154,7 @@
 <p>此文章评论部分禁止讨论有关富强上网一类的话题，仅限于交流技术与使用问题。</p>
 ]]></content>
       <categories>
-        <category>科技</category>
-        <category>软件应用</category>
+        <category>软件资源</category>
       </categories>
       <tags>
         <tag>Tor</tag>
@@ -198,8 +196,7 @@
 <h1 id="尾声"><a href="#尾声" class="headerlink" title="尾声"></a>尾声</h1><p>本文章不保持更新，但你仍可以前往资源站及时获取以及打包下载最新的书签信息！</p>
 ]]></content>
       <categories>
-        <category>科技</category>
-        <category>软件应用</category>
+        <category>软件资源</category>
       </categories>
       <tags>
         <tag>ChatGPT</tag>
@@ -243,8 +240,7 @@
 <p>如果你需要更高效率的输入，我建议可以了解声笔系列码或者开始学习五笔输入。</p>
 ]]></content>
       <categories>
-        <category>杂谈</category>
-        <category>随笔</category>
+        <category>其他</category>
       </categories>
       <tags>
         <tag>输入</tag>
@@ -316,7 +312,6 @@
 <h1 id="视频版教程"><a href="#视频版教程" class="headerlink" title="视频版教程"></a>视频版教程</h1><p>欲观看视频版，请前往bilibili。<br><a href="https://www.bilibili.com/video/BV1jL411i7LN/">https://www.bilibili.com/video/BV1jL411i7LN/</a></p>
 ]]></content>
       <categories>
-        <category>科技</category>
         <category>教程</category>
       </categories>
       <tags>
@@ -361,8 +356,7 @@
 <p>本文评论区禁止讨论有关翻牆，科學上網，等有关话题。仅限于讨论有关隐私保护，WARP+产品使用有关内容。</p>
 ]]></content>
       <categories>
-        <category>科技</category>
-        <category>软件应用</category>
+        <category>软件资源</category>
       </categories>
       <tags>
         <tag>富强上网</tag>
@@ -385,8 +379,8 @@
 <p>游戏服务器目前也面临一些其他方面的问题，具体详情可在有公告后到服务器官方网站查看具体公告。</p>
 ]]></content>
       <categories>
-        <category>杂谈</category>
-        <category>博客那些事</category>
+        <category>动态</category>
+        <category>博客动态</category>
       </categories>
       <tags>
         <tag>闲聊</tag>
@@ -424,8 +418,7 @@
 </blockquote>
 ]]></content>
       <categories>
-        <category>科技</category>
-        <category>软件应用</category>
+        <category>软件资源</category>
       </categories>
       <tags>
         <tag>科技</tag>
@@ -465,13 +458,42 @@
 <p>LET’S GET HIGHER!</p>
 ]]></content>
       <categories>
-        <category>杂谈</category>
-        <category>随笔</category>
+        <category>动态</category>
+        <category>个人动态</category>
       </categories>
       <tags>
         <tag>海文章</tag>
         <tag>杂谈</tag>
         <tag>年度总结</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>博客已恢复联机</title>
+    <url>//0012.html</url>
+    <content><![CDATA[<p>在今年开年第一天，也就是2024年1月1日。</p>
+<p>我的所有在线服务均陷入宕机状态，当时距离博主开学只剩下一个晚上。</p>
+<p>我临时性排查了我的网站配置，GitHub与Vercel账户状态。不过所有的一切都告诉我，我的配置都没有任何问题。当我点击进入域名配置页面的时候，一个红色叹号使我十分疑惑。</p>
+<p>是的，我的域名解析配置经Vercel检查是失效状态，当时我的Cloudflare配置仍然是正常的，没有任何报错。<br><br>我不知道该如何应对，只得草草的认为是为我提供服务的供应商目前出现了一些问题，就像今年10月中旬莫名其妙的被反诈中心拦截一样。</p>
+<p>1月26日，我放假回家，我立即打开电脑、进入Cloudflare。出乎意料的是，我的Cloudflare仪表板中提示我的原主域名alt021.top有待处理的域名服务器更改。</p>
+<p>了解此情况后，我便立即向硅云发出了工单，请求他们帮助我排查我的域名。在经过2小时的等待后，我收到了回复。</p>
+<p>经硅云(代销商)与商中在线(真正为我提供域名的注册商)核验，我的主域名因涉及某些特殊原因而被停止解析。</p>
+<p>众所周知我的网站内存在几篇与禾斗学上网存在潜在关联的文章，所以对于因此被停止解析我并没有感到意外。</p>
+<p>而提供商提出的解封要求是：删除相关内容并且按照工单附件格式书写保证书提交。<br><br>在我看来，这些要求并不是没有理由，且我本人表示充分理解。</p>
+<p>但是经过我慎重考虑，我认为：这么做有违我做博客的初衷，也损害了我的创作自由。<br><br>所以如各位所见，我已经恢复使用由nic.eu.org所提供的二级域名。<br><br>相比而下域名肯定不如之前美观，但使用eu.org域名我便不必再担忧域名解析服务被中止。</p>
+<p>以上便是对本站宕机一个月情况的简单说明。<br><br>如果你看到这里感谢你耐心了解。<br><br>接下来的时间里，我将继续努力于内容的创作。<br></p>
+<hr>
+<blockquote>
+<p>评论区禁止讨论相关敏感内容</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>动态</category>
+        <category>博客动态</category>
+      </categories>
+      <tags>
+        <tag>博客</tag>
+        <tag>域名</tag>
+        <tag>网站</tag>
       </tags>
   </entry>
 </search>
