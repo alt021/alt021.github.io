@@ -1,0 +1,764 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="ALT021">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="阅前提示本文章仅针对ColorOS 13 用户，如果你使用低版本，不保证文章里的方法对你的设备完全有效。 原理主题商店在试用时通过悬浮窗或者系统对话框提示来提示主题试用结束。在关闭对话框时，试用就会结束。而我们要做的就是阻止这个对话框弹出，以此来达到永久使用的目的。 在ColorOS 12&#x2F;11版本，我们都可以通过关闭主题商店的悬浮窗权限来达到永久使用。在ColorOS 13，主题商店9.0.0之">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ColorOS 13 第三方主题及无限试用教程">
+<meta property="og:url" content="https://alt021.github.io/0007.html">
+<meta property="og:site_name" content="ALT021的小世界">
+<meta property="og:description" content="阅前提示本文章仅针对ColorOS 13 用户，如果你使用低版本，不保证文章里的方法对你的设备完全有效。 原理主题商店在试用时通过悬浮窗或者系统对话框提示来提示主题试用结束。在关闭对话框时，试用就会结束。而我们要做的就是阻止这个对话框弹出，以此来达到永久使用的目的。 在ColorOS 12&#x2F;11版本，我们都可以通过关闭主题商店的悬浮窗权限来达到永久使用。在ColorOS 13，主题商店9.0.0之">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://alt021.github.io/img/0007/cover.png">
+<meta property="article:published_time" content="2023-06-03T14:09:22.000Z">
+<meta property="article:modified_time" content="2024-01-30T03:17:04.000Z">
+<meta property="article:author" content="ALT021">
+<meta property="article:tag" content="教程">
+<meta property="article:tag" content="主题">
+<meta property="article:tag" content="ColorOS">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://alt021.github.io/img/0007/cover.png">
+  
+  
+  
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC&display=swap" rel="stylesheet">
+  
+  <title>ColorOS 13 第三方主题及无限试用教程 - ALT021的小世界</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+  
+<link rel="stylesheet" href="/css/font.css">
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"alt021.github.io","root":"/","version":"1.9.7","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#425aef","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 7.1.1"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>ALT021的小世界</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/talk/" target="_self">
+                <i class="iconfont icon-comment"></i>
+                <span>留言</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/index.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="ColorOS 13 第三方主题及无限试用教程"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2023-06-03 22:09" pubdate>
+          2023年6月3日 晚上
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          1.1k 字
+        
+      </span>
+    
+
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">ColorOS 13 第三方主题及无限试用教程</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <h1 id="阅前提示"><a href="#阅前提示" class="headerlink" title="阅前提示"></a>阅前提示</h1><p>本文章仅针对ColorOS 13 用户，如果你使用低版本，不保证文章里的方法对你的设备完全有效。</p>
+<h1 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h1><p>主题商店在试用时通过悬浮窗或者系统对话框提示来提示主题试用结束。在关闭对话框时，试用就会结束。而我们要做的就是阻止这个对话框弹出，以此来达到永久使用的目的。</p>
+<p>在ColorOS 12/11版本，我们都可以通过关闭主题商店的悬浮窗权限来达到永久使用。在ColorOS 13，主题商店9.0.0之后，系统逐渐对此限制更加严格。提示也从悬浮窗变成难以拦截的系统对话框。</p>
+<p>在ColorOS 13的早期版本，我们可以停用主题商店来让其无法启动，在较新版本中，此操作已经被系统拦截，不能使用。</p>
+<h1 id="什么是暂停-Suspend"><a href="#什么是暂停-Suspend" class="headerlink" title="什么是暂停(Suspend)"></a>什么是暂停(Suspend)</h1><p>暂停是Android 7+引入的一个新概念。应用程序在处于暂停状态时，在启动器中的图标变灰，同时无法启动。您在打开它时将显示”xxx目前不可用，该应用是由xxx所管理”。</p>
+<p>在此状态下，APP的一切活动都被停止，无法发送通知，<strong>对话框</strong>或者播放音频。</p>
+<p>要取消暂停，可以使用unsuspend命令。</p>
+<h1 id="开始操作"><a href="#开始操作" class="headerlink" title="开始操作"></a>开始操作</h1><p>使用suspend来阻止试用提示主要有两种解决方案，这里我着重介绍第一种。</p>
+<h2 id="雹-Shizuku"><a href="#雹-Shizuku" class="headerlink" title="雹+Shizuku"></a>雹+Shizuku</h2><p>此方案无需电脑，仅需手机即可激活。我们先安装好这两款软件</p>
+<blockquote>
+<p>通过酷安下载APK安装文件</p>
+<p><a target="_blank" rel="noopener" href="https://www.coolapk.com/apk/com.aistra.hail">雹</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.coolapk.com/apk/moe.shizuku.privileged.api">Shizuku</a></p>
+</blockquote>
+<h3 id="配对"><a href="#配对" class="headerlink" title="配对"></a>配对</h3><p>先打开Shizuku，给予通知权限。然后点击“通过无线调试激活”下方的配对</p>
+<p><img src="/img/0007/1.png" srcset="/img/loading.gif" lazyload></p>
+<p>进入开发者选项，找到USB调试和无线调试，全部打开，并点击无线调试进入二级页面。</p>
+<p>点击使用配对码，可以生成一个6位数的配对码</p>
+<p><img src="/img/0007/2.png" srcset="/img/loading.gif" lazyload></p>
+<p>下拉通知栏并告诉Shizuku配对码</p>
+<p><img src="/img/0007/3.png" srcset="/img/loading.gif" lazyload></p>
+<p>配对成功后，返回Shizuku点击启动，如果操作无误，用不了多久，即可启动完成。</p>
+<p>如果您被提示ADB权限受限，请打开开发者选项中的“停用ADB授权超时”和“禁止权限监控”即可</p>
+<h3 id="暂停"><a href="#暂停" class="headerlink" title="暂停"></a>暂停</h3><p>接下来返回到“雹”，在设置中选择工作模式为“SHizuku-暂停”并添加主题商店到列表，点击右下角冰冻按钮即可</p>
+<p><img src="/img/0007/4.png" srcset="/img/loading.gif" lazyload></p>
+<p>如果图标变灰，那么主题商店已经被暂停，现在您可以尽情使用您的主题了。</p>
+<p>要更换主题只需要解除暂停并再次操作即可。</p>
+<h2 id="电脑引导-手动adb"><a href="#电脑引导-手动adb" class="headerlink" title="电脑引导 手动adb"></a>电脑引导 手动adb</h2><p>此方案需要一定的动手能力，以及耐心。且需要一定的命令行基础知识，否则可能不好操作。</p>
+<h3 id="资源准备"><a href="#资源准备" class="headerlink" title="资源准备"></a>资源准备</h3><p>首先前往<a target="_blank" rel="noopener" href="https://dl.google.com/android/repository/platform-tools-latest-windows.zip?hl=zh-cn">官方网站</a>获取到最新的platform-tools工具包。</p>
+<p>这其中包含最新的adb,fastboot工具等供我们使用。</p>
+<p>下载好后将其解压放置在您的桌面。</p>
+<p>打开解压获得的文件夹。在地址栏直接输入cmd并回车即可在此文件夹中打开cmd窗口。</p>
+<p><img src="/img/0007/5.png" srcset="/img/loading.gif" lazyload></p>
+<p>接下来在窗口中输入下面的命令来确定您可以调用ADB</p>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs cmd">adb version<br></code></pre></td></tr></table></figure>
+
+<p>通常情况这将返回ADB的版本，安装位置。就像这样</p>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs cmd"><span class="hljs-function">C:\<span class="hljs-title">Users</span>\<span class="hljs-title">UserName</span>&gt;<span class="hljs-title">adb</span> <span class="hljs-title">version</span></span><br><span class="hljs-function"><span class="hljs-title">Android</span> <span class="hljs-title">Debug</span> <span class="hljs-title">Bridge</span> <span class="hljs-title">version</span> 1.0.41</span><br><span class="hljs-function"><span class="hljs-title">Version</span> 34.0.1-9680074</span><br><span class="hljs-function"><span class="hljs-title">Installed</span> <span class="hljs-title">as</span> <span class="hljs-title">C</span>:\<span class="hljs-title">platform</span>-<span class="hljs-title">tools</span>\<span class="hljs-title">adb.exe</span></span><br><span class="hljs-function"></span><br><span class="hljs-function"><span class="hljs-title">C</span>:\<span class="hljs-title">Users</span>\<span class="hljs-title">UserName</span>&gt; <span class="hljs-title">_</span> </span><br></code></pre></td></tr></table></figure>
+
+<p>如果您收到报错，请检查你的安装。</p>
+<h3 id="连接"><a href="#连接" class="headerlink" title="连接"></a>连接</h3><p>接下来将手机连接电脑，选择文件传输模式，并确定USB调试已经打开。如果您的手机上弹出USB调试授权的提示，请点击允许。</p>
+<p>要确定您的电脑是否已经正确与手机建立连接，请执行</p>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs cmd">adb devices<br></code></pre></td></tr></table></figure>
+<p>如果您收到的反馈为两行以上的英文，那么连接已经成功。</p>
+<p>如果您收到的反馈像这样</p>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs cmd"><span class="hljs-function">C:\<span class="hljs-title">Users</span>\<span class="hljs-title">UserName</span>&gt;<span class="hljs-title">adb</span> <span class="hljs-title">devices</span></span><br><span class="hljs-function"><span class="hljs-title">List</span> <span class="hljs-title">of</span> <span class="hljs-title">devices</span> <span class="hljs-title">attached</span></span><br><span class="hljs-function"></span><br><span class="hljs-function"></span><br><span class="hljs-function"><span class="hljs-title">C</span>:\<span class="hljs-title">Users</span>\<span class="hljs-title">UserName</span>&gt; <span class="hljs-title">_</span></span><br></code></pre></td></tr></table></figure>
+
+<p>那么请检查adb授权以及电脑是否已经安装ADB驱动程序。</p>
+<h3 id="暂停-1"><a href="#暂停-1" class="headerlink" title="暂停"></a>暂停</h3><p>要暂停主题商店，您只需要执行一行代码</p>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs cmd">adb shell pm suspend com.heytap.themestore<br></code></pre></td></tr></table></figure>
+
+<p>执行成功后，您的主题商店将被暂停</p>
+<h3 id="取消暂停"><a href="#取消暂停" class="headerlink" title="取消暂停"></a>取消暂停</h3><p>要取消暂停，您只需要执行一行代码</p>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs cmd">adb shell pm unsuspend com.heytap.themestore<br></code></pre></td></tr></table></figure>
+
+<h1 id="尾声"><a href="#尾声" class="headerlink" title="尾声"></a>尾声</h1><p>此方案理论上对任何手机的Android 7.0以上系统都有效，具体可自行测试。</p>
+<p>不保证未来的某次OTA后此方案是否继续可用。</p>
+<h1 id="视频版教程"><a href="#视频版教程" class="headerlink" title="视频版教程"></a>视频版教程</h1><p>欲观看视频版，请前往bilibili。<br><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1jL411i7LN/">https://www.bilibili.com/video/BV1jL411i7LN/</a></p>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E6%95%99%E7%A8%8B/" class="category-chain-item">教程</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/%E6%95%99%E7%A8%8B/" class="print-no-link">#教程</a>
+      
+        <a href="/tags/%E4%B8%BB%E9%A2%98/" class="print-no-link">#主题</a>
+      
+        <a href="/tags/ColorOS/" class="print-no-link">#ColorOS</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>ColorOS 13 第三方主题及无限试用教程</div>
+      <div>https://alt021.github.io/0007.html</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>ALT021</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2023年6月3日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-by"></i>
+                  </span>
+                </a>
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="NC - 非商业性使用">
+                    <i class="iconfont icon-nc"></i>
+                  </span>
+                </a>
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="SA - 相同方式共享">
+                    <i class="iconfont icon-sa"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/0008.html" title="来自Cloudflare的隐私保护方案">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">来自Cloudflare的隐私保护方案</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/0006.html" title="一个未脱离拼音但不像拼音的输入方案">
+                        <span class="hidden-mobile">一个未脱离拼音但不像拼音的输入方案</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+  
+  
+    <article id="comments" lazyload>
+      
+  <div id="waline"></div>
+  <script type="text/javascript">
+    Fluid.utils.loadComments('#waline', function() {
+      Fluid.utils.createCssLink('https://cdn.staticfile.org/waline/2.15.5/waline.min.css')
+      Fluid.utils.createScript('https://cdn.staticfile.org/waline/2.15.5/waline.min.js', function() {
+        var options = Object.assign(
+          {"serverURL":"https://waline-1-h5058044.deta.app","path":"window.location.pathname","meta":["nick","mail","link"],"requiredMeta":["nick"],"lang":"zh-CN","emoji":["https://cdn.jsdelivr.net/gh/walinejs/emojis/weibo"],"dark":"html[data-user-color-scheme=\"dark\"]","wordLimit":0,"pageSize":10},
+          {
+            el: '#waline',
+            path: window.location.pathname
+          }
+        )
+        Waline.init(options);
+        Fluid.utils.waitElementVisible('#waline .vcontent', () => {
+          var imgSelector = '#waline .vcontent img:not(.vemoji)';
+          Fluid.plugins.imageCaption(imgSelector);
+          Fluid.plugins.fancyBox(imgSelector);
+        })
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
+
+    </article>
+  
+
+
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+      Congratulations, you've reached the end of the internet! :D
+    </div>
+  
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>
