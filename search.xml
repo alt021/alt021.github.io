@@ -14,6 +14,49 @@
       </categories>
   </entry>
   <entry>
+    <title>更加私密的浏览体验，Tor Browser</title>
+    <url>//0004.html</url>
+    <content><![CDATA[<h1 id="写在开头"><a href="#写在开头" class="headerlink" title="写在开头"></a>写在开头</h1><p>此文章只介绍有关使用方法以及保护原理。如果您想对Tor及Tor Network了解更加”深入”请移步别家。</p>
+<h1 id="使用初衷"><a href="#使用初衷" class="headerlink" title="使用初衷"></a>使用初衷</h1><p>因为极其完善的Tor网络以及网桥，让隐私浏览更加接近隐私。更加接近真正的”无痕模式”，我选择了使用Tor，并让其完全接替我的常规浏览器的匿名模式。<br><br>无论是处于保护隐私，亦或是其他一些不便于说的原因，我也会建议使用Tor进行私密浏览。至于流传甚广的”暗网”，我不在意，也不想在意。</p>
+<h1 id="实现原理"><a href="#实现原理" class="headerlink" title="实现原理"></a>实现原理</h1><p>至于具体原理，我只了解了大概。具体的，不妨连接上Tor Network问问ChatGPT！</p>
+<p><strong>我：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Tor如何保护我的隐私</span><br></pre></td></tr></table></figure>
+<p><strong>ChatGPT：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Tor是一种匿名网络，它通过将您的网络流量路由通过多个节点来保护您的隐私。当您使用Tor时，您的数据将通过称为“中继”的服务器进行路由，这些服务器由志愿者维护。每个中继只知道数据来自前一个中继，并将数据发送到下一个中继，以便在传输过程中匿名化您的身份和位置。</span><br><span class="line"></span><br><span class="line">以下是Tor如何保护您的隐私的一些关键方面：</span><br><span class="line"></span><br><span class="line">1. 匿名化您的IP地址：Tor将您的数据流量路由通过多个中继，使得目标网站无法看到您的真实IP地址。取而代之的是，他们只能看到中继节点的IP地址。</span><br><span class="line"></span><br><span class="line">2. 加密您的数据：Tor使用多层加密来保护您的数据，以确保只有您和最终目标网站能够读取您的通信内容。</span><br><span class="line"></span><br><span class="line">3. 防止流量分析：Tor还会随机化数据包的大小，时间和路由路径，防止攻击者通过流量分析来确定您的身份和位置。</span><br><span class="line"></span><br><span class="line">4. 避免DNS泄漏：Tor使用自己的DNS解析器来避免您的DNS请求暴露您的位置。</span><br><span class="line"></span><br><span class="line">总的来说，使用Tor可以帮助您保护您的隐私和匿名性，但请记住，Tor并非完美的工具，因此请注意在使用Tor时采取其他隐私保护措施，例如使用端到端加密的通信和避免向任何人透露您的真实身份和位置信息。</span><br></pre></td></tr></table></figure>
+
+<p>以上即是Tor浏览更加匿名化的原因。<br><br>但这些干干的东西显然对我们没有很大用处。我们更加在意的，还是…</p>
+<h1 id="对我们有什么影响"><a href="#对我们有什么影响" class="headerlink" title="对我们有什么影响"></a>对我们有什么影响</h1><p>过去你只能对使用同一台机器的用户匿名，现在则不然，你可以对你的ISP甚至你要访问的网站匿名。你的数据包在整个传输过程中都是加密的，被截取的可能性也微乎其微。(毕竟SSL/TLS也在从中保护).<br>这可以有效的帮助我们远离跟踪与数据收集。某些情况下也可以减少你收到垃圾短信和电话的数量。</p>
+<h1 id="有什么缺点"><a href="#有什么缺点" class="headerlink" title="有什么缺点"></a>有什么缺点</h1><p>经过我数次浏览体验，发现了这么几点问题</p>
+<ul>
+<li><strong>访问速度慢</strong><br>由于你的请求经过数次转发，最终到达客户端的速度会变得十分慢，在我这里，使用DuckDuckGO搜索一次内容需要至少等上5秒，这可能使很多人难以接受</li>
+<li><strong>无法保存登录状态</strong><br>这不算缺点，但我觉得值得一说。Tor被配置为不保存任何浏览数据，意味着即使你使用你自己的计算机，并且你希望在对匿名浏览时保存状态，这也是不被允许的。</li>
+<li><strong>部分地区难以连接</strong><br>Tor Network也许部分地区与运营商无法访问，即使配置网桥也无济于事。我建议想办法启用IPv6，这将使你更加容易连接到Tor，因为这些服务在IPv6下大多数未被封锁。</li>
+</ul>
+<h1 id="安装使用"><a href="#安装使用" class="headerlink" title="安装使用"></a>安装使用</h1><p>这一步没有什么难度，请直接去往官方网站进行下载。使用IPv6可直接访问。<br>您亦可直接前往下在本站提供的安装包。</p>
+<p>下载完成后，请按照说明进行安装。</p>
+<blockquote>
+<p><a href="https://torproject.netcologne.de/">点这去往Tor Project</a></p>
+</blockquote>
+<p>打开Tor，您将被立刻要求连接到Tor，点击连接。如果您的运营商没有封锁Tor，过不了多久，您便可以开始私密浏览了。<br></p>
+<p><img src="https://i.328888.xyz/2023/05/02/iMVnio.png"></p>
+<h1 id="Q-amp-A"><a href="#Q-amp-A" class="headerlink" title="Q&amp;A"></a>Q&amp;A</h1><h2 id="能否稳定使用"><a href="#能否稳定使用" class="headerlink" title="能否稳定使用"></a>能否稳定使用</h2><p>我的地区没有问题，且不需要使用网桥。</p>
+<h2 id="为什么不直接使用VPN"><a href="#为什么不直接使用VPN" class="headerlink" title="为什么不直接使用VPN"></a>为什么不直接使用VPN</h2><p>Tor其实与VPN的实现相差不大，但我之所以选择Tor完全是因为使用方便而且成本更低。我的其他应用也并不会受到Tor Network的影响。</p>
+<p>Tor也比VPN法律风险更低。</p>
+<h1 id="尾声"><a href="#尾声" class="headerlink" title="尾声"></a>尾声</h1><p>所有资源将在藏宝阁有更新，如您需要可自行前往下载。</p>
+<p>此文章评论部分禁止讨论有关富强上网一类的话题，仅限于交流技术与使用问题。</p>
+]]></content>
+      <categories>
+        <category>软件资源</category>
+      </categories>
+      <tags>
+        <tag>Tor</tag>
+        <tag>匿名</tag>
+        <tag>富强上网</tag>
+        <tag>科学上网</tag>
+        <tag>隐私保护</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Minecraft远程联机方法汇总</title>
     <url>//0002.html</url>
     <content><![CDATA[<h1 id="准备开始！"><a href="#准备开始！" class="headerlink" title="准备开始！"></a>准备开始！</h1><p>这篇文章的内容主要适用于<strong>Java版本</strong>远程联机，如果您是基岩版，双方可直接添加xbox好友进行联机，不需要再进行其他操作。</p>
@@ -122,89 +165,6 @@
       </tags>
   </entry>
   <entry>
-    <title>更加私密的浏览体验，Tor Browser</title>
-    <url>//0004.html</url>
-    <content><![CDATA[<h1 id="写在开头"><a href="#写在开头" class="headerlink" title="写在开头"></a>写在开头</h1><p>此文章只介绍有关使用方法以及保护原理。如果您想对Tor及Tor Network了解更加”深入”请移步别家。</p>
-<h1 id="使用初衷"><a href="#使用初衷" class="headerlink" title="使用初衷"></a>使用初衷</h1><p>因为极其完善的Tor网络以及网桥，让隐私浏览更加接近隐私。更加接近真正的”无痕模式”，我选择了使用Tor，并让其完全接替我的常规浏览器的匿名模式。<br><br>无论是处于保护隐私，亦或是其他一些不便于说的原因，我也会建议使用Tor进行私密浏览。至于流传甚广的”暗网”，我不在意，也不想在意。</p>
-<h1 id="实现原理"><a href="#实现原理" class="headerlink" title="实现原理"></a>实现原理</h1><p>至于具体原理，我只了解了大概。具体的，不妨连接上Tor Network问问ChatGPT！</p>
-<p><strong>我：</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Tor如何保护我的隐私</span><br></pre></td></tr></table></figure>
-<p><strong>ChatGPT：</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Tor是一种匿名网络，它通过将您的网络流量路由通过多个节点来保护您的隐私。当您使用Tor时，您的数据将通过称为“中继”的服务器进行路由，这些服务器由志愿者维护。每个中继只知道数据来自前一个中继，并将数据发送到下一个中继，以便在传输过程中匿名化您的身份和位置。</span><br><span class="line"></span><br><span class="line">以下是Tor如何保护您的隐私的一些关键方面：</span><br><span class="line"></span><br><span class="line">1. 匿名化您的IP地址：Tor将您的数据流量路由通过多个中继，使得目标网站无法看到您的真实IP地址。取而代之的是，他们只能看到中继节点的IP地址。</span><br><span class="line"></span><br><span class="line">2. 加密您的数据：Tor使用多层加密来保护您的数据，以确保只有您和最终目标网站能够读取您的通信内容。</span><br><span class="line"></span><br><span class="line">3. 防止流量分析：Tor还会随机化数据包的大小，时间和路由路径，防止攻击者通过流量分析来确定您的身份和位置。</span><br><span class="line"></span><br><span class="line">4. 避免DNS泄漏：Tor使用自己的DNS解析器来避免您的DNS请求暴露您的位置。</span><br><span class="line"></span><br><span class="line">总的来说，使用Tor可以帮助您保护您的隐私和匿名性，但请记住，Tor并非完美的工具，因此请注意在使用Tor时采取其他隐私保护措施，例如使用端到端加密的通信和避免向任何人透露您的真实身份和位置信息。</span><br></pre></td></tr></table></figure>
-
-<p>以上即是Tor浏览更加匿名化的原因。<br><br>但这些干干的东西显然对我们没有很大用处。我们更加在意的，还是…</p>
-<h1 id="对我们有什么影响"><a href="#对我们有什么影响" class="headerlink" title="对我们有什么影响"></a>对我们有什么影响</h1><p>过去你只能对使用同一台机器的用户匿名，现在则不然，你可以对你的ISP甚至你要访问的网站匿名。你的数据包在整个传输过程中都是加密的，被截取的可能性也微乎其微。(毕竟SSL/TLS也在从中保护).<br>这可以有效的帮助我们远离跟踪与数据收集。某些情况下也可以减少你收到垃圾短信和电话的数量。</p>
-<h1 id="有什么缺点"><a href="#有什么缺点" class="headerlink" title="有什么缺点"></a>有什么缺点</h1><p>经过我数次浏览体验，发现了这么几点问题</p>
-<ul>
-<li><strong>访问速度慢</strong><br>由于你的请求经过数次转发，最终到达客户端的速度会变得十分慢，在我这里，使用DuckDuckGO搜索一次内容需要至少等上5秒，这可能使很多人难以接受</li>
-<li><strong>无法保存登录状态</strong><br>这不算缺点，但我觉得值得一说。Tor被配置为不保存任何浏览数据，意味着即使你使用你自己的计算机，并且你希望在对匿名浏览时保存状态，这也是不被允许的。</li>
-<li><strong>部分地区难以连接</strong><br>Tor Network也许部分地区与运营商无法访问，即使配置网桥也无济于事。我建议想办法启用IPv6，这将使你更加容易连接到Tor，因为这些服务在IPv6下大多数未被封锁。</li>
-</ul>
-<h1 id="安装使用"><a href="#安装使用" class="headerlink" title="安装使用"></a>安装使用</h1><p>这一步没有什么难度，请直接去往官方网站进行下载。使用IPv6可直接访问。<br>您亦可直接前往下在本站提供的安装包。</p>
-<p>下载完成后，请按照说明进行安装。</p>
-<blockquote>
-<p><a href="https://torproject.netcologne.de/">点这去往Tor Project</a></p>
-</blockquote>
-<p>打开Tor，您将被立刻要求连接到Tor，点击连接。如果您的运营商没有封锁Tor，过不了多久，您便可以开始私密浏览了。<br></p>
-<p><img src="https://i.328888.xyz/2023/05/02/iMVnio.png"></p>
-<h1 id="Q-amp-A"><a href="#Q-amp-A" class="headerlink" title="Q&amp;A"></a>Q&amp;A</h1><h2 id="能否稳定使用"><a href="#能否稳定使用" class="headerlink" title="能否稳定使用"></a>能否稳定使用</h2><p>我的地区没有问题，且不需要使用网桥。</p>
-<h2 id="为什么不直接使用VPN"><a href="#为什么不直接使用VPN" class="headerlink" title="为什么不直接使用VPN"></a>为什么不直接使用VPN</h2><p>Tor其实与VPN的实现相差不大，但我之所以选择Tor完全是因为使用方便而且成本更低。我的其他应用也并不会受到Tor Network的影响。</p>
-<p>Tor也比VPN法律风险更低。</p>
-<h1 id="尾声"><a href="#尾声" class="headerlink" title="尾声"></a>尾声</h1><p>所有资源将在藏宝阁有更新，如您需要可自行前往下载。</p>
-<p>此文章评论部分禁止讨论有关富强上网一类的话题，仅限于交流技术与使用问题。</p>
-]]></content>
-      <categories>
-        <category>软件资源</category>
-      </categories>
-      <tags>
-        <tag>Tor</tag>
-        <tag>匿名</tag>
-        <tag>富强上网</tag>
-        <tag>科学上网</tag>
-        <tag>隐私保护</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>部分GPT镜像及其他生成式AI汇总</title>
-    <url>//0005.html</url>
-    <content><![CDATA[<h1 id="读前提示"><a href="#读前提示" class="headerlink" title="读前提示"></a>读前提示</h1><p>本文汇总了一部分ChatGPT资源以及其他的生成式AI，但并不包含使用方式、上网方式等内容，且本文内没有汇总国内的ChatGPT镜像。请确认自己需要再继续阅读。</p>
-<h1 id="ChatGPT是什么"><a href="#ChatGPT是什么" class="headerlink" title="ChatGPT是什么"></a>ChatGPT是什么</h1><p>想必能看到这篇文章的大家都知道ChatGPT是什么以及他如何使用。至于其它的信息就让ChatGPT自己来告诉大家吧。</p>
-<blockquote>
-<p>我可以帮助您解决各种问题和任务。以下是一些我可以提供帮助的领域：<br></p>
-<p>   1.回答一般性问题，例如科学、历史、地理等主题。<br><br>   2提供技术支持，例如计算机、软件和硬件问题。<br><br>   3.编写和解释代码示例（例如Python、JavaScript、C++等）。<br><br>   4.提供生活建议，例如健康、饮食和锻炼。<br><br>   5.帮助您学习新技能，例如语言、编程或者其他技能。<br><br>   6.提供旅行建议，例如目的地、酒店和交通方式。<br><br>   7.解答关于文化、艺术和娱乐的问题。<br></p>
-</blockquote>
-<p>总之，妥善利用可以提高我们的工作和学习效率。帮我们更好地查找互联网上的信息。</p>
-<h1 id="为什么选择镜像"><a href="#为什么选择镜像" class="headerlink" title="为什么选择镜像"></a>为什么选择镜像</h1><p>由于OpenAI的设定，中国大陆的IP与手机号码都不能用于ChatGPT的注册。但由于OpenAI开放付费的API可供使用，于是大量的镜像站便诞生了。</p>
-<p>但我这里并不着重介绍大陆可用的镜像，我主要介绍需要特殊上网但不需要非大陆手机号码的镜像站。这类镜像通常能够获得更好的体验。</p>
-<h1 id="ChatGPT镜像链接"><a href="#ChatGPT镜像链接" class="headerlink" title="ChatGPT镜像链接"></a>ChatGPT镜像链接</h1><p>ChatGPT的镜像众多，这里我只选出两个给大家推荐。</p>
-<h2 id="Poe"><a href="#Poe" class="headerlink" title="Poe"></a>Poe</h2><p><strong>介绍：</strong> 由美版知乎Quora提供的在线AI聊天服务，内有GPT-3.5 turbo和其他多个模型。</p>
-<p><strong>费用：</strong> GPT-3.5免费，GPT-4每日仅限使用一次，需要付费成为会员才能无限使用</p>
-<p><strong>传送门：</strong> <a href="http://www.poe.com/">www.poe.com</a></p>
-<h2 id="ForeFront"><a href="#ForeFront" class="headerlink" title="ForeFront"></a>ForeFront</h2><p><strong>介绍：</strong> 目前体验最佳的GPT-4镜像，内置100多个已经预训练的角色。可使用3.5-Turbo与GPT-4两种模型</p>
-<p><strong>费用：</strong> <em>完全免费！包括GPT-4模型</em></p>
-<p><strong>传送门：</strong> <a href="https://chat.forefront.ai/">chat.forefront.ai</a></p>
-<h1 id="其他模型"><a href="#其他模型" class="headerlink" title="其他模型"></a>其他模型</h1><p>国内互联网厂商与海外大厂已经推出很多ChatGPT的”竞品”，虽目前实力难敌GPT，但也可以尝鲜试一试。</p>
-<h2 id="Google-Bard"><a href="#Google-Bard" class="headerlink" title="Google Bard"></a>Google Bard</h2><p><strong>介绍：</strong> 由Google训练的模型，目前仅在部分国家开启测试，且目前仍不支持中文。</p>
-<p><strong>传送门：</strong> <a href="https://bard.google.com/">bard.google.com</a></p>
-<h2 id="New-Bing"><a href="#New-Bing" class="headerlink" title="New Bing"></a>New Bing</h2><p><strong>介绍：</strong> 仍使用GPT模型，但被微软添加了联网查找信息的能力。使其在处理时效性强的问题时更有优势。</p>
-<p><strong>请使用富强上网访问！若已被重定向到国内版，请使用Ctrl+F5强制刷新浏览器缓存</strong></p>
-<p><strong>传送门：</strong> <a href="https://www.bing.com/new?toWww=1&redig=EB553815C3354C00A69242B6A479DE94">www.bing.com</a></p>
-<h2 id="文心一言"><a href="#文心一言" class="headerlink" title="文心一言"></a>文心一言</h2><p><strong>介绍：</strong> 百度训练的大语言模型</p>
-<p><strong>传送门：</strong><a href="https://yiyan.baidu.com/">yiyan.baidu.com</a></p>
-<h2 id="星火"><a href="#星火" class="headerlink" title="星火"></a>星火</h2><p><strong>介绍：</strong> 由科大讯飞训练，能力强于文心一言</p>
-<p><strong>传送门：</strong> <a href="https://xinghuo.xfyun.cn/">xinghuo.xfyun.cn</a></p>
-<h1 id="尾声"><a href="#尾声" class="headerlink" title="尾声"></a>尾声</h1><p>本文章不保持更新，但你仍可以前往资源站及时获取以及打包下载最新的书签信息！</p>
-]]></content>
-      <categories>
-        <category>软件资源</category>
-      </categories>
-      <tags>
-        <tag>ChatGPT</tag>
-        <tag>AI</tag>
-        <tag>教程</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>一个未脱离拼音但不像拼音的输入方案</title>
     <url>//0006.html</url>
     <content><![CDATA[<h1 id="什么是双拼"><a href="#什么是双拼" class="headerlink" title="什么是双拼"></a>什么是双拼</h1><p>双拼（也称双打）是一种建立在拼音输入法基础上的输入方法，可视为全拼的一种改进，它通过将汉语拼音中每个含多个字母的声母或韵母各自映射到某个按键上，使得每个音都可以用两个按键打出，极大地提高了拼音输入法的输入速度。这种声母或韵母到按键的对应表通常称之为双拼方案，这种方案不是固定的，流行的大多数拼音输入法都支持双拼，并且有各自不同的方案，还允许用户自定义方案。(摘自百度百科)</p>
@@ -247,6 +207,46 @@
         <tag>双拼</tag>
         <tag>打字</tag>
         <tag>效率</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>部分GPT镜像及其他生成式AI汇总</title>
+    <url>//0005.html</url>
+    <content><![CDATA[<h1 id="读前提示"><a href="#读前提示" class="headerlink" title="读前提示"></a>读前提示</h1><p>本文汇总了一部分ChatGPT资源以及其他的生成式AI，但并不包含使用方式、上网方式等内容，且本文内没有汇总国内的ChatGPT镜像。请确认自己需要再继续阅读。</p>
+<h1 id="ChatGPT是什么"><a href="#ChatGPT是什么" class="headerlink" title="ChatGPT是什么"></a>ChatGPT是什么</h1><p>想必能看到这篇文章的大家都知道ChatGPT是什么以及他如何使用。至于其它的信息就让ChatGPT自己来告诉大家吧。</p>
+<blockquote>
+<p>我可以帮助您解决各种问题和任务。以下是一些我可以提供帮助的领域：<br></p>
+<p>   1.回答一般性问题，例如科学、历史、地理等主题。<br><br>   2提供技术支持，例如计算机、软件和硬件问题。<br><br>   3.编写和解释代码示例（例如Python、JavaScript、C++等）。<br><br>   4.提供生活建议，例如健康、饮食和锻炼。<br><br>   5.帮助您学习新技能，例如语言、编程或者其他技能。<br><br>   6.提供旅行建议，例如目的地、酒店和交通方式。<br><br>   7.解答关于文化、艺术和娱乐的问题。<br></p>
+</blockquote>
+<p>总之，妥善利用可以提高我们的工作和学习效率。帮我们更好地查找互联网上的信息。</p>
+<h1 id="为什么选择镜像"><a href="#为什么选择镜像" class="headerlink" title="为什么选择镜像"></a>为什么选择镜像</h1><p>由于OpenAI的设定，中国大陆的IP与手机号码都不能用于ChatGPT的注册。但由于OpenAI开放付费的API可供使用，于是大量的镜像站便诞生了。</p>
+<p>但我这里并不着重介绍大陆可用的镜像，我主要介绍需要特殊上网但不需要非大陆手机号码的镜像站。这类镜像通常能够获得更好的体验。</p>
+<h1 id="ChatGPT镜像链接"><a href="#ChatGPT镜像链接" class="headerlink" title="ChatGPT镜像链接"></a>ChatGPT镜像链接</h1><p>ChatGPT的镜像众多，这里我只选出两个给大家推荐。</p>
+<h2 id="Poe"><a href="#Poe" class="headerlink" title="Poe"></a>Poe</h2><p><strong>介绍：</strong> 由美版知乎Quora提供的在线AI聊天服务，内有GPT-3.5 turbo和其他多个模型。</p>
+<p><strong>费用：</strong> GPT-3.5免费，GPT-4每日仅限使用一次，需要付费成为会员才能无限使用</p>
+<p><strong>传送门：</strong> <a href="http://www.poe.com/">www.poe.com</a></p>
+<h2 id="ForeFront"><a href="#ForeFront" class="headerlink" title="ForeFront"></a>ForeFront</h2><p><strong>介绍：</strong> 目前体验最佳的GPT-4镜像，内置100多个已经预训练的角色。可使用3.5-Turbo与GPT-4两种模型</p>
+<p><strong>费用：</strong> <em>完全免费！包括GPT-4模型</em></p>
+<p><strong>传送门：</strong> <a href="https://chat.forefront.ai/">chat.forefront.ai</a></p>
+<h1 id="其他模型"><a href="#其他模型" class="headerlink" title="其他模型"></a>其他模型</h1><p>国内互联网厂商与海外大厂已经推出很多ChatGPT的”竞品”，虽目前实力难敌GPT，但也可以尝鲜试一试。</p>
+<h2 id="Google-Bard"><a href="#Google-Bard" class="headerlink" title="Google Bard"></a>Google Bard</h2><p><strong>介绍：</strong> 由Google训练的模型，目前仅在部分国家开启测试，且目前仍不支持中文。</p>
+<p><strong>传送门：</strong> <a href="https://bard.google.com/">bard.google.com</a></p>
+<h2 id="New-Bing"><a href="#New-Bing" class="headerlink" title="New Bing"></a>New Bing</h2><p><strong>介绍：</strong> 仍使用GPT模型，但被微软添加了联网查找信息的能力。使其在处理时效性强的问题时更有优势。</p>
+<p><strong>请使用富强上网访问！若已被重定向到国内版，请使用Ctrl+F5强制刷新浏览器缓存</strong></p>
+<p><strong>传送门：</strong> <a href="https://www.bing.com/new?toWww=1&redig=EB553815C3354C00A69242B6A479DE94">www.bing.com</a></p>
+<h2 id="文心一言"><a href="#文心一言" class="headerlink" title="文心一言"></a>文心一言</h2><p><strong>介绍：</strong> 百度训练的大语言模型</p>
+<p><strong>传送门：</strong><a href="https://yiyan.baidu.com/">yiyan.baidu.com</a></p>
+<h2 id="星火"><a href="#星火" class="headerlink" title="星火"></a>星火</h2><p><strong>介绍：</strong> 由科大讯飞训练，能力强于文心一言</p>
+<p><strong>传送门：</strong> <a href="https://xinghuo.xfyun.cn/">xinghuo.xfyun.cn</a></p>
+<h1 id="尾声"><a href="#尾声" class="headerlink" title="尾声"></a>尾声</h1><p>本文章不保持更新，但你仍可以前往资源站及时获取以及打包下载最新的书签信息！</p>
+]]></content>
+      <categories>
+        <category>软件资源</category>
+      </categories>
+      <tags>
+        <tag>ChatGPT</tag>
+        <tag>AI</tag>
+        <tag>教程</tag>
       </tags>
   </entry>
   <entry>
