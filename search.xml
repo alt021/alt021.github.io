@@ -165,6 +165,46 @@
       </tags>
   </entry>
   <entry>
+    <title>部分GPT镜像及其他生成式AI汇总</title>
+    <url>//0005.html</url>
+    <content><![CDATA[<h1 id="读前提示"><a href="#读前提示" class="headerlink" title="读前提示"></a>读前提示</h1><p>本文汇总了一部分ChatGPT资源以及其他的生成式AI，但并不包含使用方式、上网方式等内容，且本文内没有汇总国内的ChatGPT镜像。请确认自己需要再继续阅读。</p>
+<h1 id="ChatGPT是什么"><a href="#ChatGPT是什么" class="headerlink" title="ChatGPT是什么"></a>ChatGPT是什么</h1><p>想必能看到这篇文章的大家都知道ChatGPT是什么以及他如何使用。至于其它的信息就让ChatGPT自己来告诉大家吧。</p>
+<blockquote>
+<p>我可以帮助您解决各种问题和任务。以下是一些我可以提供帮助的领域：<br></p>
+<p>   1.回答一般性问题，例如科学、历史、地理等主题。<br><br>   2提供技术支持，例如计算机、软件和硬件问题。<br><br>   3.编写和解释代码示例（例如Python、JavaScript、C++等）。<br><br>   4.提供生活建议，例如健康、饮食和锻炼。<br><br>   5.帮助您学习新技能，例如语言、编程或者其他技能。<br><br>   6.提供旅行建议，例如目的地、酒店和交通方式。<br><br>   7.解答关于文化、艺术和娱乐的问题。<br></p>
+</blockquote>
+<p>总之，妥善利用可以提高我们的工作和学习效率。帮我们更好地查找互联网上的信息。</p>
+<h1 id="为什么选择镜像"><a href="#为什么选择镜像" class="headerlink" title="为什么选择镜像"></a>为什么选择镜像</h1><p>由于OpenAI的设定，中国大陆的IP与手机号码都不能用于ChatGPT的注册。但由于OpenAI开放付费的API可供使用，于是大量的镜像站便诞生了。</p>
+<p>但我这里并不着重介绍大陆可用的镜像，我主要介绍需要特殊上网但不需要非大陆手机号码的镜像站。这类镜像通常能够获得更好的体验。</p>
+<h1 id="ChatGPT镜像链接"><a href="#ChatGPT镜像链接" class="headerlink" title="ChatGPT镜像链接"></a>ChatGPT镜像链接</h1><p>ChatGPT的镜像众多，这里我只选出两个给大家推荐。</p>
+<h2 id="Poe"><a href="#Poe" class="headerlink" title="Poe"></a>Poe</h2><p><strong>介绍：</strong> 由美版知乎Quora提供的在线AI聊天服务，内有GPT-3.5 turbo和其他多个模型。</p>
+<p><strong>费用：</strong> GPT-3.5免费，GPT-4每日仅限使用一次，需要付费成为会员才能无限使用</p>
+<p><strong>传送门：</strong> <a href="http://www.poe.com/">www.poe.com</a></p>
+<h2 id="ForeFront"><a href="#ForeFront" class="headerlink" title="ForeFront"></a>ForeFront</h2><p><strong>介绍：</strong> 目前体验最佳的GPT-4镜像，内置100多个已经预训练的角色。可使用3.5-Turbo与GPT-4两种模型</p>
+<p><strong>费用：</strong> <em>完全免费！包括GPT-4模型</em></p>
+<p><strong>传送门：</strong> <a href="https://chat.forefront.ai/">chat.forefront.ai</a></p>
+<h1 id="其他模型"><a href="#其他模型" class="headerlink" title="其他模型"></a>其他模型</h1><p>国内互联网厂商与海外大厂已经推出很多ChatGPT的”竞品”，虽目前实力难敌GPT，但也可以尝鲜试一试。</p>
+<h2 id="Google-Bard"><a href="#Google-Bard" class="headerlink" title="Google Bard"></a>Google Bard</h2><p><strong>介绍：</strong> 由Google训练的模型，目前仅在部分国家开启测试，且目前仍不支持中文。</p>
+<p><strong>传送门：</strong> <a href="https://bard.google.com/">bard.google.com</a></p>
+<h2 id="New-Bing"><a href="#New-Bing" class="headerlink" title="New Bing"></a>New Bing</h2><p><strong>介绍：</strong> 仍使用GPT模型，但被微软添加了联网查找信息的能力。使其在处理时效性强的问题时更有优势。</p>
+<p><strong>请使用富强上网访问！若已被重定向到国内版，请使用Ctrl+F5强制刷新浏览器缓存</strong></p>
+<p><strong>传送门：</strong> <a href="https://www.bing.com/new?toWww=1&redig=EB553815C3354C00A69242B6A479DE94">www.bing.com</a></p>
+<h2 id="文心一言"><a href="#文心一言" class="headerlink" title="文心一言"></a>文心一言</h2><p><strong>介绍：</strong> 百度训练的大语言模型</p>
+<p><strong>传送门：</strong><a href="https://yiyan.baidu.com/">yiyan.baidu.com</a></p>
+<h2 id="星火"><a href="#星火" class="headerlink" title="星火"></a>星火</h2><p><strong>介绍：</strong> 由科大讯飞训练，能力强于文心一言</p>
+<p><strong>传送门：</strong> <a href="https://xinghuo.xfyun.cn/">xinghuo.xfyun.cn</a></p>
+<h1 id="尾声"><a href="#尾声" class="headerlink" title="尾声"></a>尾声</h1><p>本文章不保持更新，但你仍可以前往资源站及时获取以及打包下载最新的书签信息！</p>
+]]></content>
+      <categories>
+        <category>软件资源</category>
+      </categories>
+      <tags>
+        <tag>ChatGPT</tag>
+        <tag>AI</tag>
+        <tag>教程</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>一个未脱离拼音但不像拼音的输入方案</title>
     <url>//0006.html</url>
     <content><![CDATA[<h1 id="什么是双拼"><a href="#什么是双拼" class="headerlink" title="什么是双拼"></a>什么是双拼</h1><p>双拼（也称双打）是一种建立在拼音输入法基础上的输入方法，可视为全拼的一种改进，它通过将汉语拼音中每个含多个字母的声母或韵母各自映射到某个按键上，使得每个音都可以用两个按键打出，极大地提高了拼音输入法的输入速度。这种声母或韵母到按键的对应表通常称之为双拼方案，这种方案不是固定的，流行的大多数拼音输入法都支持双拼，并且有各自不同的方案，还允许用户自定义方案。(摘自百度百科)</p>
@@ -207,46 +247,6 @@
         <tag>双拼</tag>
         <tag>打字</tag>
         <tag>效率</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>部分GPT镜像及其他生成式AI汇总</title>
-    <url>//0005.html</url>
-    <content><![CDATA[<h1 id="读前提示"><a href="#读前提示" class="headerlink" title="读前提示"></a>读前提示</h1><p>本文汇总了一部分ChatGPT资源以及其他的生成式AI，但并不包含使用方式、上网方式等内容，且本文内没有汇总国内的ChatGPT镜像。请确认自己需要再继续阅读。</p>
-<h1 id="ChatGPT是什么"><a href="#ChatGPT是什么" class="headerlink" title="ChatGPT是什么"></a>ChatGPT是什么</h1><p>想必能看到这篇文章的大家都知道ChatGPT是什么以及他如何使用。至于其它的信息就让ChatGPT自己来告诉大家吧。</p>
-<blockquote>
-<p>我可以帮助您解决各种问题和任务。以下是一些我可以提供帮助的领域：<br></p>
-<p>   1.回答一般性问题，例如科学、历史、地理等主题。<br><br>   2提供技术支持，例如计算机、软件和硬件问题。<br><br>   3.编写和解释代码示例（例如Python、JavaScript、C++等）。<br><br>   4.提供生活建议，例如健康、饮食和锻炼。<br><br>   5.帮助您学习新技能，例如语言、编程或者其他技能。<br><br>   6.提供旅行建议，例如目的地、酒店和交通方式。<br><br>   7.解答关于文化、艺术和娱乐的问题。<br></p>
-</blockquote>
-<p>总之，妥善利用可以提高我们的工作和学习效率。帮我们更好地查找互联网上的信息。</p>
-<h1 id="为什么选择镜像"><a href="#为什么选择镜像" class="headerlink" title="为什么选择镜像"></a>为什么选择镜像</h1><p>由于OpenAI的设定，中国大陆的IP与手机号码都不能用于ChatGPT的注册。但由于OpenAI开放付费的API可供使用，于是大量的镜像站便诞生了。</p>
-<p>但我这里并不着重介绍大陆可用的镜像，我主要介绍需要特殊上网但不需要非大陆手机号码的镜像站。这类镜像通常能够获得更好的体验。</p>
-<h1 id="ChatGPT镜像链接"><a href="#ChatGPT镜像链接" class="headerlink" title="ChatGPT镜像链接"></a>ChatGPT镜像链接</h1><p>ChatGPT的镜像众多，这里我只选出两个给大家推荐。</p>
-<h2 id="Poe"><a href="#Poe" class="headerlink" title="Poe"></a>Poe</h2><p><strong>介绍：</strong> 由美版知乎Quora提供的在线AI聊天服务，内有GPT-3.5 turbo和其他多个模型。</p>
-<p><strong>费用：</strong> GPT-3.5免费，GPT-4每日仅限使用一次，需要付费成为会员才能无限使用</p>
-<p><strong>传送门：</strong> <a href="http://www.poe.com/">www.poe.com</a></p>
-<h2 id="ForeFront"><a href="#ForeFront" class="headerlink" title="ForeFront"></a>ForeFront</h2><p><strong>介绍：</strong> 目前体验最佳的GPT-4镜像，内置100多个已经预训练的角色。可使用3.5-Turbo与GPT-4两种模型</p>
-<p><strong>费用：</strong> <em>完全免费！包括GPT-4模型</em></p>
-<p><strong>传送门：</strong> <a href="https://chat.forefront.ai/">chat.forefront.ai</a></p>
-<h1 id="其他模型"><a href="#其他模型" class="headerlink" title="其他模型"></a>其他模型</h1><p>国内互联网厂商与海外大厂已经推出很多ChatGPT的”竞品”，虽目前实力难敌GPT，但也可以尝鲜试一试。</p>
-<h2 id="Google-Bard"><a href="#Google-Bard" class="headerlink" title="Google Bard"></a>Google Bard</h2><p><strong>介绍：</strong> 由Google训练的模型，目前仅在部分国家开启测试，且目前仍不支持中文。</p>
-<p><strong>传送门：</strong> <a href="https://bard.google.com/">bard.google.com</a></p>
-<h2 id="New-Bing"><a href="#New-Bing" class="headerlink" title="New Bing"></a>New Bing</h2><p><strong>介绍：</strong> 仍使用GPT模型，但被微软添加了联网查找信息的能力。使其在处理时效性强的问题时更有优势。</p>
-<p><strong>请使用富强上网访问！若已被重定向到国内版，请使用Ctrl+F5强制刷新浏览器缓存</strong></p>
-<p><strong>传送门：</strong> <a href="https://www.bing.com/new?toWww=1&redig=EB553815C3354C00A69242B6A479DE94">www.bing.com</a></p>
-<h2 id="文心一言"><a href="#文心一言" class="headerlink" title="文心一言"></a>文心一言</h2><p><strong>介绍：</strong> 百度训练的大语言模型</p>
-<p><strong>传送门：</strong><a href="https://yiyan.baidu.com/">yiyan.baidu.com</a></p>
-<h2 id="星火"><a href="#星火" class="headerlink" title="星火"></a>星火</h2><p><strong>介绍：</strong> 由科大讯飞训练，能力强于文心一言</p>
-<p><strong>传送门：</strong> <a href="https://xinghuo.xfyun.cn/">xinghuo.xfyun.cn</a></p>
-<h1 id="尾声"><a href="#尾声" class="headerlink" title="尾声"></a>尾声</h1><p>本文章不保持更新，但你仍可以前往资源站及时获取以及打包下载最新的书签信息！</p>
-]]></content>
-      <categories>
-        <category>软件资源</category>
-      </categories>
-      <tags>
-        <tag>ChatGPT</tag>
-        <tag>AI</tag>
-        <tag>教程</tag>
       </tags>
   </entry>
   <entry>
@@ -459,12 +459,12 @@
 ]]></content>
       <categories>
         <category>动态</category>
-        <category>个人动态</category>
+        <category>THE YEAR 系列</category>
       </categories>
       <tags>
         <tag>海文章</tag>
         <tag>杂谈</tag>
-        <tag>年度总结</tag>
+        <tag>THE YEAR</tag>
       </tags>
   </entry>
   <entry>
@@ -506,6 +506,38 @@
         <tag>博客</tag>
         <tag>域名</tag>
         <tag>网站</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>一起回放我&quot;消失&quot;的这一年</title>
+    <url>//0013.html</url>
+    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>在写这段文字的时间是2024年12月20日，离2025年还有11天。作为本博客很可能会长期写下去的年货系列，今年自然还是要写的。不过确实是有点担心，今年的年货写不写是不是意义真的不大。因为今年在网络上的活动实在是太少了，生产出来的内容自然也就更少了，还有不少”THE YEAR 2023”里定下的目标连新建文件夹都还没完成。</p>
+<p>正文开始</p>
+<h1 id="我的在线项目"><a href="#我的在线项目" class="headerlink" title="我的在线项目"></a>我的在线项目</h1><p>还是要先说说我的其他在线项目的情况。有在今年上半年阅读过我的博客的读者应该知道。我的博客在经历了域名解析被掐断、EU.ORG跳FANZHA中心之后，目前是在同时使用Github Pages提供的二级域名和EU.ORG提供的二级域名。且两者分别放置在Vercel与GitHub中。非敏感时间段使用EU.ORG访问速度会更快。不过评论系统是依赖EU.ORG的，这也就意味着在敏感时期博客内的评论是不可用的，这个目前还没有很好的解决办法，只能暂时如此。</p>
+<p>新项目”星际漫游”在今年上线供有需求的用户尝鲜，星际漫游专栏要写的内容还有很多，而且由于博主目前时间有限，应该在很长的一段时间内都不能完全完成。由于项目特殊性，在此就不在赘述了。导航链接大家可以在博客的导航栏中找到。<br>同时，为了保障安全，此项目直接放在了Notion上，也就把进入Notion可能遇到的一些问题当作使用这个项目的准入门槛吧。</p>
+<p>2023年上线的项目基本情况不是很乐观。”纯净计划”现在已经由自建站点转移至腾讯文档中。我也很不想使用国内第三方平台，但这目前确实是维持纯净计划存活的一个比较好的方式。</p>
+<h1 id="为小众项目提供翻译"><a href="#为小众项目提供翻译" class="headerlink" title="为小众项目提供翻译"></a>为小众项目提供翻译</h1><p>今年夏天我了解到了OxygenCustomizer这个项目，这是一个类似于Iconify(AOSP类操作系统定制和美化工具)的软件。旨在帮助ColorOS和OxygenOS用户更方便的定制他们的系统界面。博主本人比较喜欢且正在使用这款软件。</p>
+<p>此软件的翻译目前是通过Crowdin由社区共同完成的。基于此原因，此应用的部分中文化翻译存在生硬或错误等问题。</p>
+<p>因我也在使用这款软件，同时为了帮助其他中文用户改善本地化体验，我帮助完成了一些未汉化字符串的汉化。大概有30多个字符串的翻译是由我提供的，目前提交的内容均已被项目维护者采用。</p>
+<p>没想到第一次贡献开源社区，居然还是辅助进行了中文化翻译。</p>
+<h1 id="今年的视频创作"><a href="#今年的视频创作" class="headerlink" title="今年的视频创作"></a>今年的视频创作</h1><p>维持了每年1更的良好成绩……</p>
+<p>当然我知道这没啥可骄傲的，但是我目前能达到的极限状态也就基本如此了。一来，我不愿意做很多人都做过的东西；再者，我毕竟课余时间有限，想不出那么多有趣的点子来。</p>
+<p>我对待做视频的态度大致也是这样的：如果只是单纯的更新了很多视频，但是没有内容，看不看都没什么区别，那我还不如不去做。</p>
+<p>今年我的更新频率仍旧无法保证，在此也再次向所有支持过我的视频的观众们致谢！</p>
+<h1 id="研究了点没用的小东西"><a href="#研究了点没用的小东西" class="headerlink" title="研究了点没用的小东西"></a>研究了点没用的小东西</h1><p>虽然没有产出什么内容，不过今年倒确实没有闲着。一直有在折腾一些小玩意，比如说Cloudreve，Alist，Navidrome，Docsify什么的。</p>
+<p>折腾这些东西的原因也是想在不添置新硬件的同时寻找一个比较好的资源整理和多设备共享的解决方案。今年从网络上各种地方搜集了各种不同类型的资源，渐渐感觉原本单纯使用网盘进行数据同步的方案略显捉襟见肘。整理资源时体验比较混乱，存储空间的利用率也非常低。</p>
+<p>所有折腾的经验也可能会变成2025年里的一篇新文章，谁知道呢？(不对我怎么又立上flag了)</p>
+<h1 id="EOY"><a href="#EOY" class="headerlink" title="_EOY"></a>_EOY</h1><p>在学校、在家里用纸币和键盘写了好久，终于炒出了今年的年货。<br><br>在担心无事可谈但是又洋洋洒洒的写下了这一千多字。</p>
+<p>那么2024就这么愉快的完结吧。</p>
+<p>2025 LET’S GET HIGHER！</p>
+]]></content>
+      <categories>
+        <category>动态</category>
+        <category>THE YEAR 系列</category>
+      </categories>
+      <tags>
+        <tag>杂谈</tag>
+        <tag>THE YEAR</tag>
       </tags>
   </entry>
 </search>
